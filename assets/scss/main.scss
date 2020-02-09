@@ -17,15 +17,18 @@
 @import "utils/functions";
 
 // Layout
+@import "layout/page";
 @import "layout/container";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/titles";
 @import "layout/buttons";
+@import "layout/image";
 
 // Pages
 @import "pages/detail";
 @import "pages/cart";
+@import "pages/contact";
 
 // Components
 @import "component/topPanel";
@@ -68,3 +71,5 @@
 @import "component/calendarInfo";
 @import "component/animation";
 @import "component/topLink";
+@import "component/ourStory";
+@import "component/promoSlider";

@@ -1,0 +1,35 @@
+.promoSlider {
+  max-width: map_get($container-max-widths, lg);
+  margin: $spacer * 4 auto;
+  display: flex;
+  align-items: center;
+}
+
+.promoSlider__image {
+  width: 35%;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.promoSlider__content {
+  width: 65%;
+
+  .title {
+    font-size: 3rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  .swiper-container {
+    padding-bottom: 40px;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+}

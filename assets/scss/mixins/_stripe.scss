@@ -39,6 +39,39 @@
   padding-right: 0;
 
   .productDetail & {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
+}
+
+.stripe--blue,
+.stripe--red,
+.stripe--yellow {
+  padding-top: $spacer * 4;
+  padding-bottom: $spacer * 4;
+  color: #fff;
+
+  .title {
+    color: #fff;
+  }
+
+  p, span {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    min-width: 150px;
+  }
+
+}
+
+.stripe--blue {
+  background-color: rgba(63, 81, 181, 0.55);
+}
+
+.stripe--red {
+  background-color: rgba(233, 30, 99, 0.55);
+}
+
+.stripe--yellow {
+  background-color: rgba(255, 235, 59, 0.55);
 }

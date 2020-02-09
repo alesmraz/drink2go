@@ -8,11 +8,4 @@
       padding: 0;
     }
   }
-
-  .sectionHeader {
-    @include media-breakpoint-down(sm) {
-      margin-left: -$spacer;
-      margin-bottom: 185px;
-    }
-  }
 }

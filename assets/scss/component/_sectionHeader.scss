@@ -1,42 +1,19 @@
 .sectionHeader {
   position: relative;
-  height: map_get($section-header-height, 'xl');
+  height: map_get($section-header-height, 'md');
   margin-bottom: $spacer;
 
   @include get-stripe-offset();
-
-  &:after {
-    content: '';
-    @include fill();
-    @include size(100%);
-    background-color: rgba(#000, 0.40);
-  }
-
   @include media-breakpoint-down(sm) {
     height: map_get($section-header-height, 'sm');
     width: 100vw;
     margin: 0;
   }
 
-  .sliderBlocks {
-    bottom: $spacer * 2;
-    @include center(horizontal);
-
-    @include media-breakpoint-down(sm) {
-      bottom: -120px;
-      top: initial;
-      position: relative;
-      width: 100vw;
-    }
-
-    .sliderBlocks__item {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  .logo {
+    max-width: 100%;
+    max-height: 100%;
   }
-
-
 }
 
 .sectionHeader__content {

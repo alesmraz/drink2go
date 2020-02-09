@@ -1,11 +1,12 @@
 .nav-tabs {
   border-bottom: none;
   margin-bottom: $spacer * 1.5;
+  background-color: transparent;
 
   .nav-link {
     border-radius: 0;
     border-width: 3px;
-    width: 120px;
+    width: 150px;
     text-align: center;
     background: #F3F4F5;
     color: #535455;
@@ -42,9 +43,12 @@
 }
 
 .tab-pane {
-  background-color: rgba($primary, 0.05);
-  padding: 50px;
+  background: transparent url('../img/tab.svg') center center no-repeat;
+  background-size: contain;
+  padding: 20px 50px;
   width: 100%;
+  min-height: 600px;
+  position: relative;
 
   @include media-breakpoint-down(sm) {
     padding: 15px;
@@ -52,6 +56,14 @@
 
   .title, b {
     color: #000;
+  }
+
+  .tab-content {
+    @include center();
+  }
+
+  .table-responsive {
+    font-size: 14px;
   }
 }
 

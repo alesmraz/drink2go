@@ -4,15 +4,7 @@
   padding: 0 70px;
   height: $top-panel-height;
   position: relative;
-
-  &:after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 10px;
-  }
+  box-shadow: 0 2px 10px #00000045;
 
   @include media-breakpoint-down(sm) {
     padding: 0;

@@ -47,3 +47,13 @@
   text-align: center;
   font-weight: 600;
 }
+
+@each $range in $button-radius-range {
+  .btn-#{$range} {
+    transform: rotate(#{$range}deg);
+  }
+
+  .btn-m-#{$range} {
+    transform: rotate(-#{$range}deg);
+  }
+}

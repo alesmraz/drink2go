@@ -74,6 +74,7 @@
   line-height: 1;
   color: $secondary;
   white-space: nowrap;
+  font-size: 1.5rem;
 
   @include media-breakpoint-down(lg) {
     font-size: 13px;

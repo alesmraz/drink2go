@@ -1,16 +1,19 @@
 $primary:     #fbc500;
 $secondary:   #000;
+$alternative: #4D7293;
 $gray:        #707070;
 $brown:       #9c9287;
 $brown-light: #F5F5F5;
-$text-color:  #7f7f7f;
+$text-color:  #000;
 $body-color:  $text-color;
 
 $font-family-base: 'Barlow';
-$headings-font-family: 'Barlow Condensed';
-$headings-font-family-alternative: 'Barlow';
+$headings-font-family: 'Barrio';
+$headings-font-family-alternative: 'Barrio';
 
-$border-radius: .5rem;
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
 
 $container-max-widths: (
         sm: 540px,
@@ -18,6 +21,12 @@ $container-max-widths: (
         lg: 1100px,
         xl: 1340px
 );
+
+$btn-active-color:    $alternative;
+
+$button-radius-range: (10, 20, 30, 60, 90, 120, 150, 180, 210, 240, 280);
+
+$btn-font-family:   $headings-font-family;
 
 //== Components
 
@@ -37,6 +46,7 @@ $filter-width: 860px;
 // Section Header
 $section-header-height: (
     sm: 120px,
+    md: 240px,
     xl: 320px
 );
 

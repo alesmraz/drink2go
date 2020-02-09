@@ -91,6 +91,10 @@
         font-size: 14px;
       }
     }
+
+    del {
+      color: $danger;
+    }
   }
 
   .buyerpanel__button {
@@ -104,9 +108,9 @@
 .buyerpanel__item {
   display: flex;
   color: #fff;
-  background: $primary;
+  background: $alternative;
   margin: $spacer / 2 $spacer;
-  padding: $spacer / 2 $spacer * 2;
+  padding: 0;
 
   @include media-breakpoint-down(sm) {
     margin-left: 0;
@@ -130,7 +134,7 @@
 }
 
 .buyerpanel__item--noBg {
-  background: #fff;
+  background-color: transparent;
   color: #000;
   padding-left: 0;
   padding-right: 0;
@@ -294,10 +298,6 @@
       text-align: center;
     }
   }
-}
-
-.type__select {
-
 }
 
 .type__select--hide {
