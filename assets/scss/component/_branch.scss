@@ -2,19 +2,9 @@ $branches-sm-height: 250px;
 
 .branches {
   display: flex;
-  height: 78vh;
+  height: calc(100vh - 198px);
   position: relative;
   flex-wrap: wrap;
-
-  @include media-breakpoint-down(sm) {
-    height: $branches-sm-height;
-    margin-bottom: 305px;
-
-    .sliderBlocks {
-      position: absolute;
-      top: $branches-sm-height;
-    }
-  }
 }
 
 .branch__item {
@@ -26,23 +16,69 @@ $branches-sm-height: 250px;
     .branch__bg {
       transform: scale(1.05);
     }
+
+    .products img {
+      transform: translateY(20px);
+    }
+
+    .products img:nth-child(2) {
+      transform: translateY(-20px);
+    }
+
+  }
+
+  .products {
+    position: absolute;
+    bottom: 2vh;
+    z-index: 1;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 
 .branch__bg {
   @include fill();
   @include object-fit(cover);
-  filter: brightness(0.5);
+  filter: brightness(0.8);
   transition: transform 0.3s ease-in-out;
 }
 
-.branch__title {
+.branch__content {
+  width: 100%;
   @include center();
+  top: 40%;
   text-align: center;
   z-index: 1;
   color: #fff;
   text-transform: uppercase;
   font-size: 40px;
+  font-family: $font-family-base;
+
+  .title {
+    color: #fff;
+  }
+
+  .btn {
+    margin-top: $spacer * 2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    font-size: 1.5rem;
+    padding-left: $spacer * 2;
+    padding-right: $spacer * 2;
+
+    @include media-breakpoint-down(sm) {
+      padding-left: $spacer;
+      padding-right: $spacer;
+      font-size: 1rem;
+    }
+  }
 
   @include media-breakpoint-down(sm) {
     font-size: 20px;

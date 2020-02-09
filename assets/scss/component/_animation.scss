@@ -9,3 +9,18 @@
 .hidden-animation {
   opacity: 0;
 }
+
+.background {
+  height: 400px;
+  width: 100%;
+}
+
+.stripe.parallax {
+  background-size: cover;
+  background-attachment: fixed;
+
+  .parallax__content {
+    z-index: 1;
+    position: relative;
+  }
+}

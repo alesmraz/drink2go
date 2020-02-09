@@ -2,6 +2,15 @@
   color: #fff;
 }
 
+.btn-alternative {
+  background-color: $alternative;
+  color: #fff;
+}
+
+.btn-normal {
+  font-family: $font-family-base;
+}
+
 .btn-wide {
   padding-left: $spacer * 2;
   padding-right: $spacer * 2;
@@ -56,4 +65,19 @@
   .btn-m-#{$range} {
     transform: rotate(-#{$range}deg);
   }
+}
+
+.btn-to-form {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.btn-primary {
+    color: #000;
+  }
+
+
 }

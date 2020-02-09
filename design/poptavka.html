@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
-    <script src="./dist/index.js"></script>
-    <link type="text/css" rel="stylesheet" href="./dist/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./../assets/favicon.png"/>
+    <script src="./../dist/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="./../dist/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">
 </head>
@@ -17,19 +17,19 @@
     <div class="topPanel">
         <div class="topPanel__item topPanel__item--links">
             <a class="icon" href="https://www.instagram.com" target="_blank">
-                <img src="./assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
+                <img src="./../assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./../assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
         </div>
         <form action="" class="topPanel__item topPanel__item--search">
             <label for="search">
                 <span class="d-none">hledání</span>
             </label>
             <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="./assets/svg/search.svg" alt="Hledat"></button>
+            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
         </form>
         <div class="topPanel__item topPanel__item--cart">
             <a href="#" class="icon user">
                 <span class="mr-2 d-none d-lg-block">Vladimír dlouhý</span>
-                <img src="./assets/svg/profile.svg" alt="Přihlásit se">
+                <img src="./../assets/svg/profile.svg" alt="Přihlásit se">
             </a>
 
             <div class="accountPreview">
@@ -45,7 +45,7 @@
 
             <a href="kosik.html" class="icon cart cart--preview">
                 <span class="badge badge-secondary">2</span>
-                <img src="./assets/svg/cart.svg" alt="Košík">
+                <img src="./../assets/svg/cart.svg" alt="Košík">
             </a>
 
             <div class="cartPreview">
@@ -53,7 +53,7 @@
                 <section class="productCart productCart--light">
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -79,7 +79,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -92,7 +92,7 @@
 
                                 <div class="buyerpanel__typeSelect">
                                     <div class="type">
-                                        <span class="type__title mb-2">Typ: Láhev</span>
+                                        <span class="type__title mb-2">Typ: Plechovka</span>
                                         <div class="inputCounter form-group" data-parent-class="productDetail">
                                             <span class="minus">-</span>
                                             <input type="text" name="bottle" value="1" class="form-control" min="0">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -118,7 +118,7 @@
 
                                 <div class="buyerpanel__typeSelect">
                                     <div class="type">
-                                        <span class="type__title mb-2">Typ: Láhev</span>
+                                        <span class="type__title mb-2">Typ: Plechovka</span>
                                         <div class="inputCounter form-group" data-parent-class="productDetail">
                                             <span class="minus">-</span>
                                             <input type="text" name="bottle" value="1" class="form-control" min="0">
@@ -141,17 +141,7 @@
         </div>
     </div>
 
-    <div class="logoWrapper">
-        <a href="/" class="logo">
-            <img src="./assets/img/home.svg" alt="" class="icon icon--home">
-            <img src="./assets/img/logo.svg" alt="Drink2Go">
-        </a>
-        <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
-            <span class="name pr-2 fs-sm">Menu</span><img src="./assets/svg/list-menu.svg" alt="">
-        </div>
-    </div>
-
-    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./assets/svg/mobile-close.svg" alt="Zavřít"></div>
+    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
 
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
@@ -235,150 +225,115 @@
         </div>
     </div>
 
+    <ul class="nav menu menu--main" data-level="1">
+        <li class="nav__item">
+            <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
+        </li>
+        <li class="nav__item">
+            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="cenik.html" class="nav__link">Ceník</a>
+        </li>
 
-    <div class="border-bottom border-primary">
-        <ul class="nav menu menu--main" data-level="1">
-            <li class="nav__item">
-                <a href="kategorie.html" class="nav__link">Lahvové víno</a>
+        <li class="nav__item">
+            <a href="o-nas.html" class="nav__link">O nás</a>
+        </li>
 
-                <ul class="nav nav--sub" data-level="2">
-                    <li class="nav__item">
-                        <a href="kategorie.html" class="nav__link">Bílá vína (10)</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="kategorie.html" class="nav__link">Červená vína (15)</a>
-
-                    </li>
-                    <li class="nav__item">
-                        <a href="kategorie.html" class="nav__link">Růžová vína (1)</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav__item">
-                <a href="kategorie-stacena.html" class="nav__link">Stáčené víno</a>
-
-                <ul class="nav nav--sub" data-level="2">
-                    <li class="nav__item">
-                        <a href="kategorie-stacena.html" class="nav__link">Bílá vína (10)</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="kategorie-stacena.html" class="nav__link">Červená vína (15)</a>
-
-                    </li>
-                    <li class="nav__item">
-                        <a href="kategorie-stacena.html" class="nav__link">Růžová vína (1)</a>
-                    </li>
-                </ul>
-
-            </li>
-            <li class="nav__item">
-                <a href="kategorie.html" class="nav__link">Bag in box</a>
-            </li>
-            <li class="nav__item">
-                <a href="kategorie-oleje.html" class="nav__link">Olivové oleje</a>
-            </li>
-            <li class="nav__item">
-                <a href="kategorie.html" class="nav__link">Kegy a Bag In Boxy</a>
-            </li>
-            <li class="nav__item">
-                <a href="znacka.html" class="nav__link">Značky</a>
-
-                <ul class="nav nav--sub" data-level="2">
-                    <li class="nav__item">
-                        <a href="znacka.html" class="nav__link">Baldi</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="znacka-bodegas.html" class="nav__link">Bodegas</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="znacka-herznan.html" class="nav__link">Herznan</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="znacka-santero.html" class="nav__link">Santero</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="znacka-vendrame.html" class="nav__link">Vendrame</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="znacka-montenigo.html" class="nav__link">Montenigo Agricola, Montorio, Verona</a>
-                    </li>
-
-                </ul>
-
-            </li>
-            <li class="nav__item">
-                <a href="nase-vinoteky.html" class="nav__link">Naše vinotéky</a>
-            </li>
-            <li class="nav__item">
-                <a href="kontakty.html" class="nav__link">Kontakty</a>
-            </li>
-        </ul>
-    </div>
+        <li class="nav__item">
+            <a href="kontakt.html" class="nav__link">Kontakt</a>
+        </li>
+        <li class="nav__item nav__item--right">
+            <a href="/eshop/" class="nav__link">Fresh nápoje</a>
+        </li>
+    </ul>
 
 </header>
 
 <main class="page">
-    <div class="container--section">
-        <section class="sectionHeader">
-            <img src="./assets/svg/logo-baldi.svg" alt="Baldi" class="sectionHeader__content">
-            <img class="sectionHeader__bg" src="./assets/img/baldi.jpg" alt="Baldi">
+    <div class="container--section pb-5 pt-5">
 
-            <div class="sliderBlocks sliderBlocks--brand">
-                <a class="sliderBlocks__item sliderBlocks__item--gray backLink" id="backLink">
-                    <h2 class="title">
-                        <svg stroke="#fff" xmlns="http://www.w3.org/2000/svg" class="mb-1 mr-1" width="5" height="auto" viewBox="0 0 13.422 22.601"><path d="M255.134,1384l10.24,10.24-10.24,10.24" transform="translate(267.495 1405.54) rotate(180)" fill="none" stroke-width="3"></path></svg>
-                        Zpět
-                    </h2>
-                </a>
-                <a href="pribeh.html" class="sliderBlocks__item sliderBlocks__item--primary">
-                    <h2 class="title">Příběh</h2>
-                    <p>Říká se, že chuť a vůně vína jsou plodem duše a lásky lidí, kteří obdělávají svou půdu ...</p>
-                </a>
-                <a href="vasen.html" class="sliderBlocks__item sliderBlocks__item--brown">
-                    <h2 class="title">Tradice</h2>
-                    <p>V oblasti, ze které vína pochází, má vinařství staletý původ. Tradice láhve neopustila. </p>
-                </a>
+
+        <h1 class="title--big text-center font-weight-bold title--normal pb-5">Nezávázná poptávka</h1>
+
+        <form class="well pl-5 pr-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="firstNameInput">Jméno</label>
+                        <input type="text" class="form-control" id="firstNameInput">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="lastNameInput">Příjmení</label>
+                        <input type="text" class="form-control" id="lastNameInput">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="text" class="form-control" id="emailInput">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="phoneInput">Telefon</label>
+                        <input type="text" class="form-control" id="phoneInput">
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section class="pb-5">
-            <h1 class="title pt-4 pt-md-0 title--story">Vášeň <span>.</span></h1>
 
             <div class="row">
-                <div class="col-md-6">
-                    <h4 class="title title--line mb-5">Jako byste seděli na italské vinici...</h4>
-                    <p>Auctor nibh lacus eveniet reiciendis culpa rutrum! Nascetur impedit id nibh earum? Laoreet porttitor phasellus!</p>
-                    <p>Diam nesciunt anim! Volutpat sem faucibus cupiditate laoreet esse, porro dignissimos adipiscing, dolor semper nesciunt magna augue ultricies massa natus laboriosam distinctio porttitor modi feugiat tempus officiis! Sit diam urna? Earum luctus? Corrupti iure fuga mollis consectetur temporibus repellendus non. Ipsum ornare laudantium ipsam cum viverra! Ridiculus lacus,</p>
-                    <p>expedita fugit qui ipsa earum ratione, nonummy voluptatem doloremque, maxime irure magni, cursus occaecat veritatis</p>
-
-                    <p>us! Magnam repellendus consectetuer tempore veniam! Expedita. <b>Praesent!</b> Molestiae ridiculus bibendum, urna consec</p>
+                <div class="col-md-3">
+                    <label class="d-block">Typ potisku</label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="type-classic" name="type" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="type-classic">Klasický</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="type-3d" name="type" class="custom-control-input">
+                        <label class="custom-control-label" for="type-3d">3D</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="type-competition" name="type" class="custom-control-input">
+                        <label class="custom-control-label" for="type-competition">Stírací plechovka</label>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h4 class="title title--line mb-5">Italská vína patří mezi spotřebiteli mezi nejoblíbenější.</h4>
-                    <p>Auctor nibh lacus eveniet reiciendis culpa rutrum! Nascetur impedit id nibh earum? Laoreet porttitor phasellus!</p>
-                    <p>Diam nesciunt anim! Volutpat sem faucibus cupiditate laoreet esse, porro dignissimos adipiscing, dolor semper nesciunt magna augue ultricies massa natus laboriosam distinctio porttitor modi feugiat tempus officiis! Sit diam urna? Earum luctus? Corrupti iure fuga mollis consectetur temporibus repellendus non. Ipsum ornare laudantium ipsam cum viverra! Ridiculus lacus,</p>
-                    <p>expedita fugit qui ipsa earum ratione, nonummy voluptatem doloremque, maxime irure magni, cursus occaecat veritatis</p>
-
-                    <p>us! Magnam repellendus consectetuer tempore veniam! Expedita. <b>Praesent!</b> Molestiae ridiculus bibendum, urna consec</p>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label for="noteControl">Poznámka</label>
+                        <textarea class="form-control" id="noteControl" rows="3"></textarea>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section class="mosaic">
-            <a href="#" class="mosaic__item">
-                <img src="./assets/img/aboutus/1.jpg" alt="">
-            </a>
-            <a href="#" class="mosaic__item">
-                <img src="./assets/img/aboutus/2.jpg" alt="">
-            </a>
-            <a href="#" class="mosaic__item">
-                <img src="./assets/img/aboutus/3.jpg" alt="">
-            </a>
-        </section>
+            <div class="row">
+                <div class="col-md-9">
+                    <label class="d-block">Objem</label>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="objem-250s" name="objem" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="objem-250s">250 ml(široká)</label>
+                    </div>
+
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="objem-250u" name="objem" class="custom-control-input">
+                        <label class="custom-control-label" for="objem-250u">250 ml(úzká)</label>
+                    </div>
+
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="objem-330" name="objem" class="custom-control-input">
+                        <label class="custom-control-label" for="objem-330">330 ml</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-alternative btn-normal w-100 mt-3">Odeslat poptávku</button>
+                </div>
+            </div>
+        </form>
 
     </div>
 </main>
@@ -422,14 +377,13 @@
 
     <div class="copyright">Drink2Go © 2020</div>
 </footer>
-
 <section id="modals">
 
     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="loginLabel"><img class="mb-2 mr-2" width="40" src="./assets/svg/profile-invert.svg" alt=""> Přihlásit se</h5>
+                    <h5 class="modal-title" id="loginLabel"><img class="mb-2 mr-2" width="40" src="./../assets/svg/profile-invert.svg" alt=""> Přihlásit se</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -485,10 +439,10 @@
                         <div class="buyerpanel__item">
                             <div class="buyerpanel__typeSelect">
                                 <div class="type">
-                                    <img src="./assets/svg/bottle.svg" alt="" class="type__image" data-name="bottle">
-                                    <img src="./assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
+                                    <img src="./../assets/svg/bottle.svg" alt="" class="type__image" data-name="bottle">
+                                    <img src="./../assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
                                     <div class="type__control">
-                                        <span class="type__title" data-name="bottle">Typ: Láhev</span>
+                                        <span class="type__title" data-name="bottle">Typ: Plechovka</span>
                                         <span class="type__title type__title--hide" data-name="box">Typ: Karton</span>
                                         <span class="text-center">Množství</span>
 
@@ -523,6 +477,69 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 </section>
 </body>

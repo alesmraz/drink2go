@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
-    <script src="./dist/index.js"></script>
-    <link type="text/css" rel="stylesheet" href="./dist/index.css">
+    <link rel="shortcut icon" type="image/png" href="./../assets/favicon.png"/>
+    <script src="./../dist/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="./../dist/index.css">
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -18,19 +17,19 @@
     <div class="topPanel">
         <div class="topPanel__item topPanel__item--links">
             <a class="icon" href="https://www.instagram.com" target="_blank">
-                <img src="./assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
+                <img src="./../assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./../assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
         </div>
         <form action="" class="topPanel__item topPanel__item--search">
             <label for="search">
                 <span class="d-none">hledání</span>
             </label>
             <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="./assets/svg/search.svg" alt="Hledat"></button>
+            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
         </form>
         <div class="topPanel__item topPanel__item--cart">
             <a href="#" class="icon user">
                 <span class="mr-2 d-none d-lg-block">Vladimír dlouhý</span>
-                <img src="./assets/svg/profile.svg" alt="Přihlásit se">
+                <img src="./../assets/svg/profile.svg" alt="Přihlásit se">
             </a>
 
             <div class="accountPreview">
@@ -46,7 +45,7 @@
 
             <a href="kosik.html" class="icon cart cart--preview">
                 <span class="badge badge-secondary">2</span>
-                <img src="./assets/svg/cart.svg" alt="Košík">
+                <img src="./../assets/svg/cart.svg" alt="Košík">
             </a>
 
             <div class="cartPreview">
@@ -54,7 +53,7 @@
                 <section class="productCart productCart--light">
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/can/product.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -80,7 +79,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/can/product.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -106,7 +105,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/can/product.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -142,7 +141,7 @@
         </div>
     </div>
 
-    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./assets/svg/mobile-close.svg" alt="Zavřít"></div>
+    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
 
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
@@ -228,288 +227,107 @@
 
     <ul class="nav menu menu--main" data-level="1">
         <li class="nav__item">
-            <a href="kategorie-stacena.html" class="nav__link">Párty packy</a>
+            <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
         </li>
         <li class="nav__item">
-            <a href="kategorie-stacena.html" class="nav__link">Naše drinky</a>
+            <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
         </li>
         <li class="nav__item">
-            <a href="kategorie.html" class="nav__link">O nás</a>
+            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
         </li>
         <li class="nav__item">
-            <a href="kontakty.html" class="nav__link">Kontakt</a>
+            <a href="cenik.html" class="nav__link">Ceník</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="o-nas.html" class="nav__link">O nás</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="kontakt.html" class="nav__link">Kontakt</a>
         </li>
         <li class="nav__item nav__item--right">
-            <a href="kategorie-stacena.html" class="nav__link">Promo plechovky</a>
+            <a href="/eshop/" class="nav__link">Fresh nápoje</a>
         </li>
     </ul>
 
 </header>
 
 <main class="page">
-    <div class="container--section productDetail mt-1 mt-md-1">
-        <div class="alerts pt-3">
-            <div class="alert alert-success text-center alert-dismissible fade show" role="alert">Zboží bylo přidáno do košíku
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    <div class="container--section">
+        <section class="sectionHeader">
+            <img class="logo" src="./../assets/img/logo.svg" alt="Drink2Go">
+        </section>
+
+        <div class="row contactPromo">
+            <div class="col-md-3">
+                <img src="./../assets/img/product.png" class="image" alt="Drink2Go">
             </div>
-            <div class="alert alert-danger text-center alert-dismissible fade show" role="alert">Ajaj, něco se nepovedlo
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-        <div class="productDetail__header">
-            <h1>Hugo dolce</h1>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="productDetail__gallery">
-                    <img src="./assets/img/can/product.png" alt="Hugo dolce">
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="ratingWrapper ratingWrapper--left">
-                    <fieldset class="rating">
-                        <input disabled type="radio" id="star5Top" name="rating" value="5" /><label class = "full" for="star5Top" title="Awesome - 5 stars"></label>
-                        <input disabled type="radio" id="star4halfTop" name="rating" value="4 and a half" /><label class="half" for="star4halfTop" title="Pretty good - 4.5 stars"></label>
-                        <input disabled type="radio" id="star4Top" name="rating" value="4" /><label class = "full" for="star4Top" title="Pretty good - 4 stars"></label>
-                        <input disabled type="radio" id="star3halfTop" name="rating" value="3 and a half" /><label class="half" for="star3halfTop" title="Meh - 3.5 stars"></label>
-                        <input disabled type="radio" id="star3Top" name="rating" value="3" /><label class = "full" for="star3Top" title="Meh - 3 stars"></label>
-                        <input disabled checked type="radio" id="star2halfTop" name="rating" value="2 and a half" /><label class="half" for="star2halfTop" title="Kinda bad - 2.5 stars"></label>
-                        <input disabled type="radio" id="star2Top" name="rating" value="2" /><label class = "full" for="star2Top" title="Kinda bad - 2 stars"></label>
-                        <input disabled type="radio" id="star1halfTop" name="rating" value="1 and a half" /><label class="half" for="star1halfTop" title="Meh - 1.5 stars"></label>
-                        <input disabled type="radio" id="star1Top" name="rating" value="1" /><label class = "full" for="star1Top" title="Sucks big time - 1 star"></label>
-                        <input disabled type="radio" id="starhalfTop" name="rating" value="half" /><label class="half" for="starhalfTop" title="Sucks big time - 0.5 stars"></label>
-                    </fieldset>
-                </div>
-
-                <div class="productDetail__params productDetail__params--top">
-                    <p class="productDetail__paramsItem"><span>Země původu:</span> <b>Itálie</b></p>
-                    <p class="productDetail__paramsItem"><span>Typ:</span> <b>Extra Brut</b></p>
-                    <p class="productDetail__paramsItem"><span>Alkohol:</span> <b>11,5 %</b></p>
-                </div>
-
-                <div class="productDetail__params">
-                    <p class="productDetail__paramsItem"><span>Výrobce:</span> <b><a href="znacka.html">BALDI</a></b></p>
-                    <p class="productDetail__paramsItem"><span>Kód výrobku:</span> <b>10011</b></p>
-                    <p class="productDetail__paramsItem"><span>Dostupnost:</span> <b>Na skladě</b></p>
-                </div>
-
-                <form class="buyerpanel buyerpanel--detail">
-                    <input type="hidden" name="id" value="">
-                    <div class="buyerpanel__item buyerpanel__item--noBg">
-                        <div class="price">
-                            <del data-price="old">598,00 Kč</del>
-                            <span data-price="actual" class="actual font-weight-bold">539,00 Kč</span>
-                            <small data-price="noVat">445,45 Kč (bez DPH)</small>
-                        </div>
-                    </div>
-
-                    <div class="buyerpanel__item">
-                        <div class="buyerpanel__typeSelect">
-                            <div class="type">
-                                <img src="./assets/svg/can.svg" alt="" class="type__image" data-name="bottle">
-                                <img src="./assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
-                                <div class="type__control">
-                                    <span class="type__title" data-name="bottle">Typ: Plechovka</span>
-                                    <span class="type__title type__title--hide" data-name="box">Typ: Balení</span>
-                                    <span class="text-center">Množství</span>
-
-                                    <div class="inputCounter form-group" data-parent-class="productDetail">
-                                        <span class="minus">-</span>
-                                        <input type="text" name="bottle" value="0" class="form-control" min="0">
-                                        <span class="plus">+</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="type type-select">
-                                <div class="type__control">
-                                    <label>
-                                        <input data-target="bottle" type="radio" name="buyerpanelselect" checked>
-                                        <span>Plechovka</span>
-                                    </label>
-                                    <label>
-                                        <input data-target="box" type="radio" name="buyerpanelselect">
-                                        <span>Balení (6 ks)</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="buyerpanel__buttonWrap">
-                            <button type="submit" class="btn btn-m-10 mb-2 btn-lg btn-primary buyerpanel__button btn-wide pb-3">
-                                <span>Do košíku</span>
-                            </button>
-                            <a href="kategorie.html" class="backLink mb-lg-1 mb-3 mt-md-2" id="backLink">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-1 mr-1" width="5" height="auto" viewBox="0 0 13.422 22.601"><path d="M255.134,1384l10.24,10.24-10.24,10.24" transform="translate(267.495 1405.54) rotate(180)" fill="none" stroke-width="3"/></svg>
-                                Zpět k nákupu
-                            </a>
-                        </div>
-                    </div>
-
-                    <input type="hidden" name="id" value="123">
-                </form>
+            <div class="col-md-9">
+                <h2 class="title mt-4">Co děláme</h2>
+                <p>ero platea sociosqu eaque cras omnis quod dui ad adipisicing ipsa congue elementum luctus torquent pretium? Quisquam molestias, orci risus, sequi excepturi facere voluptatem. Convallis totam lobortis dictum, cillum do fermentum et optio dolorem diamlorem iusto ducimus magni, autem? Nibh aliquet fusce blandit saepe, eros, rutrum class asperiores cupidatat, corrupti qui varius modi sapiente quia viverra, corporis arcu. Leo harum venenatis torquent necessitatibus mollit. Quam aliquam, doloribus mollis! Eleifend laoreet, sit rhoncus. Eaque anim nunc aperiam vulputat</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
+        <div class="stripe parallax stripe--blue">
+            <div class="parallax__content">
+                <h2 class="title">Stírací plechovky</h2>
+                <p>At mus facilis aperiam senectus turpis aute tincidunt! Dolores officiis cumque montes, magnam exercitation ornare hac sint dignissim a, magni! Fugit repellendus hymenaeos rhoncus? Mattis, beatae? Officia inventore dui dolorem exercitationem sapiente fermentum, dapibus bibendum maiores! Beatae? Ullamco, deserunt itaque, eum fugiat! Velit mollitia tempor suscipit hac minima, laborum! Odit, lacus cillum. At mus facilis aperiam senectus turpis aute tincidunt! Dolores officiis cumque montes, magnam exercitation ornare hac sint dignissim a, magni! Fugit repellendus hymenaeos rhoncus? Mattis, beatae?</p>
+                <p class="text-center d-block mt-5">
+                    <a href="stiraci-plechovky.html" class="btn btn-primary btn-m-10 btn-lg">Více</a>
+                </p>
+            </div>
+        </div>
+        <div class="stripe parallax stripe--red">
+            <div class="parallax__content">
+                <h2 class="title">3D potisk plechovek</h2>
+                <p>At mus facilis aperiam senectus turpis aute tincidunt! Dolores officiis cumque montes, magnam exercitation ornare hac sint dignissim a, magni! Fugit repellendus hymenaeos rhoncus? Mattis, beatae? Officia inventore dui dolorem exercitationem sapiente fermentum, dapibus bibendum maiores! Beatae? Ullamco, deserunt itaque, eum fugiat! Velit mollitia tempor suscipit hac minima, laborum! Odit, lacus cillum. At mus facilis aperiam senectus turpis aute tincidunt! Dolores officiis cumque montes, magnam exercitation ornare hac sint dignissim a, magni! Fugit repellendus hymenaeos rhoncus? Mattis, beatae?</p>
+                <p class="text-center d-block mt-5">
+                    <a href="potisk-plechovek.html" class="btn btn-primary btn-m-10 btn-lg">Více</a>
+                </p>
+            </div>
+        </div>
+        <div class="stripe parallax stripe--yellow">
+            <div class="parallax__content">
+                <h2 class="title">Plnění plechovek</h2>
+                <p>At mus facilis aperiam senectus turpis aute tincidunt! Dolores officiis cumque montes, magnam exercitation ornare hac sint dignissim a, magni! Fugit repellendus hymenaeos rhoncus? Mattis, beatae? Officia inventore dui dolorem exercitationem sapiente fermentum, dapibus bibendum maiores! Beatae? Ullamco, deserunt itaque, eum fugiat! Velit mollitia tempor suscipit hac minima, laborum! Odit, lacus cillum. At mus facilis aperiam senectus turpis aute tincidunt! Dolores officiis cumque montes, magnam exercitation ornare hac sint dignissim a, magni! Fugit repellendus hymenaeos rhoncus? Mattis, beatae?</p>
+                <p class="text-center d-block mt-5">
+                    <a href="plneni-plechovek.html" class="btn btn-primary btn-m-10 btn-lg">Více</a>
+                </p>
+            </div>
+        </div>
 
-                <section class="section section--small section--detail mb-5 mt-2">
-                    <ul class="nav nav-tabs tabs--detail" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="desc-tab" data-toggle="tab" href="#desc" role="tab" aria-controls="desc" aria-selected="true">Popis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="specification-tab" data-toggle="tab" href="#specification" role="tab" aria-controls="specification" aria-selected="false">Specifikace</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="rate-tab" data-toggle="tab" href="#rate" role="tab" aria-controls="rate" aria-selected="false">Hodnocení</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="desc" role="tabpanel" aria-labelledby="desc-tab">
-                            <div class="tab-content">
-                                <h3 class="title title--line">Popis produktu</h3>
-                                <p>Víno na absolutní špičce. Pěstuje se v Ogliano di Conegliano, oblast DOCG Conegliano Valdobbiadene z vlastních vinic. Půda z vinice leží na vápenatých skalách, jílovitých, suchých a mělkých. Ve vinicích se nepoužívají chemikálie, veškerá výživa půdy se provádí pomocí zeleného hnojení a přírodními metodami. Sklizeň hroznů je pouze manuální. Vinařství v současné době prochází certifikací, aby mohlo používat označení bio. Všechna vína jsou veganská. Označení Rive znamená čeření vína minimálně 3 měsíce.</p>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
-                            <div class="tab-content">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <tbody>
-                                        <tr>
-                                            <td>Země původu</td>
-                                            <td>Španělsko</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vinařská oblast</td>
-                                            <td>La Mancha</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Typ</td>
-                                            <td>suché víno</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Odrůda</td>
-                                            <td>Macabeo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alkohol</td>
-                                            <td>12%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Výrobce</td>
-                                            <td><a href="znacka-bodegas.html">Bodegas Yuntero</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ročník</td>
-                                            <td>2018</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="rate" role="tabpanel" aria-labelledby="rate-tab">
-                            <div class="tab-content">
-                                <div class="rate">
-                                    <h2 class="rate__title">Tento produkt jste ještě neohodnotili.</h2>
-                                    <h2 class="rate__sub">Jak vám chutnalo?</h2>
-
-                                    <div class="ratingWrapper">
-                                        <fieldset class="rating rating--lg">
-                                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <h3 class="text-left mt-3 mb-4 text-secondary">Další podobné produkty:</h3>
-                <div class="stripe stripe--full overflow-hidden">
-                    <div class="productList">
-                        <div class="productCard">
-                            <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
-                            <div class="productCard__content">
-
-                                <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
-
-                                <div class="productCard__parameters">
-                                    <span>Země původu: <b>Itálie</b></span>
-                                    <span>Typ: <b>Prosecco</b></span>
-                                    <span>Alkohol: <b>11%</b></span>
-                                </div>
-
-                                <div class="productCard__price">
-                                    <span class="price price__actual">280 Kč</span>
-                                    <span class="price price__del">1 000 Kč</span>
-                                    <span class="price price__noVat">230 Kč (bez dph)</span>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="productCard">
-                            <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
-                            <div class="productCard__content">
-
-                                <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
-
-                                <div class="productCard__parameters">
-                                    <span>Země původu: <b>Itálie</b></span>
-                                    <span>Typ: <b>Prosecco</b></span>
-                                    <span>Alkohol: <b>11%</b></span>
-                                </div>
-
-                                <div class="productCard__price">
-                                    <span class="price price__actual">280 Kč</span>
-                                    <span class="price price__del">1 000 Kč</span>
-                                    <span class="price price__noVat">230 Kč (bez dph)</span>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="productCard">
-                            <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
-                            <div class="productCard__content">
-
-                                <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
-
-                                <div class="productCard__parameters">
-                                    <span>Země původu: <b>Itálie</b></span>
-                                    <span>Typ: <b>Prosecco</b></span>
-                                    <span>Alkohol: <b>11%</b></span>
-                                </div>
-
-                                <div class="productCard__price">
-                                    <span class="price price__actual">280 Kč</span>
-                                    <span class="price price__del">1 000 Kč</span>
-                                    <span class="price price__noVat">230 Kč (bez dph)</span>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <h2 class="title title--big text-center mt-5">Ceník</h2>
+        <div class="priceLists">
+            <div class="priceList">
+                <div class="priceList__header">Klasický tisk</div>
+                <dl class="priceList__prices">
+                    <dt><span>1-99ks</span></dt>
+                    <dd>79 Kč/ks</dd>
+                    <dt><span>100-299ks</span></dt>
+                    <dd>65 Kč/ks</dd>
+                    <dt><span>100-299ks</span></dt>
+                    <dd>65 Kč/ks</dd>
+                    <dt><span>1000+ks</span></dt>
+                    <dd>35 Kč/ks</dd>
+                </dl>
+                <div class="cleaner"></div>
+                <div class="priceList__info">litora erat pariatur gravida rerum justo parturient placerat varius, cubilia placeat consectetuer ali</div>
+            </div>
+            <div class="priceList">
+                <div class="priceList__header">Stírací plechovka</div>
+                <dl class="priceList__prices">
+                    <dt><span>1-99ks</span></dt>
+                    <dd>79 Kč/ks</dd>
+                    <dt><span>100-299ks</span></dt>
+                    <dd>65 Kč/ks</dd>
+                    <dt><span>100-299ks</span></dt>
+                    <dd>65 Kč/ks</dd>
+                    <dt><span>1000+ks</span></dt>
+                    <dd>35 Kč/ks</dd>
+                </dl>
+                <div class="cleaner"></div>
+                <div class="priceList__info">litora erat pariatur gravida rerum justo parturient placerat varius, cubilia placeat consectetuer ali</div>
             </div>
         </div>
     </div>
@@ -555,11 +373,12 @@
     <div class="copyright">Drink2Go © 2020</div>
 </footer>
 <section id="modals">
+
     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="loginLabel"><img class="mb-2 mr-2" width="40" src="./assets/svg/profile-invert.svg" alt=""> Přihlásit se</h5>
+                    <h5 class="modal-title" id="loginLabel"><img class="mb-2 mr-2" width="40" src="./../assets/svg/profile-invert.svg" alt=""> Přihlásit se</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -592,6 +411,7 @@
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -614,11 +434,11 @@
                         <div class="buyerpanel__item">
                             <div class="buyerpanel__typeSelect">
                                 <div class="type">
-                                    <img src="./assets/svg/can.svg" alt="" class="type__image" data-name="bottle">
-                                    <img src="./assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
+                                    <img src="./../assets/svg/bottle.svg" alt="" class="type__image" data-name="bottle">
+                                    <img src="./../assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
                                     <div class="type__control">
                                         <span class="type__title" data-name="bottle">Typ: Plechovka</span>
-                                        <span class="type__title type__title--hide" data-name="box">Typ: Balení</span>
+                                        <span class="type__title type__title--hide" data-name="box">Typ: Karton</span>
                                         <span class="text-center">Množství</span>
 
                                         <div class="inputCounter form-group" data-parent-class="productDetail">
@@ -632,17 +452,17 @@
                                     <div class="type__control">
                                         <label>
                                             <input data-target="bottle" type="radio" name="buyerpanelselect" checked>
-                                            <span>Plechovka</span>
+                                            <span>Lahev</span>
                                         </label>
                                         <label>
                                             <input data-target="box" type="radio" name="buyerpanelselect">
-                                            <span>Balení (6 ks)</span>
+                                            <span>Karton</span>
                                         </label>
                                     </div>
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-lg btn-primary btn-wide buyerpanel__button">
+                            <button type="submit" class="btn btn-lg btn-secondary btn-wide buyerpanel__button">
                                 <span>Do košíku</span>
                             </button>
                         </div>
@@ -718,4 +538,3 @@
     </div>
 </section>
 </body>
-</html>

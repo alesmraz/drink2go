@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./../assets/favicon.png"/>
     <script src="./dist/index.js"></script>
     <link type="text/css" rel="stylesheet" href="./dist/index.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
@@ -17,19 +17,19 @@
     <div class="topPanel">
         <div class="topPanel__item topPanel__item--links">
             <a class="icon" href="https://www.instagram.com" target="_blank">
-                <img src="./assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
+                <img src="./../assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./../assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
         </div>
         <form action="" class="topPanel__item topPanel__item--search">
             <label for="search">
                 <span class="d-none">hledání</span>
             </label>
             <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="./assets/svg/search.svg" alt="Hledat"></button>
+            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
         </form>
         <div class="topPanel__item topPanel__item--cart">
             <a href="#" class="icon user">
                 <span class="mr-2 d-none d-lg-block">Vladimír dlouhý</span>
-                <img src="./assets/svg/profile.svg" alt="Přihlásit se">
+                <img src="./../assets/svg/profile.svg" alt="Přihlásit se">
             </a>
 
             <div class="accountPreview">
@@ -45,7 +45,7 @@
 
             <a href="kosik.html" class="icon cart cart--preview">
                 <span class="badge badge-secondary">2</span>
-                <img src="./assets/svg/cart.svg" alt="Košík">
+                <img src="./../assets/svg/cart.svg" alt="Košík">
             </a>
 
             <div class="cartPreview">
@@ -53,7 +53,7 @@
                 <section class="productCart productCart--light">
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -79,7 +79,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -92,7 +92,7 @@
 
                                 <div class="buyerpanel__typeSelect">
                                     <div class="type">
-                                        <span class="type__title mb-2">Typ: Láhev</span>
+                                        <span class="type__title mb-2">Typ: Plechovka</span>
                                         <div class="inputCounter form-group" data-parent-class="productDetail">
                                             <span class="minus">-</span>
                                             <input type="text" name="bottle" value="1" class="form-control" min="0">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -118,7 +118,7 @@
 
                                 <div class="buyerpanel__typeSelect">
                                     <div class="type">
-                                        <span class="type__title mb-2">Typ: Láhev</span>
+                                        <span class="type__title mb-2">Typ: Plechovka</span>
                                         <div class="inputCounter form-group" data-parent-class="productDetail">
                                             <span class="minus">-</span>
                                             <input type="text" name="bottle" value="1" class="form-control" min="0">
@@ -143,15 +143,15 @@
 
     <div class="logoWrapper">
         <a href="/" class="logo">
-            <img src="./assets/img/home.svg" alt="" class="icon icon--home">
-            <img src="./assets/img/logo.svg" alt="Drink2Go">
+            <img src="./../assets/img/home.svg" alt="" class="icon icon--home">
+            <img src="./../assets/img/logo.svg" alt="Drink2Go">
         </a>
         <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
-            <span class="name pr-2 fs-sm">Menu</span><img src="./assets/svg/list-menu.svg" alt="">
+            <span class="name pr-2 fs-sm">Menu</span><img src="./../assets/svg/list-menu.svg" alt="">
         </div>
     </div>
 
-    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./assets/svg/mobile-close.svg" alt="Zavřít"></div>
+    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
 
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
@@ -322,33 +322,56 @@
 </header>
 
 <main class="page">
-    <div class="">
+    <div>
         <section class="sectionHeader">
-            <h1 class="sectionHeader__content">Stáčené víno</h1>
-            <img class="sectionHeader__bg" src="./assets/img/wines/stacena/1.jpg" alt="Stáčené víno">
+            <h1 class="sectionHeader__content">Lahvová vína</h1>
+            <img class="sectionHeader__bg" src="./../assets/img/category.jpg" alt="Lahvové víno">
+            <div class="sliderBlocks">
+                <a href="kategorie-zeme.html" class="sliderBlocks__item sliderBlocks__item--primary">
+                    <h5 class="title">STÁČENÁ VÍNA</h5>
+                </a>
+                <a href="kategorie-zeme.html" class="sliderBlocks__item sliderBlocks__item--brown">
+                    <h5 class="title">BAG IN BOXY</h5>
+                </a>
+                <a href="kategorie-zeme.html" class="sliderBlocks__item sliderBlocks__item--yellow">
+                    <h5 class="title">OLIVOVÉ OLEJE</h5>
+                </a>
+            </div>
         </section>
+
 
         <section class="overflow-hidden">
             <form action="" id="category-filter" class="filter filter--category">
-                <div class="sliderBlocks sliderBlocks--static">
-                    <a href="kategorie-zeme.html" class="sliderBlocks__item sliderBlocks__item--gray">
-                        <h5 class="title">LAHVOVÁ VÍNA</h5>
+
+
+                <div class="filterSection filterSection--middle">
+                    <a href="znacka-vendrame.html" class="filterSection__item">
+                        <img src="./../assets/svg/vendrame.svg" alt="vendrame" height="65">
+                        <img src="./../assets/svg/flag-it.svg" alt="Italie" class="mt-3" width="80">
                     </a>
-                    <a href="kategorie-zeme.html" class="sliderBlocks__item sliderBlocks__item--brown">
-                        <h5 class="title">BAG IN BOXY</h5>
+                    <a href="znacka-herznan.html" class="filterSection__item">
+                        <img src="./../assets/svg/montenigo.svg" alt="herznan" height="65">
+                        <img src="./../assets/svg/flag-it.svg" alt="Italie" class="mt-3" width="80">
                     </a>
-                    <a href="kategorie-zeme.html" class="sliderBlocks__item sliderBlocks__item--yellow">
-                        <h5 class="title">OLIVOVÉ OLEJE</h5>
+                    <a href="znacka-santero.html" class="filterSection__item">
+                        <img src="./../assets/svg/logo-santero-invert.svg" alt="santero" height="65">
+                        <img src="./../assets/svg/flag-it.svg" alt="Italie" class="mt-3" width="80">
+                    </a>
+                    <a href="znacka-herznan.html" class="filterSection__item">
+                        <img src="./../assets/svg/logo-herznan-invert.svg" alt="herznan" height="65">
+                        <img src="./../assets/svg/flag-cz.svg" alt="Italie" class="mt-3" width="80">
+                    </a>
+                    <a href="znacka-bodegas.html" class="filterSection__item">
+                        <img src="./../assets/svg/logo-bodegas-invert.svg" alt="bodegas" height="65">
+                        <img src="./../assets/svg/flag-es.svg" alt="Italie" class="mt-3" width="80">
                     </a>
                 </div>
                 <span class="filterSeparator"></span>
-                <div class="filterSection filterSection--big">
-                    <button class="btn btn-lg btn-secondary btn-wide text-uppercase">ČERVENÁ</button>
-                    <button class="btn btn-lg btn-secondary btn-wide text-uppercase">BÍLÁ</button>
-                    <button class="btn btn-lg btn-secondary btn-wide text-uppercase">PROSECCO</button>
-                    <button class="btn btn-lg btn-secondary btn-wide text-uppercase">Vše</button>
+
+                <div class="filterSection">
+                    <a href="https://originalnivina.cz/index.php?route=product/category&amp;path=70_78" class="btn btn-gold btn-wide">Bag In Box 3 l (6)</a>
+                    <a href="https://originalnivina.cz/index.php?route=product/category&amp;path=70_77" class="btn btn-gold btn-wide">Bag In Box 5 l (2)</a>
                 </div>
-                <span class="filterSeparator"></span>
             </form>
         </section>
 
@@ -356,10 +379,10 @@
             <form action="" id="filter" class="filter">
 
                 <button class="btn filter__button" type="button" data-toggle="collapse" data-target="#orderCollapse" aria-expanded="false" aria-controls="filterCollapse">
-                    <img src="./assets/svg/sort.svg" alt="Třídit"><span>Třídit</span>
+                    <img src="./../assets/svg/sort.svg" alt="Třídit"><span>Třídit</span>
                 </button>
                 <button class="btn filter__button" type="button" data-toggle="collapse" data-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
-                    <img src="./assets/svg/filter.svg" alt="Filtrovat"><span>Filtrovat</span>
+                    <img src="./../assets/svg/filter.svg" alt="Filtrovat"><span>Filtrovat</span>
                 </button>
 
                 <div class="collapse collapse-one-item show" id="orderCollapse">
@@ -417,10 +440,13 @@
 
             <div class="productList">
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <div class="productCard__tags tag">
+                        <div class="tag__item tag__item--sale">Akce</div>
+                    </div>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -438,10 +464,10 @@
                     </div>
                 </div>
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -459,10 +485,10 @@
                     </div>
                 </div>
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -480,95 +506,10 @@
                     </div>
                 </div>
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280 Kč</span>
-                            <span class="price price__del">1 000 Kč</span>
-                            <span class="price price__noVat">230 Kč (bez dph)</span>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
-                    <div class="productCard__content">
-
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280 Kč</span>
-                            <span class="price price__del">1 000 Kč</span>
-                            <span class="price price__noVat">230 Kč (bez dph)</span>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
-                    <div class="productCard__content">
-
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280 Kč</span>
-                            <span class="price price__del">1 000 Kč</span>
-                            <span class="price price__noVat">230 Kč (bez dph)</span>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
-                    <div class="productCard__content">
-
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280 Kč</span>
-                            <span class="price price__del">1 000 Kč</span>
-                            <span class="price price__noVat">230 Kč (bez dph)</span>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
-                    <div class="productCard__content">
-
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -587,10 +528,10 @@
                 </div>
 
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -608,10 +549,10 @@
                     </div>
                 </div>
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -629,10 +570,10 @@
                     </div>
                 </div>
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -650,10 +591,10 @@
                     </div>
                 </div>
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -672,10 +613,10 @@
                 </div>
 
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -693,10 +634,95 @@
                     </div>
                 </div>
                 <div class="productCard">
-                    <a href="detail.html" class="productCard__image"><img src="./assets/img/can/product.png" alt=""></a>
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
                     <div class="productCard__content">
 
-                        <h3 class="title"><a href="detail.html">Hugo dolce</a></h3>
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                        <div class="productCard__parameters">
+                            <span>Země původu: <b>Itálie</b></span>
+                            <span>Typ: <b>Prosecco</b></span>
+                            <span>Alkohol: <b>11%</b></span>
+                        </div>
+
+                        <div class="productCard__price">
+                            <span class="price price__actual">280 Kč</span>
+                            <span class="price price__del">1 000 Kč</span>
+                            <span class="price price__noVat">230 Kč (bez dph)</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="productCard">
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
+                    <div class="productCard__content">
+
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                        <div class="productCard__parameters">
+                            <span>Země původu: <b>Itálie</b></span>
+                            <span>Typ: <b>Prosecco</b></span>
+                            <span>Alkohol: <b>11%</b></span>
+                        </div>
+
+                        <div class="productCard__price">
+                            <span class="price price__actual">280 Kč</span>
+                            <span class="price price__del">1 000 Kč</span>
+                            <span class="price price__noVat">230 Kč (bez dph)</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="productCard">
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
+                    <div class="productCard__content">
+
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                        <div class="productCard__parameters">
+                            <span>Země původu: <b>Itálie</b></span>
+                            <span>Typ: <b>Prosecco</b></span>
+                            <span>Alkohol: <b>11%</b></span>
+                        </div>
+
+                        <div class="productCard__price">
+                            <span class="price price__actual">280 Kč</span>
+                            <span class="price price__del">1 000 Kč</span>
+                            <span class="price price__noVat">230 Kč (bez dph)</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="productCard">
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
+                    <div class="productCard__content">
+
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                        <div class="productCard__parameters">
+                            <span>Země původu: <b>Itálie</b></span>
+                            <span>Typ: <b>Prosecco</b></span>
+                            <span>Alkohol: <b>11%</b></span>
+                        </div>
+
+                        <div class="productCard__price">
+                            <span class="price price__actual">280 Kč</span>
+                            <span class="price price__del">1 000 Kč</span>
+                            <span class="price price__noVat">230 Kč (bez dph)</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="productCard">
+                    <a href="detail.html" class="productCard__image"><img src="./../assets/img/can/product.png" alt=""></a>
+                    <div class="productCard__content">
+
+                        <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
 
                         <div class="productCard__parameters">
                             <span>Země původu: <b>Itálie</b></span>
@@ -716,13 +742,12 @@
             </div>
 
             <div class="pagination">
-                <span class="pagination__prev disabled"><img src="./assets/svg/pagination-left.svg" alt="Zpět"></span>
+                <span class="pagination__prev disabled"><img src="./../assets/svg/pagination-left.svg" alt="Zpět"></span>
                 <span class="pagination__actual">Strana 1 z 12</span>
-                <a href="#" class="pagination__next"><img src="./assets/svg/pagination-right.svg" alt="Vpřed"></a>
+                <a href="#" class="pagination__next"><img src="./../assets/svg/pagination-right.svg" alt="Vpřed"></a>
             </div>
 
         </section>
-
     </div>
 </main>
 
@@ -771,7 +796,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="loginLabel"><img class="mb-2 mr-2" width="40" src="./assets/svg/profile-invert.svg" alt=""> Přihlásit se</h5>
+                    <h5 class="modal-title" id="loginLabel"><img class="mb-2 mr-2" width="40" src="./../assets/svg/profile-invert.svg" alt=""> Přihlásit se</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -827,16 +852,16 @@
                         <div class="buyerpanel__item">
                             <div class="buyerpanel__typeSelect">
                                 <div class="type">
-                                    <img src="./assets/svg/pet.svg" alt="" class="type__image" data-name="petOne">
-                                    <img src="./assets/svg/pet2.svg" alt="" class="type__image type__image--hide" data-name="petTwo">
+                                    <img src="./../assets/svg/bottle.svg" alt="" class="type__image" data-name="bottle">
+                                    <img src="./../assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
                                     <div class="type__control">
-                                        <span class="type__title" data-name="petOne">Typ: Pet 1l</span>
-                                        <span class="type__title type__title--hide" data-name="petTwo">Typ: Pet 2l</span>
+                                        <span class="type__title" data-name="bottle">Typ: Plechovka</span>
+                                        <span class="type__title type__title--hide" data-name="box">Typ: Karton</span>
                                         <span class="text-center">Množství</span>
 
                                         <div class="inputCounter form-group" data-parent-class="productDetail">
                                             <span class="minus">-</span>
-                                            <input type="text" name="petOne" value="0" class="form-control" min="0">
+                                            <input type="text" name="bottle" value="0" class="form-control" min="0">
                                             <span class="plus">+</span>
                                         </div>
                                     </div>
@@ -844,12 +869,12 @@
                                 <div class="type type-select">
                                     <div class="type__control">
                                         <label>
-                                            <input data-target="petOne" type="radio" name="buyerpanelselect" checked>
-                                            <span>Pet 1l</span>
+                                            <input data-target="bottle" type="radio" name="buyerpanelselect" checked>
+                                            <span>Lahev</span>
                                         </label>
                                         <label>
-                                            <input data-target="petTwo" type="radio" name="buyerpanelselect">
-                                            <span>Pet 2l</span>
+                                            <input data-target="box" type="radio" name="buyerpanelselect">
+                                            <span>Karton</span>
                                         </label>
                                     </div>
                                 </div>

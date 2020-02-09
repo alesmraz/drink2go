@@ -8,7 +8,7 @@ export default class MobileList {
 
   init () {
     const lists = document.querySelectorAll('.mobileList[data-level="1"]')
-    const backlinkPrototype = '<li class="mobileList__item"><a href="#" class="mobileList__link mobileList__link--backlink"><img class="icon" src="./assets/svg/mobile-move-left.svg"><span class="ml-2">Zpět</span></li>'
+    const backlinkPrototype = '<li class="mobileList__item"><a href="#" class="mobileList__link mobileList__link--backlink"><img class="icon" src="./../assets/svg/mobile-move-left.svg"><span class="ml-2">Zpět</span></li>'
     this.mobileSide = document.querySelector('.mobileSide')
 
     if (this.mobileSide) {
@@ -30,7 +30,7 @@ export default class MobileList {
             innerUl.insertAdjacentHTML('afterBegin', `<li class="mobileList__item"><a class="mobileList__link" href="${innerLink.getAttribute('href')}">${innerLink.textContent}</a></li>`)
             innerUl.insertAdjacentHTML('afterBegin', backlinkPrototype)
             innerUl.classList.add('mobileList--hidden')
-            innerLink.insertAdjacentHTML('beforeEnd', '<img class="icon" src="./assets/svg/mobile-move-right.svg" alt="">')
+            innerLink.insertAdjacentHTML('beforeEnd', '<img class="icon" src="./../assets/svg/mobile-move-right.svg" alt="">')
           }
 
           this._setupEvents(listItem)

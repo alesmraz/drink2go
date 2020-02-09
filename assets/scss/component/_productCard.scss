@@ -139,6 +139,7 @@
       font-family: $font-family-base;
       font-weight: $font-weight-base;
       font-size: 17px;
+      text-transform: uppercase;
 
       @media screen and (max-width: 1015px) {
         font-size: 18px;
