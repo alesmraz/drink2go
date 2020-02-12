@@ -5,6 +5,10 @@ $branches-sm-height: 250px;
   height: calc(100vh - 198px);
   position: relative;
   flex-wrap: wrap;
+
+  @include media-breakpoint-down(sm) {
+    height: calc(100vh - 144px);
+  }
 }
 
 .branch__item {
@@ -31,12 +35,13 @@ $branches-sm-height: 250px;
     position: absolute;
     bottom: 2vh;
     z-index: 1;
-    width: 75%;
+    width: 60%;
     left: 50%;
     transform: translateX(-50%);
 
     img {
       transition: all 0.3s ease-in-out;
+      height: min-intrinsic;
     }
   }
 }
@@ -56,8 +61,9 @@ $branches-sm-height: 250px;
   z-index: 1;
   color: #fff;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 30px;
   font-family: $font-family-base;
+  line-height: 1.2;
 
   .title {
     color: #fff;

@@ -13,6 +13,8 @@ import Photoswipe from './Photoswipe'
 import Buyerpannel from './Buyerpannel'
 import BackLink from './BackLink'
 import Branch from "./Branch";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 document.addEventListener('DOMContentLoaded', () => {
   const sliders = new Slider()
@@ -50,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const branch = new Branch()
   branch.init()
+
+  AOS.init();
 
   /** Animation */
   let elements = null;

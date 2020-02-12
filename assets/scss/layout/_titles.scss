@@ -43,7 +43,9 @@
   font-size: 6rem;
 
   @include media-breakpoint-down(sm) {
-    font-size: $font-size-lg * 2;
+    font-size: 3rem;
+    margin-left: $spacer / 2;
+    margin-right: $spacer / 2;
   }
 }
 

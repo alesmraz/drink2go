@@ -16,7 +16,7 @@
 
     @include media-breakpoint-down(sm) {
       width: 90px;
-      font-size: 1rem;
+      font-size: 0.9rem;
       padding-left: $spacer / 2;
       padding-right: $spacer / 2;
     }
@@ -52,6 +52,11 @@
 
   @include media-breakpoint-down(sm) {
     padding: 15px;
+    background-size: cover;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+    min-height: 1000px;
   }
 
   .title, b {

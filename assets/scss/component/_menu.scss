@@ -76,7 +76,7 @@
   white-space: nowrap;
   font-size: 1.5rem;
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     font-size: 13px;
   }
 

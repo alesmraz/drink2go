@@ -5,8 +5,9 @@
   margin: 30px auto $spacer auto;
 
   @include media-breakpoint-down(sm) {
-    display: block;
+    display: flex;
     margin: $spacer * 2 auto $spacer auto;
+    flex-wrap: wrap;
   }
 
   .collapse {
@@ -28,7 +29,7 @@
       flex: 4;
     }
   }
-  
+
   .form-group {
     flex: 1;
     margin: 0 15px;

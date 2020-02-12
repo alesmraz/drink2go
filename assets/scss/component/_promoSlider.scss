@@ -1,35 +1,73 @@
 .promoSlider {
   max-width: map_get($container-max-widths, lg);
-  margin: $spacer * 4 auto;
+  margin: $spacer * 2 auto;
   display: flex;
   align-items: center;
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
 }
 
 .promoSlider__image {
   width: 35%;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
 
   img {
     max-width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
 .promoSlider__content {
-  width: 65%;
+  width: 100%;
+
+  .wrap {
+    width: 65%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      text-align: center;
+      margin-top: $spacer;
+    }
+  }
 
   .title {
     font-size: 3rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.5em;
+    }
   }
 
   p {
     margin-bottom: 0;
     font-size: 1.4rem;
-  }
 
-  .swiper-container {
-    padding-bottom: 40px;
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
   }
 
   .swiper-pagination {
-    bottom: 0;
+    bottom: 110px;
+
+    @include media-breakpoint-down(sm) {
+      bottom: 125px;
+    }
   }
 }

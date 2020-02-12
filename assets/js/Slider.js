@@ -18,6 +18,9 @@ export default class Slider {
       autoplay: {
         delay: 5000,
       },
+
+      preventClicks: false,
+      preventClicksPropagation: false
     }
     this.instances = []
     this.observer = new IntersectionObserver(entries => {

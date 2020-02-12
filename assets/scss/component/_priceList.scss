@@ -4,6 +4,10 @@
   padding-bottom: $spacer * 2;
   display: flex;
 
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+
   @include media-breakpoint-up(md) {
     .priceList {
       width: calc(50% - #{$spacer});
@@ -33,6 +37,10 @@
   width: 320px;
   font-weight: $font-weight-bold;
   padding: 10px;
+
+  @include media-breakpoint-down(sm) {
+    width: 250px;
+  }
 
   dt {
     float: left;

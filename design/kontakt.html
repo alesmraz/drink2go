@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Drink2Go</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./../assets/favicon.png"/>
+    <script src="./../dist/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="./../dist/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="topPanel">
+        <div class="topPanel__item topPanel__item--links">
+            <a class="icon" href="https://www.instagram.com" target="_blank">
+                <img src="./../assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./../assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
+        </div>
+        <form action="" class="topPanel__item topPanel__item--search">
+            <label for="search">
+                <span class="d-none">hledání</span>
+            </label>
+            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
+            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
+        </form>
+        <div class="topPanel__item topPanel__item--cart">
+            <a href="#" class="icon user">
+                <span class="mr-2 d-none d-lg-block">Vladimír dlouhý</span>
+                <img src="./../assets/svg/profile.svg" alt="Přihlásit se">
+            </a>
+
+            <div class="accountPreview">
+                <button type="button" data-toggle="modal" data-target="#login" class="btn btn-primary w-100 mb-1">PŘIHLÁSIT SE</button>
+                <a href="registrace.html" class="small">ZAREGISTRUJTE SE</a>
+
+                <ul class="list-unstyled">
+                    <li><a href="#">Můj přehled</a></li>
+                    <li><a href="#">Mé objednávky</a></li>
+                    <li><a href="#">Nápověda</a></li>
+                </ul>
+            </div>
+
+            <a href="kosik.html" class="icon cart cart--preview">
+                <span class="badge badge-secondary">2</span>
+                <img src="./../assets/svg/cart.svg" alt="Košík">
+            </a>
+
+            <div class="cartPreview">
+                <h4 class="cartPreview__title">Můj nákupní košík</h4>
+                <section class="productCart productCart--light">
+                    <div class="productCart__item">
+                        <div class="productCart__image">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
+                        </div>
+
+                        <div class="productCart__text">
+                            <h5 class="title">Hugo dolce</h5>
+                            <form class="buyerpanel buyerpanel--cart">
+                                <div class="price">
+                                    <del data-price="old">598,00 Kč</del>
+                                    <span data-price="actual" class="actual">539,00 Kč</span>
+                                </div>
+
+                                <div class="buyerpanel__typeSelect">
+                                    <div class="type">
+                                        <span class="type__title mb-2">Typ: Balení (6 ks) 1l (+5Kč)</span>
+                                        <div class="inputCounter form-group" data-parent-class="productDetail">
+                                            <span class="minus">-</span>
+                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="productCart__item">
+                        <div class="productCart__image">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
+                        </div>
+
+                        <div class="productCart__text">
+                            <h5 class="title">Hugo dolce</h5>
+                            <form class="buyerpanel buyerpanel--cart">
+                                <div class="price">
+                                    <del data-price="old">598,00 Kč</del>
+                                    <span data-price="actual" class="actual">539,00 Kč</span>
+                                </div>
+
+                                <div class="buyerpanel__typeSelect">
+                                    <div class="type">
+                                        <span class="type__title mb-2">Typ: Plechovka</span>
+                                        <div class="inputCounter form-group" data-parent-class="productDetail">
+                                            <span class="minus">-</span>
+                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="productCart__item">
+                        <div class="productCart__image">
+                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
+                        </div>
+
+                        <div class="productCart__text">
+                            <h5 class="title">Hugo dolce</h5>
+                            <form class="buyerpanel buyerpanel--cart">
+                                <div class="price">
+                                    <del data-price="old">598,00 Kč</del>
+                                    <span data-price="actual" class="actual">539,00 Kč</span>
+                                </div>
+
+                                <div class="buyerpanel__typeSelect">
+                                    <div class="type">
+                                        <span class="type__title mb-2">Typ: Plechovka</span>
+                                        <div class="inputCounter form-group" data-parent-class="productDetail">
+                                            <span class="minus">-</span>
+                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <p class="d-flex justify-content-between mb-0 mt-2">
+                    <span class="title">Celkem <span class="gray">(Vč. DPH)</span></span>
+                    <span class="actualPrice">XXX,00 Kč</span>
+                </p>
+                <a href="kosik.html" class="btn btn-primary w-100 text-uppercase">Přejít do nákupního košíku</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
+
+    <div class="mobileSide hide">
+        <div class="mobileSide__inner">
+            <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
+                <li class="mobileList__item">
+                    <a href="potisk-plechovek.html" class="mobileList__link">Potisk plechovek</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="stiraci-plechovky.html" class="mobileList__link">Stírací plechovky</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="plneni-plechovek.html" class="mobileList__link">Plnění plechovek</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="cenik.html" class="mobileList__link">Ceník</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="o-nas.html" class="mobileList__link">O nás</a>
+                </li>
+
+                <li class="mobileList__item">
+                    <a href="kontakt.html" class="mobileList__link">Kontakt</a>
+                </li>
+
+                <li class="mobileList__item">
+                    <a href="/eshop/" class="mobileList__link">Fresh nápoje</a>
+                </li>
+            </ul>
+
+            <div class="mobileList__footer">Drink2Go © 2020</div>
+        </div>
+    </div>
+
+    <ul class="nav menu menu--main" data-level="1">
+        <li class="nav__item">
+            <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
+        </li>
+        <li class="nav__item">
+            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="cenik.html" class="nav__link">Ceník</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="o-nas.html" class="nav__link">O nás</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="kontakt.html" class="nav__link">Kontakt</a>
+        </li>
+        <li class="nav__item nav__item--right">
+            <a href="/eshop/" class="nav__link">Fresh nápoje</a>
+        </li>
+    </ul>
+
+</header>
+
+<main class="page">
+    <div class="container--section pb-5">
+        <section class="sectionHeader">
+            <img class="logo" src="./../assets/img/logo.svg" alt="Drink2Go">
+            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
+                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
+            </div>
+        </section>
+
+        <h1 class="text-center text-uppercase">Kontakty</h1>
+
+        <p>as? Nobis voluptatem pellentesque ab cupiditate odio quod perferendis per lectus. Nascetur atque. Dicta anim nam! Nobis aliquip explicabo, duis exercitation cumque placeat aliqua et quae habitasse quidem, aliqua. Molestiae nascetur dolores, mi sit magni nascetur omnis deserunt enim augue eleifend magnam fugit morbi doloribus quas illo adipisicing, curabitur, interdum eleifend? Nihil voluptates vel molestias cursus molestias. Suspendisse vestibulum quisque elementum, perspiciatis netus nostrum, excepteur, natoque, nam suspendisse nesciunt. Ultrices incidunt, cum quos natoque orci tincidunt amet eros tempora! Natus, quidem nisi ultrices malesuada, ridiculus enim ipsam netus tortor, debitis primis, fermentum! Libero sollicitudin wisi reprehenderit! Quidem, mauris faucibus porttitor officiis, ultric</p>
+
+    </div>
+</main>
+
+<footer class="container-fluid pl-0 pr-0">
+    <div class="row">
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Informace</h4>
+            <ul class="footer__list">
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Zákaznický servis</h4>
+            <ul class="footer__list">
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Doplňky</h4>
+            <ul class="footer__list">
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Můj účet</h4>
+            <ul class="footer__list">
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">Drink2Go © 2020</div>
+</footer>
+<section id="modals">
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Přihlásit se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Pro přihlášení ke svému uživatelskému účtu prosím zadejte své přihlašovací údaje.</p>
+
+                    <form class="form--small">
+                        <div class="form-group">
+                            <label for="loginEmail">E-mailová adresa</label>
+                            <input type="email" class="form-control form-control-lg" id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Heslo</label>
+                            <input type="password" class="form-control form-control-password form-control-lg" id="loginPassword">
+                            <button class="password-show" data-target="#loginPassword">Zobrazit</button>
+                        </div>
+
+                        <button type="submit" class="btn btn-alternative btn-lg w-100 mt-3 text-uppercase">Přihlásit se</button>
+
+                        <a class="d-block text-center mt-4 mb-4" href="zapomenute-heslo.html">Zapomněli jste své heslo?</a>
+                    </form>
+
+                    <div class="well well-brown-light well-out text-center mt-3">
+                        <h3 class="mb-3">Nový zákazník?</h3>
+                        <a href="registrace.html" class="btn btn-white-secondary mt-2 mb-2 w-75 ml-auto mr-auto">REGISTRUJTE SE ZDE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Produkt: </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="buyerpanel">
+                        <div class="buyerpanel__item">
+                            <h4 class="priceLabel">Naše cena:</h4>
+                            <div class="price">
+                                <del data-price="old">598,00 Kč</del>
+                                <span data-price="actual" class="actual">539,00 Kč</span>
+                                <small data-price="noVat">Cena bez DPH: 445,45 Kč</small>
+                            </div>
+                        </div>
+                        <div class="buyerpanel__item">
+                            <div class="buyerpanel__typeSelect">
+                                <div class="type">
+                                    <img src="./../assets/svg/can.svg" alt="" class="type__image" data-name="bottle">
+                                    <img src="./../assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
+                                    <div class="type__control">
+                                        <span class="type__title" data-name="bottle">Typ: Plechovka</span>
+                                        <span class="type__title type__title--hide" data-name="box">Typ: Karton</span>
+                                        <span class="text-center">Množství</span>
+
+                                        <div class="inputCounter form-group" data-parent-class="productDetail">
+                                            <span class="minus">-</span>
+                                            <input type="text" name="bottle" value="0" class="form-control" min="0">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="type type-select">
+                                    <div class="type__control">
+                                        <label>
+                                            <input data-target="bottle" type="radio" name="buyerpanelselect" checked>
+                                            <span>Lahev</span>
+                                        </label>
+                                        <label>
+                                            <input data-target="box" type="radio" name="buyerpanelselect">
+                                            <span>Karton</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-secondary btn-wide buyerpanel__button">
+                                <span>Do košíku</span>
+                            </button>
+                        </div>
+
+                        <input type="hidden" name="id" value="123">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</body>

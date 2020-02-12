@@ -5,10 +5,11 @@
   height: $top-panel-height;
   position: relative;
   box-shadow: 0 2px 10px #00000045;
+  z-index: 2;
 
   @include media-breakpoint-down(sm) {
     padding: 0;
-    margin-bottom: $spacer / 2;
+    margin-bottom: 0;
   }
 
   a {

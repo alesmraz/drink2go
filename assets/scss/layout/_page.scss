@@ -1,4 +1,22 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 .page {
   background: #fff url('../img/bg.svg') center center no-repeat;
   background-size: cover;
+  min-height: 100vh;
+}
+
+@each $range in $button-radius-range {
+  .r-#{$range} {
+    transform: rotate(#{$range}deg);
+    display: block;
+  }
+
+  .r-m-#{$range} {
+    transform: rotate(-#{$range}deg);
+    display: block;
+  }
 }
