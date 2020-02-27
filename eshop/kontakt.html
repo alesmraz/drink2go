@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="./../assets/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png"/>
     <script src="./../dist/index.js"></script>
     <link type="text/css" rel="stylesheet" href="./../dist/index.css">
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
@@ -163,7 +163,7 @@
                 </li>
 
                 <li class="mobileList__item">
-                    <a href="https://alesmraz.github.io/drink2go/design/" class="mobileList__link">Promo plechovky</a>
+                    <a href="/design/" class="mobileList__link">Promo plechovky</a>
                 </li>
             </ul>
 
@@ -172,32 +172,30 @@
     </div>
 
     <div class="logoWrapper logoWrapper--primary">
-        <div class="logo m-0">
-            <a href="https://alesmraz.github.io/drink2go/eshop/"><img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home"></a>
-            <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
+        <div class="container">
+            <div class="logo m-0">
+                <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
+                <a href="/eshop/"><img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home"></a>
+            </div>
+            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
+                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
+            </div>
+            <ul class="nav menu menu--main" data-level="1">
+                <li class="nav__item">
+                    <a href="kategorie.html" class="nav__link">Párty packy</a>
+                </li>
+                <li class="nav__item">
+                    <a href="kategorie.html" class="nav__link">Naše drinky</a>
+                </li>
+                <li class="nav__item">
+                    <a href="o-nas.html" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__item">
+                    <a href="kontakt.html" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
-            <span class="name pr-2 fs-sm">Menu</span><img src="./../assets/svg/list-menu.svg" alt="">
-        </div></div>
-
-    <ul class="nav menu menu--main" data-level="1">
-        <li class="nav__item">
-            <a href="kategorie.html" class="nav__link">Párty packy</a>
-        </li>
-        <li class="nav__item">
-            <a href="kategorie.html" class="nav__link">Naše drinky</a>
-        </li>
-        <li class="nav__item">
-            <a href="o-nas.html" class="nav__link">O nás</a>
-        </li>
-        <li class="nav__item">
-            <a href="kontakt.html" class="nav__link">Kontakt</a>
-        </li>
-        <li class="nav__item nav__item--right">
-            <a href="https://alesmraz.github.io/drink2go/design/" class="nav__link">Promo plechovky</a>
-        </li>
-    </ul>
+    </div>
 </header>
 
 <main class="page">

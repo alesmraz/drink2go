@@ -1,12 +1,14 @@
 .mobileMenu {
   display: none;
-  padding-right: 15px;
   align-items: center;
-  padding-top: 5px;
+  padding-top: 0;
   cursor: pointer;
+  padding-left: 20px;
+  padding-right: 10px;
+
 
   .name {
-    color: $gray;
+    color: $white;
     font-size: 12px;
     text-transform: uppercase;
   }

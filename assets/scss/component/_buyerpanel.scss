@@ -109,7 +109,7 @@
 .buyerpanel__item {
   display: flex;
   color: #fff;
-  background: $alternative;
+  background: $brown;
   margin: $spacer / 2 $spacer;
   padding: 0;
 
@@ -141,7 +141,7 @@
   padding-right: 0;
 
   @include media-breakpoint-down(sm) {
-    max-width: 50%;
+    max-width: 45%;
     margin-left: auto !important;
     text-align: right;
   }

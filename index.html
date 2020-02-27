@@ -3,8 +3,8 @@
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
-    <script src="./dist/index.js"></script>
-    <link type="text/css" rel="stylesheet" href="./dist/index.css">
+    <script src="./../dist/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="./../dist/index.css">
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">
@@ -24,202 +24,69 @@
             <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
             <button type="submit"><img src="./assets/svg/search.svg" alt="Hledat"></button>
         </form>
-        <div class="topPanel__item topPanel__item--cart">
-            <a href="#" class="icon user">
-                <span class="mr-2 d-none d-lg-block">Vladimír dlouhý</span>
-                <img src="./assets/svg/profile.svg" alt="Přihlásit se">
-            </a>
-
-            <div class="accountPreview">
-                <button type="button" data-toggle="modal" data-target="#login" class="btn btn-primary w-100 mb-1">PŘIHLÁSIT SE</button>
-                <a href="registrace.html" class="small">ZAREGISTRUJTE SE</a>
-
-                <ul class="list-unstyled">
-                    <li><a href="#">Můj přehled</a></li>
-                    <li><a href="#">Mé objednávky</a></li>
-                    <li><a href="#">Nápověda</a></li>
-                </ul>
-            </div>
-
-            <a href="kosik.html" class="icon cart cart--preview">
-                <span class="badge badge-secondary">2</span>
-                <img src="./assets/svg/cart.svg" alt="Košík">
-            </a>
-
-            <div class="cartPreview">
-                <h4 class="cartPreview__title">Můj nákupní košík</h4>
-                <section class="productCart productCart--light">
-                    <div class="productCart__item">
-                        <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
-                        </div>
-
-                        <div class="productCart__text">
-                            <h5 class="title">Hugo dolce</h5>
-                            <form class="buyerpanel buyerpanel--cart">
-                                <div class="price">
-                                    <del data-price="old">598,00 Kč</del>
-                                    <span data-price="actual" class="actual">539,00 Kč</span>
-                                </div>
-
-                                <div class="buyerpanel__typeSelect">
-                                    <div class="type">
-                                        <span class="type__title mb-2">Typ: Balení (6 ks) 1l (+5Kč)</span>
-                                        <div class="inputCounter form-group" data-parent-class="productDetail">
-                                            <span class="minus">-</span>
-                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="productCart__item">
-                        <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
-                        </div>
-
-                        <div class="productCart__text">
-                            <h5 class="title">Hugo dolce</h5>
-                            <form class="buyerpanel buyerpanel--cart">
-                                <div class="price">
-                                    <del data-price="old">598,00 Kč</del>
-                                    <span data-price="actual" class="actual">539,00 Kč</span>
-                                </div>
-
-                                <div class="buyerpanel__typeSelect">
-                                    <div class="type">
-                                        <span class="type__title mb-2">Typ: Plechovka</span>
-                                        <div class="inputCounter form-group" data-parent-class="productDetail">
-                                            <span class="minus">-</span>
-                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="productCart__item">
-                        <div class="productCart__image">
-                            <img src="./assets/img/wines/detail.png" alt="Hugo dolce">
-                        </div>
-
-                        <div class="productCart__text">
-                            <h5 class="title">Hugo dolce</h5>
-                            <form class="buyerpanel buyerpanel--cart">
-                                <div class="price">
-                                    <del data-price="old">598,00 Kč</del>
-                                    <span data-price="actual" class="actual">539,00 Kč</span>
-                                </div>
-
-                                <div class="buyerpanel__typeSelect">
-                                    <div class="type">
-                                        <span class="type__title mb-2">Typ: Plechovka</span>
-                                        <div class="inputCounter form-group" data-parent-class="productDetail">
-                                            <span class="minus">-</span>
-                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-                <p class="d-flex justify-content-between mb-0 mt-2">
-                    <span class="title">Celkem <span class="gray">(Vč. DPH)</span></span>
-                    <span class="actualPrice">XXX,00 Kč</span>
-                </p>
-                <a href="kosik.html" class="btn btn-primary w-100 text-uppercase">Přejít do nákupního košíku</a>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="logoWrapper logoWrapper--primary logoWrapper--big">
-        <div class="logo m-0">
-            <img src="./assets/img/logo--invert.svg" alt="Drink2Go">
-        </div>
+        <div class="topPanel__item topPanel__item--cart"></div>
     </div>
 </header>
 
 <main>
     <section class="branches">
-        <a href="https://alesmraz.github.io/drink2go/eshop/" class="branch__item">
-            <span class="branch__content">
+        <div class="branch__item order-1">
+            <div class="logoWrapper logoWrapper--primary logoWrapper--big">
+                <div class="logo m-0">
+                    <img src="./assets/img/logo--invert.svg" alt="Drink2Go">
+                </div>
+            </div>
+            <div class="branch__content">
                 <span class="title">Chci si vybrat<br>ze sortimentu fresh nápojů<br>drink2go</span>
-                <button class="btn btn-primary btn-lg btn-m-10">Nakupovat</button>
-            </span>
+                <a href="/eshop/" class="btn btn-primary btn-lg btn-m-10">Nakupovat</a>
+                <div class="btnGroup">
+                    <a href="/eshop/kategorie.html" class="btn btn-primary btn-sm btn-m-5">Pivo</a>
+                    <a href="/eshop/kategorie.html" class="btn btn-primary btn-sm btn-m-5">Víno</a>
+                    <a href="/eshop/kategorie.html" class="btn btn-primary btn-sm btn-m-5">Vinné nápoje</a>
+                    <a href="/eshop/kategorie.html" class="btn btn-primary btn-sm btn-m-5">Míchané nápoje</a>
+                    <a href="/eshop/kategorie.html" class="btn btn-primary btn-sm btn-m-5">Vinné koktejly</a>
+                    <a href="/eshop/kategorie.html" class="btn btn-primary btn-sm btn-m-5">Energy drink</a>
+                    <a href="/eshop/kategorie.html" class="btn btn-primary btn-sm btn-m-5">Limonády</a>
+                </div>
+            </div>
 
-            <span class="products ipr-3">
+            <div class="products ipr-6">
                 <img src="./assets/img/product.png" alt="">
                 <img src="./assets/img/product.png" alt="">
                 <img src="./assets/img/product.png" alt="">
-            </span>
+                <img src="./assets/img/product.png" alt="">
+                <img src="./assets/img/product.png" alt="">
+                <img src="./assets/img/product.png" alt="">
+            </div>
 
-            <img src="./assets/img/eshop.svg" class="branch__bg">
-        </a>
-        <a href="https://alesmraz.github.io/drink2go/design/" class="branch__item">
-            <span class="branch__content">
+            <img src="./assets/img/eshop.svg" class="branch__bg" alt="eshop">
+        </div>
+        <div class="branch__item order-2">
+            <div class="logoWrapper logoWrapper--primary logoWrapper--big">
+                <div class="logo m-0">
+                    <img src="./assets/img/logo.svg" alt="Drink2Go">
+                </div>
+            </div>
+            <div class="branch__content">
                 <span class="title">Chci plechovku<br>
                 <b>s vlastním designem</b></span>
-                <button class="btn btn-primary btn-lg btn-m-10">Prozkoumat</button>
-            </span>
+                <a href="/design/" class="btn btn-primary btn-lg btn-m-10">Prozkoumat</a>
+            </div>
 
-            <span class="products ipr-3">
+            <div class="products ipr-6">
                 <img src="./assets/img/product.png" alt="">
                 <img src="./assets/img/product.png" alt="">
                 <img src="./assets/img/product.png" alt="">
-            </span>
+                <img src="./assets/img/product.png" alt="">
+                <img src="./assets/img/product.png" alt="">
+                <img src="./assets/img/product.png" alt="">
+            </div>
 
-            <img src="./assets/img/design.svg" class="branch__bg">
-        </a>
+            <img src="./assets/img/design.svg" class="branch__bg" alt="design">
+        </div>
     </section>
 
 </main>
-
-<!--<footer class="container-fluid pl-0 pr-0">-->
-<!--    <div class="row">-->
-<!--        <div class="footer-col col-md-3">-->
-<!--            <h4 class="footer__title">Informace</h4>-->
-<!--            <ul class="footer__list">-->
-<!--                <li><a href="o-nas.html">O nás</a></li>-->
-<!--                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>-->
-<!--                <li><a href="#">Informace o dopravě</a></li>-->
-<!--                <li><a href="#">Ochrana osvních údajů</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="footer-col col-md-3">-->
-<!--            <h4 class="footer__title">Zákaznický servis</h4>-->
-<!--            <ul class="footer__list">-->
-<!--                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>-->
-<!--                <li><a href="#">Informace o dopravě</a></li>-->
-<!--                <li><a href="#">Ochrana osvních údajů</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="footer-col col-md-3">-->
-<!--            <h4 class="footer__title">Doplňky</h4>-->
-<!--            <ul class="footer__list">-->
-<!--                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>-->
-<!--                <li><a href="#">Informace o dopravě</a></li>-->
-<!--                <li><a href="#">Ochrana osvních údajů</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="footer-col col-md-3">-->
-<!--            <h4 class="footer__title">Můj účet</h4>-->
-<!--            <ul class="footer__list">-->
-<!--                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>-->
-<!--                <li><a href="#">Informace o dopravě</a></li>-->
-<!--                <li><a href="#">Ochrana osvních údajů</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--    <div class="copyright">Drink2Go © 2020</div>-->
-<!--</footer>-->
 
 <section id="modals">
 

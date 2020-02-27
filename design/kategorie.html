@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -98,121 +99,235 @@
 </header>
 
 <main class="page">
-    <div class="container--section pb-5 pt-3 pt-md-5">
-        <h1 class="title--big text-center font-weight-bold title--normal pb-5">Nezávázná poptávka</h1>
+    <section class="stripe stripe--full" data-aos="fade-up">
+        <h2 class="title title--line text-center mt-5 mb-4 title--big">Naše drinky</h2>
+        <form action="" id="filter" class="filter">
+            <div class="row filterBtns">
+                <div class="filterControl">
+                    <input class="btn filter__button" type="button" value="Vše" data-group="all">
+                    <input class="btn filter__button filter__button--active" type="button" value="Alko" data-group="alcoholic">
+                    <input class="btn filter__button" type="button" value="Nealko" data-group="nonalcoholic">
+                </div>
+                <div class="filterControlChild">
+                    <input class="btn filter__button filter__button--show" type="button" value="Pivo" data-group="alcoholic">
+                    <input class="btn filter__button filter__button--show" type="button" value="Víno" data-group="alcoholic">
+                    <input class="btn filter__button filter__button--show" type="button" value="Vinné nápoje" data-group="alcoholic">
+                    <input class="btn filter__button filter__button--show" type="button" value="Míchané nápoje" data-group="alcoholic">
 
-        <form class="well pl-5 pr-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="firstNameInput">Jméno</label>
-                        <input type="text" class="form-control" id="firstNameInput">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="lastNameInput">Příjmení</label>
-                        <input type="text" class="form-control" id="lastNameInput">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="emailInput">Email</label>
-                        <input type="text" class="form-control" id="emailInput">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="phoneInput">Telefon</label>
-                        <input type="text" class="form-control" id="phoneInput">
-                    </div>
+                    <input class="btn filter__button" type="button" value="Vinné koktejly" data-group="nonalcoholic">
+                    <input class="btn filter__button" type="button" value="Energy drink" data-group="nonalcoholic">
+                    <input class="btn filter__button" type="button" value="Limonády" data-group="nonalcoholic">
                 </div>
             </div>
+            <div class="row filterSelect mt-4 mb-3">
+                <h4 class="title title--normal text-uppercase font-weight-bold">Spotřeba:</h4>
+                <label>
+                    <input type="radio" name="spotreba" value="vse" checked>
+                    <span class="font-weight-bold text-uppercase ml-2">Vše</span>
+                </label>
+                <label>
+                    <input type="radio" name="spotreba" value="24h">
+                    <span class="font-weight-bold text-uppercase ml-2">24h - Určeno k okamžité spotřebě</span>
+                </label>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <label class="d-block">Typ potisku</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="type-classic" name="type" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="type-classic">Klasický</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="type-3d" name="type" class="custom-control-input">
-                        <label class="custom-control-label" for="type-3d">3D</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="type-competition" name="type" class="custom-control-input">
-                        <label class="custom-control-label" for="type-competition">Stírací plechovka</label>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="form-group">
-                        <label for="noteControl">Poznámka</label>
-                        <textarea class="form-control" id="noteControl" rows="3"></textarea>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <h4 class="d-block title title--normal">Vybrat nápoj</h4>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <select class="custom-select custom-select-lg mb-3">
-                            <option selected>Vše</option>
-                            <option value="1">Alko</option>
-                            <option value="2">Nealko</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <select class="custom-select custom-select-lg mb-3">
-                        <option selected>--- Vyberte ---</option>
-                        <option value="1">Pivo</option>
-                        <option value="2">Víno</option>
-                        <option value="3">Vinné nápoje</option>
-                        <option value="4">Míchané nápoje</option>
-                        <option value="5">Vinné koktejly</option>
-                        <option value="6">Energy drink</option>
-                        <option value="7">Limonády</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <select class="custom-select custom-select-lg mb-3">
-                        <option selected>--- Vyberte ---</option>
-                        <option value="1">Nápoj 1</option>
-                        <option value="2">Nápoj 2</option>
-                        <option value="3">Nápoj 3</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-9">
-                    <label class="d-block">Objem</label>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="objem-250s" name="objem" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="objem-250s">250 ml(široká)</label>
-                    </div>
-
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="objem-250u" name="objem" class="custom-control-input">
-                        <label class="custom-control-label" for="objem-250u">250 ml(úzká)</label>
-                    </div>
-
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="objem-330" name="objem" class="custom-control-input">
-                        <label class="custom-control-label" for="objem-330">330 ml</label>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <button type="submit" class="btn btn-alternative btn-normal w-100 mt-3">Odeslat poptávku</button>
-                </div>
+                <label>
+                    <input type="radio" name="spotreba" value="Vše">
+                    <span class="font-weight-bold text-uppercase ml-2">Dlouhodobě trvanlivé</span>
+                </label>
             </div>
         </form>
 
-    </div>
+        <div class="productList">
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/can/product.png" alt="">
+
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <span class="price price__actual">280 Kč</span>
+                        <span class="price price__del">1 000 Kč</span>
+                        <span class="price price__noVat">230 Kč (bez dph)</span>
+                    </div>
+                </div>
+                <div class="productCard__title">Hugo secco</div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                </div>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/can/product.png" alt="">
+
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <span class="price price__actual">280 Kč</span>
+                        <span class="price price__del">1 000 Kč</span>
+                        <span class="price price__noVat">230 Kč (bez dph)</span>
+                    </div>
+                </div>
+                <div class="productCard__title">Hugo secco</div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/can/product.png" alt="">
+
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <span class="price price__actual">280 Kč</span>
+                        <span class="price price__del">1 000 Kč</span>
+                        <span class="price price__noVat">230 Kč (bez dph)</span>
+                    </div>
+                </div>
+                <div class="productCard__title">Hugo secco</div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/can/product.png" alt="">
+
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <span class="price price__actual">280 Kč</span>
+                        <span class="price price__del">1 000 Kč</span>
+                        <span class="price price__noVat">230 Kč (bez dph)</span>
+                    </div>
+                </div>
+                <div class="productCard__title">Hugo secco</div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/can/product.png" alt="">
+
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <span class="price price__actual">280 Kč</span>
+                        <span class="price price__del">1 000 Kč</span>
+                        <span class="price price__noVat">230 Kč (bez dph)</span>
+                    </div>
+                </div>
+                <div class="productCard__title">Hugo secco</div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/can/product.png" alt="">
+
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <h3 class="title"><a href="detail.html">Vinný perlivý koktejl s bezovým květem</a></h3>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <span class="price price__actual">280 Kč</span>
+                        <span class="price price__del">1 000 Kč</span>
+                        <span class="price price__noVat">230 Kč (bez dph)</span>
+                    </div>
+                </div>
+                <div class="productCard__title">Hugo secco</div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <span class="pagination__prev disabled"><img src="./../assets/svg/pagination-left.svg" alt="Zpět"></span>
+            <span class="pagination__actual">Strana 1 z 12</span>
+            <a href="#" class="pagination__next"><img src="./../assets/svg/pagination-right.svg" alt="Vpřed"></a>
+        </div>
+
+    </section>
 </main>
 
 <footer class="container-fluid pl-0 pr-0">
@@ -354,69 +469,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe.
-             It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides.
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-
-            </div>
-
-        </div>
-
     </div>
 </section>
 </body>

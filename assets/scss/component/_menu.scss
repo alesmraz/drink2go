@@ -3,12 +3,10 @@
 }
 
 .menu {
-  width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
   justify-content: center;
-  padding: 10px 60px;
+  padding: 10px 0;
   background-color: $primary;
-  box-shadow: 0 10px 16px -1px #00000030;
 }
 
 .nav--sub {
@@ -72,7 +70,7 @@
   justify-content: center;
   align-items: center;
   line-height: 1;
-  color: $secondary;
+  color: $brown;
   white-space: nowrap;
   font-size: 1.5rem;
 
@@ -81,7 +79,7 @@
   }
 
   @include hover-focus() {
-    color: invert($secondary);
+    color: invert($brown);
     text-decoration: none;
   }
 }

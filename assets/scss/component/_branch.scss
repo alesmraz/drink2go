@@ -2,12 +2,13 @@ $branches-sm-height: 250px;
 
 .branches {
   display: flex;
-  height: calc(100vh - 198px);
+  height: calc(100vh - 60px);
   position: relative;
   flex-wrap: wrap;
 
   @include media-breakpoint-down(sm) {
     height: calc(100vh - 144px);
+    flex-direction: column;
   }
 }
 
@@ -15,6 +16,10 @@ $branches-sm-height: 250px;
   position: relative;
   flex: 1;
   overflow: hidden;
+
+  .logoWrapper {
+    z-index: 1;
+  }
 
   @include hover-focus() {
     .branch__bg {
@@ -25,7 +30,7 @@ $branches-sm-height: 250px;
       transform: translateY(20px);
     }
 
-    .products img:nth-child(2) {
+    .products img:nth-child(odd) {
       transform: translateY(-20px);
     }
 
@@ -38,6 +43,10 @@ $branches-sm-height: 250px;
     width: 60%;
     left: 50%;
     transform: translateX(-50%);
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
 
     img {
       transition: all 0.3s ease-in-out;
@@ -69,6 +78,13 @@ $branches-sm-height: 250px;
     color: #fff;
   }
 
+  .btnGroup {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    margin: 3rem auto 0 auto;
+  }
+
   .btn {
     margin-top: $spacer * 2;
     display: block;
@@ -78,6 +94,16 @@ $branches-sm-height: 250px;
     font-size: 1.5rem;
     padding-left: $spacer * 2;
     padding-right: $spacer * 2;
+    max-width: 250px;
+
+    &.btn-sm {
+      max-width: 180px;
+      font-size: .6em;
+      margin-top: 0.5rem;
+      align-items: center;
+      display: flex;
+      line-height: 1;
+    }
 
     @include media-breakpoint-down(sm) {
       padding-left: $spacer;

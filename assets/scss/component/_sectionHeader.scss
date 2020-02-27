@@ -10,11 +10,6 @@
   @include media-breakpoint-down(sm) {
     height: map_get($section-header-height, 'sm');
     margin: 0;
-
-    .mobileMenu {
-      padding-left: 20px;
-      padding-right: 0;
-    }
   }
 
   .logo {
@@ -22,7 +17,7 @@
     max-width: 400px;
 
     @include media-breakpoint-down(sm) {
-      max-width: calc(100% - 50px);
+      max-width: 60%;
     }
   }
 }

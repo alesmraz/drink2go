@@ -28,117 +28,9 @@
             <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
         </form>
         <div class="topPanel__item topPanel__item--cart">
-            <a href="#" class="icon user">
-                <span class="mr-2 d-none d-lg-block">Vladimír dlouhý</span>
-                <img src="./../assets/svg/profile.svg" alt="Přihlásit se">
-            </a>
-
-            <div class="accountPreview">
-                <button type="button" data-toggle="modal" data-target="#login" class="btn btn-primary w-100 mb-1">PŘIHLÁSIT SE</button>
-                <a href="registrace.html" class="small">ZAREGISTRUJTE SE</a>
-
-                <ul class="list-unstyled">
-                    <li><a href="#">Můj přehled</a></li>
-                    <li><a href="#">Mé objednávky</a></li>
-                    <li><a href="#">Nápověda</a></li>
-                </ul>
+            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
+                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
             </div>
-
-            <a href="kosik.html" class="icon cart cart--preview">
-                <span class="badge badge-secondary">2</span>
-                <img src="./../assets/svg/cart.svg" alt="Košík">
-            </a>
-
-            <div class="cartPreview">
-                <h4 class="cartPreview__title">Můj nákupní košík</h4>
-                <section class="productCart productCart--light">
-                    <div class="productCart__item">
-                        <div class="productCart__image">
-                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
-                        </div>
-
-                        <div class="productCart__text">
-                            <h5 class="title">Hugo dolce</h5>
-                            <form class="buyerpanel buyerpanel--cart">
-                                <div class="price">
-                                    <del data-price="old">598,00 Kč</del>
-                                    <span data-price="actual" class="actual">539,00 Kč</span>
-                                </div>
-
-                                <div class="buyerpanel__typeSelect">
-                                    <div class="type">
-                                        <span class="type__title mb-2">Typ: Balení (6 ks) 1l (+5Kč)</span>
-                                        <div class="inputCounter form-group" data-parent-class="productDetail">
-                                            <span class="minus">-</span>
-                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="productCart__item">
-                        <div class="productCart__image">
-                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
-                        </div>
-
-                        <div class="productCart__text">
-                            <h5 class="title">Hugo dolce</h5>
-                            <form class="buyerpanel buyerpanel--cart">
-                                <div class="price">
-                                    <del data-price="old">598,00 Kč</del>
-                                    <span data-price="actual" class="actual">539,00 Kč</span>
-                                </div>
-
-                                <div class="buyerpanel__typeSelect">
-                                    <div class="type">
-                                        <span class="type__title mb-2">Typ: Plechovka</span>
-                                        <div class="inputCounter form-group" data-parent-class="productDetail">
-                                            <span class="minus">-</span>
-                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="productCart__item">
-                        <div class="productCart__image">
-                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
-                        </div>
-
-                        <div class="productCart__text">
-                            <h5 class="title">Hugo dolce</h5>
-                            <form class="buyerpanel buyerpanel--cart">
-                                <div class="price">
-                                    <del data-price="old">598,00 Kč</del>
-                                    <span data-price="actual" class="actual">539,00 Kč</span>
-                                </div>
-
-                                <div class="buyerpanel__typeSelect">
-                                    <div class="type">
-                                        <span class="type__title mb-2">Typ: Plechovka</span>
-                                        <div class="inputCounter form-group" data-parent-class="productDetail">
-                                            <span class="minus">-</span>
-                                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-                <p class="d-flex justify-content-between mb-0 mt-2">
-                    <span class="title">Celkem <span class="gray">(Vč. DPH)</span></span>
-                    <span class="actualPrice">XXX,00 Kč</span>
-                </p>
-                <a href="kosik.html" class="btn btn-primary w-100 text-uppercase">Přejít do nákupního košíku</a>
-            </div>
-
         </div>
     </div>
 
@@ -148,15 +40,19 @@
         <div class="mobileSide__inner">
             <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
                 <li class="mobileList__item">
-                    <a href="kategorie.html" class="mobileList__link">Párty packy</a>
+                    <a href="potisk-plechovek.html" class="mobileList__link">Potisk plechovek</a>
                 </li>
-
                 <li class="mobileList__item">
-                    <a href="kategorie.html" class="mobileList__link">Naše drinky</a>
+                    <a href="stiraci-plechovky.html" class="mobileList__link">Stírací plechovky</a>
                 </li>
-
                 <li class="mobileList__item">
-                    <a href="kategorie.html" class="mobileList__link">O nás</a>
+                    <a href="plneni-plechovek.html" class="mobileList__link">Plnění plechovek</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="cenik.html" class="mobileList__link">Ceník</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="o-nas.html" class="mobileList__link">O nás</a>
                 </li>
 
                 <li class="mobileList__item">
@@ -164,7 +60,7 @@
                 </li>
 
                 <li class="mobileList__item">
-                    <a href="/design/" class="mobileList__link">Promo plechovky</a>
+                    <a href="/eshop/" class="mobileList__link">Fresh nápoje</a>
                 </li>
             </ul>
 
@@ -173,17 +69,20 @@
     </div>
 
     <div class="logoWrapper logoWrapper--primary">
-        <div class="container">
+        <div class="container-fluid d-flex justify-content-center">
             <div class="logo m-0">
-                <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
-                <a href="/eshop/"><img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home"></a>
-            </div>
-            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
-                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
+                <img src="./../assets/img/logo.svg" alt="cans4all">
+                <a href="/eshop/"><img src="./../assets/img/home.svg" alt="cans4all" class="icon--home"></a>
             </div>
             <ul class="nav menu menu--main" data-level="1">
                 <li class="nav__item">
-                    <a href="kategorie.html" class="nav__link">Párty packy</a>
+                    <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
+                </li>
+                <li class="nav__item">
+                    <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
+                </li>
+                <li class="nav__item">
+                    <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
                 </li>
                 <li class="nav__item">
                     <a href="kategorie.html" class="nav__link">Naše drinky</a>
@@ -200,19 +99,7 @@
 </header>
 
 <main class="page">
-    <div class="container--section productDetail mt-1 mt-md-1">
-        <div class="alerts pt-3">
-            <div class="alert alert-success text-center alert-dismissible fade show" role="alert">Zboží bylo přidáno do košíku
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="alert alert-danger text-center alert-dismissible fade show" role="alert">Ajaj, něco se nepovedlo
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
+    <div class="container--section productDetail">
         <div class="productDetail__header">
             <h1>Hugo dolce</h1>
         </div>
@@ -260,9 +147,8 @@
                     <input type="hidden" name="id" value="">
                     <div class="buyerpanel__item buyerpanel__item--noBg">
                         <div class="price">
-                            <del data-price="old">598,00 Kč</del>
-                            <span data-price="actual" class="actual font-weight-bold">539,00 Kč</span>
-                            <small data-price="noVat">445,45 Kč (bez DPH)</small>
+                            <span data-price="actual" class="actual font-weight-bold"><small class="font-weight-bold">Od</small> 539,00 Kč/ks</span>
+                            <small data-price="noVat">Od 589,45 Kč/ks (s DPH)</small>
                         </div>
                     </div>
 
@@ -299,12 +185,12 @@
                         </div>
 
                         <div class="buyerpanel__buttonWrap">
-                            <button type="submit" class="btn btn-m-10 mb-2 btn-lg btn-primary buyerpanel__button btn-wide pb-3">
-                                <span>Do košíku</span>
-                            </button>
+                            <a href="poptavka.html" type="submit" class="btn btn-m-5 mb-2 btn-primary buyerpanel__button btn-wide pb-3">
+                                <span>Nezávazně poptat</span>
+                            </a>
                             <a href="kategorie.html" class="backLink mb-lg-1 mb-3 mt-md-2" id="backLink">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="mb-1 mr-1" width="5" height="auto" viewBox="0 0 13.422 22.601"><path d="M255.134,1384l10.24,10.24-10.24,10.24" transform="translate(267.495 1405.54) rotate(180)" fill="none" stroke-width="3"/></svg>
-                                Zpět k nákupu
+                                Zpět v prohlížení
                             </a>
                         </div>
                     </div>

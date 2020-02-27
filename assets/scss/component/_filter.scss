@@ -1,8 +1,9 @@
 .filter {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   max-width: calc(#{$filter-width} - 30px);
   margin: 30px auto $spacer auto;
+  align-items: center;
 
   @include media-breakpoint-down(sm) {
     display: flex;
@@ -10,30 +11,34 @@
     flex-wrap: wrap;
   }
 
-  .collapse {
-    display: flex;
-
-    @include media-breakpoint-down(sm) {
-      display: block;
-
-      &:not(.show) {
-        display: none;
-      }
-    }
-
-    &.collapse-one-item {
-      flex: 1;
-    }
-
-    &.collapse-four-item {
-      flex: 4;
-    }
-  }
-
   .form-group {
     flex: 1;
     margin: 0 15px;
   }
+}
+
+.filterControl,
+.filterControlChild {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterSelect {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.filterBtns {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .custom-select {
@@ -52,7 +57,7 @@
 .filter__button {
   display: flex;
   min-width: 150px;
-  margin: 0 auto;
+  margin: 0 0.25rem;
   margin-bottom: $spacer / 2;
   background-color: $primary;
   justify-content: space-evenly;
@@ -66,6 +71,22 @@
     color: #fff;
   }
 
+  @include media-breakpoint-down(sm) {
+    margin: 0 auto .5rem;
+    font-size: 1rem;
+    padding: 0 0.05rem;
+    min-width: 100px;
+  }
+
+}
+.filterControlChild {
+  .filter__button {
+    display: none;
+  }
+
+  .filter__button--show {
+    display: flex;
+  }
 }
 
 .filter__button--active {

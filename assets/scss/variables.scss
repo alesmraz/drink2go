@@ -2,7 +2,7 @@ $primary:     #fbc500;
 $secondary:   #000;
 $alternative: #4D7293;
 $gray:        #707070;
-$brown:       #9c9287;
+$brown:       #856440;
 $brown-light: #F5F5F5;
 $text-color:  #000;
 $body-color:  $text-color;
@@ -74,5 +74,5 @@ $desktop-offset: -100px;
 /* Items per row & gutters >>> */
 /* ------------------------------------------------------------------------- */
 $gutters-map:               (5px, 10px, 15px, 20px, 25px, 30px) !default;
-$max-items-per-row:         5 !default;
+$max-items-per-row:         6 !default;
 /* <<< Items per row & gutters */
