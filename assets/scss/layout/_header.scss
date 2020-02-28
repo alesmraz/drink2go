@@ -22,10 +22,11 @@
 }
 
 .logoWrapper--primary {
-  background-color: $primary;
+  background-color: $white;
 
   > .container {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -61,7 +62,7 @@
 .icon--home {
   width: 40px!important;
   margin-left: 1rem;
-  margin-top: 0.95rem;
+  margin-top: 0;
 
   @include media-breakpoint-down(sm) {
     width: 30px !important;

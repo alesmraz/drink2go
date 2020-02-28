@@ -14,7 +14,7 @@
     position: absolute;
   }
 
-  @media screen and (max-width: 1060px) {
+  @include media-breakpoint-down(sm) {
     flex-direction: column;
   }
 
@@ -66,11 +66,10 @@
 
   > img {
     width: 200px;
-
     @include object-fit(contain);
 
     @media screen and (max-width: 1060px) {
-      width: auto;
+      width: 100%;
     }
 
     @include media-breakpoint-down(sm) {
@@ -96,12 +95,16 @@
   padding: 1.5rem 0.25rem 2rem;
   flex: 2;
   z-index: 1;
+  color: #000;
+  text-decoration: none;
+
+  @include hover-focus() {
+    color: #000;
+    text-decoration: none;
+  }
 
   @media screen and (max-width: 1060px) {
-    padding-top: $spacer / 2;
-    padding-bottom: $spacer;
-    padding-left: $spacer;
-    padding-right: $spacer;
+    padding: $spacer / 2 $spacer $spacer;
     width: 100%;
   }
 
@@ -109,9 +112,19 @@
     height: 2em;
     margin-bottom: 0.25rem;
     min-height: max-content;
+    color: #000;
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: 17px;
+    text-transform: uppercase;
+
+    @include hover-focus() {
+      color: #000;
+    }
 
     @media screen and (max-width: 1015px) {
       height: 5em;
+      font-size: 18px;
     }
 
     @include media-breakpoint-down(lg) {
@@ -129,22 +142,6 @@
     @media screen and (max-width: 625px) {
       height: auto;
       margin-bottom: $spacer / 2;
-    }
-
-    > a {
-      color: #000;
-      font-family: $font-family-base;
-      font-weight: $font-weight-base;
-      font-size: 17px;
-      text-transform: uppercase;
-
-      @media screen and (max-width: 1015px) {
-        font-size: 18px;
-      }
-
-      @include hover-focus() {
-        color: #000;
-      }
     }
   }
 

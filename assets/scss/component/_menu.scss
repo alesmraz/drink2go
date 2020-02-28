@@ -5,8 +5,8 @@
 .menu {
   margin-left: auto;
   justify-content: center;
-  padding: 10px 0;
-  background-color: $primary;
+  padding: 15px 0 15px;
+  background-color: $white;
 }
 
 .nav--sub {
@@ -38,15 +38,23 @@
 .nav__item {
   position: relative;
   text-align: center;
-  height: $nav-item-height;
+  height: calc(35px / 2);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 30px;
   flex: 0;
   white-space: nowrap;
   font-size: $font-size-lg;
-  font-weight: $font-weight-bold;
+  border-right: 1.8px solid $brown;
+
+  &:last-of-type {
+    border-right: none;
+  }
+
+  &.nav__item--active {
+    font-weight: $font-weight-bold;
+  }
 
   @include media-breakpoint-down(lg) {
      padding: 0 5px;

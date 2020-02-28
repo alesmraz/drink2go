@@ -50,6 +50,14 @@
   min-height: 600px;
   position: relative;
 
+  &.tab-pane--nobg {
+    background-image: none;
+
+    table {
+      border: 5px solid $primary;
+    }
+  }
+
   @include media-breakpoint-down(sm) {
     padding: 15px;
     background-size: cover;
@@ -60,7 +68,7 @@
   }
 
   .title, b, p {
-    color: $white;
+    color: $black;
   }
 
   .tab-content {
@@ -93,4 +101,9 @@
     margin-right: 0;
     max-width: 100%;
   }
+}
+
+.tabs--detail {
+  display: flex;
+  justify-content: center;
 }

@@ -55,7 +55,11 @@ $branches-sm-height: 250px;
     transform: translateX(-50%);
 
     @media (max-height: 800px) {
-      bottom: 140px;
+      bottom: 50px;
+    }
+
+    @media (max-height: 600px) {
+      display: none;
     }
 
     @include media-breakpoint-down(sm) {

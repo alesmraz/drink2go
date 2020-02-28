@@ -302,6 +302,13 @@
   }
 }
 
+.buyerpanel__buttonWrap--slim {
+  max-width: 40%;
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+  }
+}
+
 .type__select--hide {
   display: none !important
 }
