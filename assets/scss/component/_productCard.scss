@@ -57,6 +57,7 @@
 
   @media screen and (max-width: 1060px) {
     width: 100%;
+    flex: initial;
   }
 
   @include media-breakpoint-down(sm) {
@@ -99,12 +100,9 @@
   @media screen and (max-width: 1060px) {
     padding-top: $spacer / 2;
     padding-bottom: $spacer;
-    width: 100%;
-  }
-
-  @include media-breakpoint-down(sm) {
     padding-left: $spacer;
     padding-right: $spacer;
+    width: 100%;
   }
 
   .title {
@@ -150,7 +148,7 @@
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @media screen and (max-width: 1060px) {
     padding: 1.5rem 3rem;
     margin-left: 0;
   }
