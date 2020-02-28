@@ -79,7 +79,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
+                            <img src="./../assets/img/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="productCart__item">
                         <div class="productCart__image">
-                            <img src="./../assets/img/can/product.png" alt="Hugo dolce">
+                            <img src="./../assets/img/product.png" alt="Hugo dolce">
                         </div>
 
                         <div class="productCart__text">
@@ -140,9 +140,7 @@
 
         </div>
     </div>
-
     <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
-
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
             <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
@@ -173,41 +171,93 @@
 
     <div class="logoWrapper logoWrapper--primary">
         <div class="container">
-            <div class="logo m-0">
+            <a href="/eshop/" class="logo m-0">
                 <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
-                <a href="/eshop/"><img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home"></a>
-            </div>
+                <img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home">
+            </a>
+
             <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
                 <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
             </div>
-            <ul class="nav menu menu--main" data-level="1">
-                <li class="nav__item">
-                    <a href="kategorie.html" class="nav__link">Párty packy</a>
-                </li>
-                <li class="nav__item">
-                    <a href="kategorie-nase-drinky.html" class="nav__link">Naše drinky</a>
-                </li>
-                <li class="nav__item">
-                    <a href="o-nas.html" class="nav__link">O nás</a>
-                </li>
-                <li class="nav__item">
-                    <a href="kontakt.html" class="nav__link">Kontakt</a>
-                </li>
-            </ul>
         </div>
     </div>
+
+    <ul class="nav menu menu--main" data-level="1">
+        <li class="nav__item nav__item--active">
+            <a href="kategorie.html" class="nav__link">Párty packy</a>
+        </li>
+        <li class="nav__item">
+            <a href="kategorie-nase-drinky.html" class="nav__link">Naše drinky</a>
+        </li>
+        <li class="nav__item">
+            <a href="o-nas.html" class="nav__link">O nás</a>
+        </li>
+        <li class="nav__item">
+            <a href="kontakt.html" class="nav__link">Kontakt</a>
+        </li>
+    </ul>
 </header>
 
 <main class="page">
-    <section class="ourStory pt-5 pb-5" data-aos="fade-up">
-        <div class="ourStory__content">
-            <h2>Kontakt</h2>
-            <p>Faucibus curae penatibus iure quisque vehicula libero. Sociis cursus dignissimos! Quam pharetra, ex cupidatat vitae pulvinar venenatis. Cursus! Tempus. Veniam? Expedita donec iure dolorum habitasse, curabitur quidem incididunt maiores pede?</p>
+    <div class="container pt-5">
+        <h1>Kontakt</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><b>Originální vína - office</b></p>
 
+                        <p>Original Wines s.r.o.</p>
+                        <p>K Vltavě 653/63</p>
+                        <p>Praha 4, 143 00</p>
+                        <p>IČO: 04385233</p>
+                        <p>DIČ: CZ04385233</p>
+                        <p>info@originalnivina.cz</p>
+
+                        <p>Telefon: +420 601 601 187</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><b>Otevírací doba</b></p>
+                        <br>
+                        <p>Po - Pá : 9:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form action="https://originalnivina.cz/index.php?route=information/contact" method="post" enctype="multipart/form-data" class="mb-4">
+                    <div class="form-group">
+                        <label for="input-name">Vaše jméno: </label>
+                        <input type="text" name="name" value="" class="form-control" id="input-name" placeholder="Vaše jméno">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-email">E-mail:</label>
+                        <input type="email" name="email" value="" id="input-email" class="form-control" aria-describedby="email" placeholder="Váš e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-enquiry">Dotaz:</label>
+                        <textarea name="enquiry" class="form-control" id="input-enquiry" rows="3"></textarea>
+                    </div>
+
+                    <fieldset>
+                        <legend>Antispam</legend>
+                        <div class="form-group row required">
+                            <label class="col-sm-2 col-form-label" for="input-captcha">Zadejte kód</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="captcha" id="input-captcha" class="form-control input-captcha">
+                                <img src="index.php?route=extension/captcha/basic/captcha" alt="">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <small class="form-text text-muted mb-3">Odeslání souhlasíte se <a href="gdpr.html" target="_blank">zpracováním osobních údajů.</a></small>
+
+                    <button type="submit" class="btn btn-primary btn-wide text-uppercase" value="Potvrdit">Odeslat</button>
+                </form>
+            </div>
         </div>
-
-        <img src="./../assets/img/ourStory.svg" alt="Náš příběh" class="bg">
-    </section>
+    </div>
 </main>
 
 <footer class="container-fluid pl-0 pr-0">

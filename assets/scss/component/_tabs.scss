@@ -43,12 +43,16 @@
 }
 
 .tab-pane {
-  background: transparent url('../img/tab.svg') center center no-repeat;
-  background-size: contain;
-  padding: 20px 50px;
+  background-color: $primary;
   width: 100%;
   min-height: 600px;
   position: relative;
+  align-items: center;
+  padding: 7%;
+
+  @include media-breakpoint-down(sm) {
+    padding: 12% 7%;
+  }
 
   &.tab-pane--nobg {
     background-image: none;
@@ -58,21 +62,8 @@
     }
   }
 
-  @include media-breakpoint-down(sm) {
-    padding: 15px;
-    background-size: cover;
-    margin-right: -15px;
-    margin-left: -15px;
-    width: calc(100% + 30px);
-    min-height: 1000px;
-  }
-
   .title, b, p {
     color: $black;
-  }
-
-  .tab-content {
-    @include center();
   }
 
   .table-responsive {

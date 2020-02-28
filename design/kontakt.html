@@ -26,15 +26,9 @@
             <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
             <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
         </form>
-        <div class="topPanel__item topPanel__item--cart">
-            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
-                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
-            </div>
-        </div>
+        <div class="topPanel__item topPanel__item--cart"></div>
     </div>
-
     <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
-
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
             <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
@@ -48,7 +42,7 @@
                     <a href="plneni-plechovek.html" class="mobileList__link">Plnění plechovek</a>
                 </li>
                 <li class="mobileList__item">
-                    <a href="cenik.html" class="mobileList__link">Ceník</a>
+                    <a href="kategorie.html" class="mobileList__link">Kategorie</a>
                 </li>
                 <li class="mobileList__item">
                     <a href="o-nas.html" class="mobileList__link">O nás</a>
@@ -68,41 +62,99 @@
     </div>
 
     <div class="logoWrapper logoWrapper--primary">
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="logo m-0">
-                <img src="./../assets/img/logo.svg" alt="cans4all">
-                <a href="/eshop/"><img src="./../assets/img/home.svg" alt="cans4all" class="icon--home"></a>
+        <div class="container">
+            <a href="/design/" class="logo m-0">
+                <img src="./../assets/img/logo.svg" alt="Drink2Go">
+                <img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home">
+            </a>
+
+            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
+                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
             </div>
-            <ul class="nav menu menu--main" data-level="1">
-                <li class="nav__item">
-                    <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
-                </li>
-                <li class="nav__item">
-                    <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
-                </li>
-                <li class="nav__item">
-                    <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
-                </li>
-                <li class="nav__item">
-                    <a href="kategorie.html" class="nav__link">Naše drinky</a>
-                </li>
-                <li class="nav__item">
-                    <a href="o-nas.html" class="nav__link">O nás</a>
-                </li>
-                <li class="nav__item">
-                    <a href="kontakt.html" class="nav__link">Kontakt</a>
-                </li>
-            </ul>
         </div>
     </div>
+
+    <ul class="nav menu menu--main" data-level="1">
+        <li class="nav__item nav__item--active">
+            <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
+        </li>
+        <li class="nav__item">
+            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="kategorie.html" class="nav__link">Naše drinky</a>
+        </li>
+        <li class="nav__item">
+            <a href="o-nas.html" class="nav__link">O nás</a>
+        </li>
+        <li class="nav__item">
+            <a href="kontakt.html" class="nav__link">Kontakt</a>
+        </li>
+    </ul>
 </header>
 
 <main class="page">
     <div class="container--section pb-5 pt-5">
-        <h1 class="text-center text-uppercase">Kontakty</h1>
+        <h1>Kontakt</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><b>Originální vína - office</b></p>
 
-        <p>as? Nobis voluptatem pellentesque ab cupiditate odio quod perferendis per lectus. Nascetur atque. Dicta anim nam! Nobis aliquip explicabo, duis exercitation cumque placeat aliqua et quae habitasse quidem, aliqua. Molestiae nascetur dolores, mi sit magni nascetur omnis deserunt enim augue eleifend magnam fugit morbi doloribus quas illo adipisicing, curabitur, interdum eleifend? Nihil voluptates vel molestias cursus molestias. Suspendisse vestibulum quisque elementum, perspiciatis netus nostrum, excepteur, natoque, nam suspendisse nesciunt. Ultrices incidunt, cum quos natoque orci tincidunt amet eros tempora! Natus, quidem nisi ultrices malesuada, ridiculus enim ipsam netus tortor, debitis primis, fermentum! Libero sollicitudin wisi reprehenderit! Quidem, mauris faucibus porttitor officiis, ultric</p>
+                        <p>Original Wines s.r.o.</p>
+                        <p>K Vltavě 653/63</p>
+                        <p>Praha 4, 143 00</p>
+                        <p>IČO: 04385233</p>
+                        <p>DIČ: CZ04385233</p>
+                        <p>info@originalnivina.cz</p>
 
+                        <p>Telefon: +420 601 601 187</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><b>Otevírací doba</b></p>
+                        <br>
+                        <p>Po - Pá : 9:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form action="https://originalnivina.cz/index.php?route=information/contact" method="post" enctype="multipart/form-data" class="mb-4">
+                    <div class="form-group">
+                        <label for="input-name">Vaše jméno: </label>
+                        <input type="text" name="name" value="" class="form-control" id="input-name" placeholder="Vaše jméno">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-email">E-mail:</label>
+                        <input type="email" name="email" value="" id="input-email" class="form-control" aria-describedby="email" placeholder="Váš e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-enquiry">Dotaz:</label>
+                        <textarea name="enquiry" class="form-control" id="input-enquiry" rows="3"></textarea>
+                    </div>
+
+                    <fieldset>
+                        <legend>Antispam</legend>
+                        <div class="form-group row required">
+                            <label class="col-sm-2 col-form-label" for="input-captcha">Zadejte kód</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="captcha" id="input-captcha" class="form-control input-captcha">
+                                <img src="index.php?route=extension/captcha/basic/captcha" alt="">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <small class="form-text text-muted mb-3">Odeslání souhlasíte se <a href="gdpr.html" target="_blank">zpracováním osobních údajů.</a></small>
+
+                    <button type="submit" class="btn btn-primary btn-wide text-uppercase" value="Potvrdit">Odeslat</button>
+                </form>
+            </div>
+        </div>
     </div>
 </main>
 

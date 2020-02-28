@@ -26,15 +26,9 @@
             <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
             <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
         </form>
-        <div class="topPanel__item topPanel__item--cart">
-            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
-                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
-            </div>
-        </div>
+        <div class="topPanel__item topPanel__item--cart"></div>
     </div>
-
     <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
-
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
             <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
@@ -48,7 +42,7 @@
                     <a href="plneni-plechovek.html" class="mobileList__link">Plnění plechovek</a>
                 </li>
                 <li class="mobileList__item">
-                    <a href="cenik.html" class="mobileList__link">Ceník</a>
+                    <a href="kategorie.html" class="mobileList__link">Kategorie</a>
                 </li>
                 <li class="mobileList__item">
                     <a href="o-nas.html" class="mobileList__link">O nás</a>
@@ -68,33 +62,38 @@
     </div>
 
     <div class="logoWrapper logoWrapper--primary">
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="logo m-0">
-                <img src="./../assets/img/logo.svg" alt="cans4all">
-                <a href="/eshop/"><img src="./../assets/img/home.svg" alt="cans4all" class="icon--home"></a>
+        <div class="container">
+            <a href="/design/" class="logo m-0">
+                <img src="./../assets/img/logo.svg" alt="Drink2Go">
+                <img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home">
+            </a>
+
+            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
+                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
             </div>
-            <ul class="nav menu menu--main" data-level="1">
-                <li class="nav__item">
-                    <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
-                </li>
-                <li class="nav__item">
-                    <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
-                </li>
-                <li class="nav__item">
-                    <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
-                </li>
-                <li class="nav__item">
-                    <a href="kategorie.html" class="nav__link">Naše drinky</a>
-                </li>
-                <li class="nav__item">
-                    <a href="o-nas.html" class="nav__link">O nás</a>
-                </li>
-                <li class="nav__item">
-                    <a href="kontakt.html" class="nav__link">Kontakt</a>
-                </li>
-            </ul>
         </div>
     </div>
+
+    <ul class="nav menu menu--main" data-level="1">
+        <li class="nav__item nav__item--active">
+            <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
+        </li>
+        <li class="nav__item">
+            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="kategorie.html" class="nav__link">Naše drinky</a>
+        </li>
+        <li class="nav__item">
+            <a href="o-nas.html" class="nav__link">O nás</a>
+        </li>
+        <li class="nav__item">
+            <a href="kontakt.html" class="nav__link">Kontakt</a>
+        </li>
+    </ul>
 </header>
 
 <main class="page">
@@ -141,7 +140,7 @@
                     </div>
                     <div class="custom-control custom-radio">
                         <input type="radio" id="type-competition" name="type" class="custom-control-input">
-                        <label class="custom-control-label" for="type-competition">Stírací plechovka</label>
+                        <label class="custom-control-label" for="type-competition">Soutěžní plechovka</label>
                     </div>
 
                     <div class="form-group mt-2">

@@ -64,6 +64,10 @@
     margin-left: 0;
     margin-right: 0;
     border-radius: $border-radius;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: $spacer;
+    }
   }
 
   .buyerpanel__typeSelect {

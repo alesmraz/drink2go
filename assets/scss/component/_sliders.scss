@@ -110,7 +110,7 @@
     font-family: $headings-font-family;
 
     @include media-breakpoint-down(sm) {
-      font-size: 1.5em;
+      font-size: 2.3em;
       margin-bottom: $spacer * 1.25;
     }
   }
@@ -130,7 +130,7 @@
     margin-bottom: $spacer * 2;
 
     @include media-breakpoint-down(sm) {
-      font-size: 2.5em;
+      font-size: 3.3em;
       margin-bottom: $spacer / 2;
     }
   }
@@ -186,6 +186,10 @@
     text-decoration: none;
   }
 
+  @include media-breakpoint-down(sm) {
+    font-size: 30px;
+  }
+
   &.slider__more {
     position: absolute;
     bottom: 20vh;
@@ -197,8 +201,7 @@
     content: '';
     background: transparent url('../svg/slider__more--invert.svg') center center no-repeat;
     display: block;
-    width: 80px;
-    height: 80px;
+    @include size(80px);
     background-size: contain;
     position: relative;
     left: 15px;
@@ -206,6 +209,9 @@
     animation-name: jump;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+    @include media-breakpoint-down(sm) {
+      @include size(60px);
+    }
   }
 
   &.slider__more {
@@ -217,6 +223,10 @@
 
     &:after {
       background-image: url('../svg/slider__more.svg');
+    }
+
+    @include media-breakpoint-down(sm) {
+      bottom: 10vh;
     }
   }
 
