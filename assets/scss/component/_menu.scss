@@ -79,7 +79,7 @@
   }
 
   @include hover-focus() {
-    color: invert($brown);
+    color: $alternative;
     text-decoration: none;
   }
 }

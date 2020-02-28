@@ -155,59 +155,90 @@
 
             <div class="row">
                 <div class="col-md-3">
-                    <h4 class="d-block title title--normal">Vybrat nápoj</h4>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <select class="custom-select custom-select-lg mb-3">
-                            <option selected>Vše</option>
-                            <option value="1">Alko</option>
-                            <option value="2">Nealko</option>
-                        </select>
+                    <label class="d-block">Objem</label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="objem-250s" name="objem" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="objem-250s">250 ml slim</label>
                     </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="objem-250u" name="objem" class="custom-control-input">
+                        <label class="custom-control-label" for="objem-250u">250 ml regular</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="objem-330" name="objem" class="custom-control-input">
+                        <label class="custom-control-label" for="objem-330">330 ml regular</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="objem-500" name="objem" class="custom-control-input">
+                        <label class="custom-control-label" for="objem-500">500 ml regular</label>
+                    </div>
+
                 </div>
-                <div class="col-md-3">
-                    <select class="custom-select custom-select-lg mb-3">
-                        <option selected>--- Vyberte ---</option>
-                        <option value="1">Pivo</option>
-                        <option value="2">Víno</option>
-                        <option value="3">Vinné nápoje</option>
-                        <option value="4">Míchané nápoje</option>
-                        <option value="5">Vinné koktejly</option>
-                        <option value="6">Energy drink</option>
-                        <option value="7">Limonády</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <select class="custom-select custom-select-lg mb-3">
-                        <option selected>--- Vyberte ---</option>
-                        <option value="1">Nápoj 1</option>
-                        <option value="2">Nápoj 2</option>
-                        <option value="3">Nápoj 3</option>
-                    </select>
+                <div class="col-md-9">
+                    <label>Vybrat nápoj</label>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="custom-select custom-select-lg mb-3">
+                                    <option selected>Vše</option>
+                                    <option value="1">Alko</option>
+                                    <option value="2">Nealko</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="custom-select custom-select-lg mb-3">
+                                <option selected>--- Vyberte ---</option>
+                                <option value="1">Pivo</option>
+                                <option value="2">Víno</option>
+                                <option value="3">Vinné nápoje</option>
+                                <option value="4">Míchané nápoje</option>
+                                <option value="5">Vinné koktejly</option>
+                                <option value="6">Energy drink</option>
+                                <option value="7">Limonády</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="custom-select custom-select-lg mb-3">
+                                <option selected>--- Vyberte ---</option>
+                                <option value="1">Nápoj 1</option>
+                                <option value="2">Nápoj 2</option>
+                                <option value="3">Nápoj 3</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
+                <div class="col-md-3"></div>
                 <div class="col-md-9">
-                    <label class="d-block">Objem</label>
+                    <label class="d-block">Spotřeba</label>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="objem-250s" name="objem" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="objem-250s">250 ml(široká)</label>
+                        <input type="radio" id="spotreba-all" name="type" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="spotreba-all">Vše</label>
                     </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="spotreba-24" name="type" class="custom-control-input">
+                        <label class="custom-control-label" for="spotreba-24">24h - Určeno k okamžité spotřebě</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="spotreba-long" name="type" class="custom-control-input">
+                        <label class="custom-control-label" for="spotreba-long">Dlouhodobě trvanlivé</label>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="objem-250u" name="objem" class="custom-control-input">
-                        <label class="custom-control-label" for="objem-250u">250 ml(úzká)</label>
-                    </div>
-
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="objem-330" name="objem" class="custom-control-input">
-                        <label class="custom-control-label" for="objem-330">330 ml</label>
-                    </div>
+            <div class="row mt-4">
+                <div class="col-md-9">
+                    <h4 class="title title--normal"><b>Nevíte si rady?</b> Napište nám do poznámky vaši ideální<br> představu a my se vám ozveme s řešením na míru!</h4>
                 </div>
                 <div class="col-md-3">
                     <button type="submit" class="btn btn-alternative btn-normal w-100 mt-3">Odeslat poptávku</button>
+                    <small>Odeslání souhlasíte se zpracováním osobních údajů</small>
                 </div>
             </div>
         </form>

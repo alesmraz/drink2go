@@ -7,7 +7,7 @@ $branches-sm-height: 250px;
   flex-wrap: wrap;
 
   @include media-breakpoint-down(sm) {
-    height: calc(100vh - 144px);
+    height: calc(100vh - 60px);
     flex-direction: column;
   }
 }
@@ -19,6 +19,16 @@ $branches-sm-height: 250px;
 
   .logoWrapper {
     z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 0;
+      padding-top: 0;
+
+      .logo > img {
+        max-width: 140px;
+        height: 45px;
+      }
+    }
   }
 
   @include hover-focus() {
@@ -38,11 +48,15 @@ $branches-sm-height: 250px;
 
   .products {
     position: absolute;
-    bottom: 2vh;
+    bottom: 190px;
     z-index: 1;
-    width: 60%;
+    width: 90%;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (max-height: 800px) {
+      bottom: 140px;
+    }
 
     @include media-breakpoint-down(sm) {
       display: none;
@@ -51,6 +65,36 @@ $branches-sm-height: 250px;
     img {
       transition: all 0.3s ease-in-out;
       height: min-intrinsic;
+      max-height: 25vh;
+      object-fit: contain;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+    padding: 20px 0 10px 0;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+      padding-top: 5px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .row {
+      padding: 0;
+      max-width: 80%;
+      margin: 0 auto;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -65,17 +109,27 @@ $branches-sm-height: 250px;
 .branch__content {
   width: 100%;
   @include center();
-  top: 40%;
+  top: 350px;
   text-align: center;
   z-index: 1;
   color: #fff;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 50px;
   font-family: $font-family-base;
   line-height: 1.2;
 
+  @media (max-height: 1020px) {
+    font-size: 30px;
+    top: 230px;
+  }
+
   .title {
+    font-weight: $font-weight-bold;
     color: #fff;
+
+    &.title--dark {
+      color: $black;
+    }
   }
 
   .btnGroup {
@@ -91,10 +145,14 @@ $branches-sm-height: 250px;
     margin-left: auto;
     margin-right: auto;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-left: $spacer * 2;
     padding-right: $spacer * 2;
     max-width: 250px;
+
+    @media (max-height: 1020px) {
+      font-size: 1.2rem;
+    }
 
     &.btn-sm {
       max-width: 180px;
@@ -106,15 +164,17 @@ $branches-sm-height: 250px;
     }
 
     @include media-breakpoint-down(sm) {
-      padding-left: $spacer;
-      padding-right: $spacer;
-      font-size: 1rem;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 0.7rem;
+      max-width: 120px;
+      margin-top: 1rem;
     }
   }
 
   @include media-breakpoint-down(sm) {
-    font-size: 20px;
-    top: calc(50% + 15px);
+    font-size: 16px;
+    top: calc(50%);
   }
 
   img {
