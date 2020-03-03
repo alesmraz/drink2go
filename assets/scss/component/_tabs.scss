@@ -55,14 +55,12 @@
 
   @include media-breakpoint-down(sm) {
     padding: 12% 7%;
+    min-height: initial;
   }
 
-  &.tab-pane--nobg {
-    background-image: none;
 
-    table {
-      border: 5px solid $primary;
-    }
+  table {
+    border: 1px solid #dee2e6;
   }
 
   .title, b, p {
@@ -115,7 +113,8 @@
 }
 
 .tab-content--detail {
-  .tab-content>.active {
+
+  .tab-content > .active {
     display: flex;
   }
 
@@ -123,5 +122,11 @@
     align-items: initial;
     padding-top: $spacer * 3;
     min-height: 600px;
+    padding: 5rem;
+
+    @include media-breakpoint-down(sm) {
+      min-height: initial;
+      padding: 2rem;
+    }
   }
 }

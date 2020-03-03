@@ -152,7 +152,7 @@
   }
 
   .buyerpanel__button {
-    color: $white;
+    color: $black;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -215,6 +215,7 @@
   padding-top: $spacer * 0.75;
   padding-bottom: $spacer * 0.75;
   color: $white;
+  -webkit-appearance: borderless-attachment;
 
   @include media-breakpoint-down(sm) {
     margin-bottom: $spacer / 2;
@@ -356,6 +357,13 @@
     @include media-breakpoint-down(sm) {
       text-align: center;
     }
+  }
+}
+
+.buyerpanel__buttonWrap--detail {
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    top: 100px;
   }
 }
 
