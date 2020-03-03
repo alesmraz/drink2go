@@ -1,0 +1,10 @@
+.rh {
+
+}
+
+.hr--full {
+  @include get-stripe-offset(100%);
+  border-top: 1px dashed $black;
+  position: relative;
+  margin-bottom: -30px;
+}

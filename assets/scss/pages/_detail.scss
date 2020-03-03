@@ -24,7 +24,8 @@
     @include media-breakpoint-down(sm) {
       max-width: 100%;
       margin-left: 0;
-      font-size: $font-size-lg;
+      font-size: $font-size-lg * 2;
+      text-align: center;
       color: $text-color;
     }
   }

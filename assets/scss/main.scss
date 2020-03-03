@@ -24,26 +24,23 @@
 @import "layout/titles";
 @import "layout/buttons";
 @import "layout/image";
+@import "layout/hr";
+@import "layout/lists";
 
 // Pages
 @import "pages/detail";
 @import "pages/cart";
-@import "pages/contact";
 
 // Components
 @import "component/topPanel";
 @import "component/menu";
 @import "component/forms";
 @import "component/sliders";
-@import "component/sliderBlocks";
-@import "component/banner";
 @import "component/filter";
 @import "component/productCount";
 @import "component/productList";
 @import "component/productCard";
 @import "component/pagination";
-@import "component/saleCode";
-@import "component/sectionHeader";
 @import "component/brand";
 @import "component/mobileMenu";
 @import "component/subCategories";
@@ -74,3 +71,9 @@
 @import "component/ourStory";
 @import "component/promoSlider";
 @import "component/bubbles";
+@import "component/showroom";
+@import "component/borderWrapper";
+
+// Banners
+@import "component/banners/banner";
+@import "component/banners/topBanner";

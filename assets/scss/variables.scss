@@ -1,4 +1,4 @@
-$primary:     #fbc500;
+$primary:     #E06437;
 $secondary:   #000;
 $alternative: #c43c20;
 $gray:        #707070;
@@ -6,6 +6,7 @@ $brown:       #856440;
 $brown-light: #F5F5F5;
 $text-color:  #000;
 $body-color:  $text-color;
+$yellow:  #febc03;
 
 $font-family-base: 'Barlow';
 $headings-font-family: 'Barrio';
@@ -55,12 +56,12 @@ $brand-sm-size: 250px;
 
 // Mobile menu
 $mobile-side-max-width:                 300px !default;
-$mobile-side-bg:                        #f1f1f1 !default;
+$mobile-side-bg:                        #fff !default;
 $mobile-side-close-bg:                  $gray !default;
 $mobile-side-close-size:                40px !default;
 $mobile-side-link-color:                #000 !default;
 $mobile-side-link-bg:                   $mobile-side-bg !default;
-$mobile-side-link-border:               rgba($primary, 0.3) !default;
+$mobile-side-link-border:               #fff !default;
 $mobile-side-link-hover-color:          $primary !default;
 $mobile-side-link-hover-bg:             darken($mobile-side-link-bg, 3%) !default;
 

@@ -46,7 +46,7 @@
   flex: 0;
   white-space: nowrap;
   font-size: $font-size-lg;
-  border-right: 1.8px solid $brown;
+  border-right: 1px solid $primary;
 
   &:last-of-type {
     border-right: none;
@@ -78,9 +78,9 @@
   justify-content: center;
   align-items: center;
   line-height: 1;
-  color: $brown;
+  color: $black;
   white-space: nowrap;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 
   @include media-breakpoint-down(md) {
     font-size: 13px;

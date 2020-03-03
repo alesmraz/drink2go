@@ -7,7 +7,7 @@
   margin-right: auto;
   margin-left: auto;
   display: block;
-  color: #fff;
+  color: $black;
   font-size: 19px;
   font-weight: 600;
 
@@ -26,4 +26,12 @@
 
 .backLink--invert {
   color: #000;
+}
+
+.backLinkBlock {
+  background-color: $gray-200;
+  color: $black;
+  padding: 10px 70px 10px 13px;
+  border-radius: 4px;
+  margin: $spacer * 2 0;
 }

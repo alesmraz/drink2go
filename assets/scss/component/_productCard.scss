@@ -23,14 +23,6 @@
     margin-left: 0;
   }
 
-  @include hover-focus() {
-    text-decoration: none;
-    color: #000;
-    transform: scale(1.03);
-    z-index: 1;
-    box-shadow: 0px 0px 8px #5f5f5f;
-  }
-
   .source {
     font-weight: $font-weight-light;
     text-transform: uppercase;
@@ -43,6 +35,18 @@
     font-size: 1.4rem;
     font-weight: $font-weight-bold;
     margin-bottom: 2rem;
+  }
+}
+
+.productCard__changer {
+  display: flex;
+  margin-top: $spacer;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
   }
 }
 
@@ -113,7 +117,6 @@
     margin-bottom: 0.25rem;
     min-height: max-content;
     color: #000;
-    font-family: $font-family-base;
     font-weight: $font-weight-base;
     font-size: 17px;
     text-transform: uppercase;

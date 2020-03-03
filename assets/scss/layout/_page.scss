@@ -7,6 +7,10 @@ html {
   background: #fff url('../img/bg.svg') center center no-repeat;
   background-size: cover;
   min-height: 100vh;
+
+  &.page--noBg {
+    background: #fff;
+  }
 }
 
 @each $range in $button-radius-range {

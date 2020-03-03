@@ -1,0 +1,10 @@
+.borderWrapper {
+  position: relative;
+  background: linear-gradient(to right, #FE7D00, #C10110);
+  padding: 8px 8px 6px 8px;
+  border-radius: 5px;
+
+  > div {
+    padding: 1rem;
+  }
+}

@@ -15,12 +15,118 @@
   width: 100%;
 }
 
-.stripe.parallax {
-  background-size: cover;
-  background-attachment: fixed;
+.canTogether {
+  position: absolute;
+  left: 25%;
 
-  .parallax__content {
-    z-index: 1;
+  @include media-breakpoint-down(sm) {
+    min-height: 300px;
+    display: block;
     position: relative;
+    left: 0;
+  }
+
+  img {
+    max-width: 300px;
+    position: absolute;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 180px;
+    }
+  }
+
+  img:nth-child(1) {
+    transform: rotate(-30deg);
+    top: 40px;
+    left: -90px;
+
+    @include media-breakpoint-down(sm) {
+      left: 0;
+    }
+  }
+
+  img:nth-child(2) {
+    top: 0;
+
+    @include media-breakpoint-down(sm) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.canTogether--large {
+  img {
+    max-width: 400px;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 180px;
+    }
+  }
+}
+
+.canTriple {
+  @include media-breakpoint-down(sm) {
+    min-height: 300px;
+  }
+
+  img {
+    max-width: 200px;
+    position: absolute;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 125px;
+    }
+  }
+
+  img:nth-child(1) {
+    left: 0;
+    top: -20px;
+  }
+  img:nth-child(2) {
+    left: 155px;
+    top: 0;
+
+    @include media-breakpoint-down(sm) {
+      left: calc(50% + 10px);
+      transform: translateX(-50%);
+    }
+  }
+  img:nth-child(3) {
+    right: 0;
+    top: -70px;
+  }
+}
+
+.canTriple--large {
+  @include media-breakpoint-down(sm) {
+    position: relative;
+    top: 70px;
+  }
+
+  img {
+    max-width: 260px;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100px;
+    }
+  }
+
+  img:nth-child(2) {
+    left: 38%;
+
+    @include media-breakpoint-down(sm) {
+      left: calc(50% + 10px);
+    }
+  }
+}
+
+.machine {
+  img {
+
+  }
+
+  img:nth-child(2) {
+    transform: scaleX(-1);
   }
 }

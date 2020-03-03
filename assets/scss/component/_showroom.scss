@@ -1,0 +1,53 @@
+.showroom {
+  @include get-stripe-offset(100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.showroomSplit {
+  display: flex;
+  height: 550px;
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: 48px;
+    max-width: 40%;
+    line-height: 1;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      font-size: $h3-font-size;
+    }
+  }
+}
+
+.showroomSplit__item {
+  &:nth-child(1) {
+    width: 100%;
+    z-index: 1;
+    margin-top: $spacer * 3;
+  }
+
+  &:nth-child(2) {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    width: 65vw;
+    max-height: 550px;
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      right: initial;
+      width: calc(100% + 60px);
+      max-height: initial;
+      margin-right: -30px;
+      margin-left: -30px;
+    }
+  }
+}

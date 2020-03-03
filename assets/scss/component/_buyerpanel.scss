@@ -20,7 +20,6 @@
     flex-direction: column;
     align-items: flex-end;
     line-height: 1;
-    padding-top: $spacer / 2;
     flex: 1 0 50%;
 
     @include media-breakpoint-down(sm) {
@@ -60,18 +59,28 @@
 
 .buyerpanel--detail {
 
+  @include media-breakpoint-down(sm) {
+    margin-top: 20px;
+  }
+
   .buyerpanel__item {
     margin-left: 0;
     margin-right: 0;
     border-radius: $border-radius;
 
     @include media-breakpoint-down(sm) {
-      margin-top: $spacer;
+      margin-top: 0;
+      display: flex;
     }
   }
 
   .buyerpanel__typeSelect {
     justify-content: space-around;
+
+    .inputCounter input {
+      color: $black;
+      border-color: $black;
+    }
 
     .type {
       height: 130px;
@@ -102,6 +111,7 @@
   }
 
   .buyerpanel__button {
+    color: $black;
     @include media-breakpoint-down(sm) {
       width: 100%;
       margin-bottom: 1.5rem !important;
@@ -112,9 +122,9 @@
 
 .buyerpanel__item {
   display: flex;
-  color: #fff;
-  background: $brown;
-  margin: $spacer / 2 $spacer;
+  color: $black;
+  background: #fff;
+  margin: 0;
   padding: 0;
 
   @include media-breakpoint-down(sm) {
@@ -161,7 +171,7 @@
   font-weight: $font-weight-bold;
   padding-top: $spacer * 0.75;
   padding-bottom: $spacer * 0.75;
-  color: #000;
+  color: $white;
 
   @include media-breakpoint-down(sm) {
     margin-bottom: $spacer / 2;
@@ -315,4 +325,29 @@
 
 .type__select--hide {
   display: none !important
+}
+
+.buyerpanel__variantSelect {
+  &:not(.buyerpanel__variantSelect--mobile) {
+    @include media-breakpoint-down(xs) {
+      display: none;
+
+      &:last-of-type {
+        display: block;
+
+        label {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.buyerpanel__variantSelect--mobile {
+  display: none;
+
+  @include media-breakpoint-down(xs) {
+    display: flex;
+    justify-content: space-around;
+  }
 }

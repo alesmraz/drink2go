@@ -1,0 +1,30 @@
+ul.styled {
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-left: 25px;
+    font-size: $font-size-base * 1.8;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base;
+      margin-left: 15px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -60px;
+      width: 30px;
+      height: 3px;
+      background-color: $primary;
+      display: block;
+      @include center(vertical);
+
+      @include media-breakpoint-down(sm) {
+        left: -50px;
+        width: 20px;
+      }
+    }
+  }
+}

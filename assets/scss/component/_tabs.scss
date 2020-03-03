@@ -43,12 +43,15 @@
 }
 
 .tab-pane {
-  background-color: $primary;
   width: 100%;
   min-height: 600px;
   position: relative;
   align-items: center;
   padding: 7%;
+
+  .tab-content {
+    background-color: $white;
+  }
 
   @include media-breakpoint-down(sm) {
     padding: 12% 7%;
@@ -97,4 +100,16 @@
 .tabs--detail {
   display: flex;
   justify-content: center;
+}
+
+.tab-content--detail {
+  .tab-content>.active {
+    display: flex;
+  }
+
+  .tab-content {
+    align-items: initial;
+    padding-top: $spacer * 3;
+    min-height: 600px;
+  }
 }

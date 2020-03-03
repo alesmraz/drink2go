@@ -90,3 +90,36 @@ h5.title--story {
 .title--dark {
   color: $black;
 }
+
+.title__underline {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base * 1.5;
+  }
+
+  &:after {
+    content: '';
+    background-color: $primary;
+    height: 3px;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    width: 100vw;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &.title__underline--right:after {
+    left: 0;
+  }
+
+  &.title__underline--left:after {
+    right: 0;
+  }
+}

@@ -31,7 +31,14 @@
     <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
+            <div class="mobileList__header">
+                <img src="./../assets/img/logo--invert.svg" alt="Drink2go">
+            </div>
+
             <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
+                <li class="mobileList__item">
+                    <a href="../design" class="mobileList__link">Domů</a>
+                </li>
                 <li class="mobileList__item">
                     <a href="potisk-plechovek.html" class="mobileList__link">Potisk plechovek</a>
                 </li>
@@ -57,17 +64,22 @@
                 </li>
             </ul>
 
-            <div class="mobileList__footer">Drink2Go © 2020</div>
+            <div class="mobileList__footer">
+                <div class="logo"><img src="./../assets/img/mobileMenu/cans4all.svg" alt="cans4all"></div>
+            </div>
         </div>
     </div>
 
     <div class="logoWrapper logoWrapper--primary">
         <div class="container">
-            <a href="/design/" class="logo m-0">
-                <img src="./../assets/img/logo.svg" alt="Drink2Go">
-                <img src="./../assets/img/home.svg" alt="Drink2Go" class="icon--home">
-            </a>
-
+            <div class="links d-flex">
+                <a href="/eshop/" class="logo">
+                    <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
+                </a>
+                <a href="/design/" class="logo logo--active">
+                    <img src="./../assets/img/logo.svg" alt="cans4all">
+                </a>
+            </div>
             <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
                 <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
             </div>
@@ -75,17 +87,20 @@
     </div>
 
     <ul class="nav menu menu--main" data-level="1">
-        <li class="nav__item nav__item--active">
-            <a href="potisk-plechovek.html" class="nav__link">Potisk plechovek</a>
-        </li>
-        <li class="nav__item">
-            <a href="stiraci-plechovky.html" class="nav__link">Stírací plechovky</a>
-        </li>
-        <li class="nav__item">
-            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
+        <li class="nav__item nav__item">
+            <a href="../design/" class="nav__link">Domů</a>
         </li>
         <li class="nav__item">
             <a href="kategorie.html" class="nav__link">Naše drinky</a>
+        </li>
+        <li class="nav__item">
+            <a href="stiraci-plechovky.html" class="nav__link">Soutěžní plechovky</a>
+        </li>
+        <li class="nav__item nav__item--active">
+            <a href="potisk-plechovek.html" class="nav__link">3D Potisk plechovek</a>
+        </li>
+        <li class="nav__item">
+            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
         </li>
         <li class="nav__item">
             <a href="o-nas.html" class="nav__link">O nás</a>

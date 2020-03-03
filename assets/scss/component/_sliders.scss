@@ -84,7 +84,7 @@
   margin: 0 12px;
 }
 
-.slider__text {
+.topBanner__content--overdraw {
   z-index: 5;
   position: absolute;
   left: 20vw;
@@ -116,6 +116,9 @@
   }
   
   .title--line {
+    flex-direction: initial !important;
+    justify-content: center;
+
     &:before {
       background-image: url('../svg/title/left--primary.svg');
     }
@@ -125,9 +128,10 @@
   }
 
   .title--big {
-    color: $primary;
+    color: #FFBB00 !important;
     font-size: 6rem;
     margin-bottom: $spacer * 2;
+    text-align: center !important;
 
     @include media-breakpoint-down(sm) {
       font-size: 3.3em;
@@ -209,9 +213,11 @@
     animation-name: jump;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+
     @include media-breakpoint-down(sm) {
       @include size(60px);
     }
+
   }
 
   &.slider__more {
@@ -229,12 +235,15 @@
       bottom: 10vh;
     }
   }
-
 }
 
 .discover--center {
   &:after {
     left: 35px;
+
+    @include media-breakpoint-down(sm) {
+      left: 0;
+    }
   }
 }
 
@@ -331,5 +340,21 @@
 .swiper--thumbnails {
   @include media-breakpoint-down(sm) {
     display: flex;
+  }
+}
+
+.slider--mobileSmall {
+  @include media-breakpoint-down(sm) {
+    height: 70%;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      max-height: 250px;
+      @include object-fit(contain);
+    }
   }
 }
