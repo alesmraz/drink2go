@@ -1,6 +1,6 @@
 .topBanner {
   display: flex;
-  max-height: 20vh;
+  height: 400px;
   position: relative;
   margin-bottom: 15vh;
 
@@ -13,6 +13,7 @@
 .topBanner__bg {
   position: absolute;
   @include size(100%);
+  min-height: 300px;
 
   > img {
     @include fill();
@@ -33,6 +34,7 @@
     display: flex;
     flex-direction: column;
     font-size: 60px;
+    white-space: nowrap;
 
     @include media-breakpoint-down(sm) {
       font-size: 21px;
@@ -71,8 +73,10 @@
 
 .topBanner__right {
   text-align: right;
-  position: relative;
   z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: -100px;
 
   @include media-breakpoint-down(sm) {
     max-width: 40%;
