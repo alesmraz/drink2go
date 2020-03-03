@@ -69,6 +69,18 @@
     color: $black;
   }
 
+  .title {
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+    }
+  }
+
   .table-responsive {
     font-size: 14px;
   }

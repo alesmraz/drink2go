@@ -6,7 +6,12 @@
   z-index: 0;
 
   @include media-breakpoint-down(sm) {
-    left: 5px;
+    position: relative;
+    top: 10px;
+    left: 0;
+    height: 45px;
+    margin-bottom: 0;
+    width: calc(100% - 10px);
   }
 }
 
@@ -23,6 +28,14 @@
   font-size: 23px;
   letter-spacing: 6px;
   text-align: center;
+  max-width: 40px;
+
+  @include media-breakpoint-down(sm) {
+    transform: rotate(0);
+    width: 100%;
+    writing-mode: initial;
+    max-width: 100%;
+  }
 
   .side {
     color: rgba(#fff, 0.5);

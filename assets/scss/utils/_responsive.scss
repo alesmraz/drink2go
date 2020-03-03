@@ -7,6 +7,15 @@
 
 }
 
+.desktop-only {
+  display: block;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
 .z-index-1 {
   z-index: 1;
 }
+

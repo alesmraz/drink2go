@@ -63,6 +63,12 @@
     margin-top: 20px;
   }
 
+  @include media-breakpoint-down(sm) {
+    .borderWrapper {
+      margin-bottom: 5rem;
+    }
+  }
+
   .buyerpanel__item {
     margin-left: 0;
     margin-right: 0;
@@ -77,13 +83,34 @@
   .buyerpanel__typeSelect {
     justify-content: space-around;
 
-    .inputCounter input {
-      color: $black;
-      border-color: $black;
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+      margin-top: $spacer / 2;
+      margin-bottom: $spacer * 2;
+      width: 100%;
+    }
+
+    .inputCounter {
+
+      @include media-breakpoint-down(sm) {
+        .minus,
+        .plus {
+          @include size(20px);
+        }
+      }
+
+      input {
+        color: $black;
+        border-color: $black;
+      }
     }
 
     .type {
       height: 130px;
+
+      @include media-breakpoint-down(sm) {
+        height: 80px;
+      }
 
       img {
         height: 100px;
@@ -93,6 +120,20 @@
         }
       }
     }
+  }
+  @include media-breakpoint-down(sm) {
+    .type__control {
+      order: 1;
+
+      span {
+        font-size: 13px;
+      }
+
+      .type__title {
+        display: none;
+      }
+    }
+
   }
 
   .price {
@@ -111,10 +152,12 @@
   }
 
   .buyerpanel__button {
-    color: $black;
+    color: $white;
+
     @include media-breakpoint-down(sm) {
       width: 100%;
       margin-bottom: 1.5rem !important;
+      min-height: initial;
     }
   }
 
@@ -329,11 +372,17 @@
 
 .buyerpanel__variantSelect {
   &:not(.buyerpanel__variantSelect--mobile) {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: none;
 
       &:last-of-type {
-        display: block;
+        display: flex;
+        align-items: flex-end;
+        height: 110px;
+
+        .buyerpanel__item {
+          align-items: flex-end;
+        }
 
         label {
           display: none;

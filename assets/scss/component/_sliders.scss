@@ -245,6 +245,13 @@
       left: 0;
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @keyframes jump {

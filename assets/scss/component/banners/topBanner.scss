@@ -2,11 +2,10 @@
   display: flex;
   height: 400px;
   position: relative;
-  margin-bottom: 15vh;
+  margin-bottom: 40px;
 
   @include media-breakpoint-down(sm) {
-    max-height: 40vh;
-    margin-bottom: 15vh;
+    max-height: 300px;
   }
 }
 
@@ -37,7 +36,12 @@
     white-space: nowrap;
 
     @include media-breakpoint-down(sm) {
-      font-size: 21px;
+      font-size: 40px;
+
+      &:before {
+        width: 20px;
+        height: 34px;
+      }
     }
 
     b {
@@ -52,7 +56,9 @@
   width: 30%;
 
   @include media-breakpoint-down(sm) {
-    display: none;
+    top: 50%;
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -79,13 +85,52 @@
   bottom: -100px;
 
   @include media-breakpoint-down(sm) {
-    max-width: 40%;
-    margin-left: auto;
-    top: 60px;
+    display: none;
   }
 
   img {
     max-width: 100%;
-    max-height: 30vh;
+    max-height: 450px;
+
+    @include media-breakpoint-down(md) {
+      max-height: 300px;
+    }
+  }
+}
+
+.topBanner--design {
+  margin-bottom: 180px;
+
+  @include media-breakpoint-down(sm) {
+    max-height: 200px;
+    margin-bottom: 100px;
+
+    .topBanner__bg {
+      min-height: 200px;
+    }
+
+    .topBanner__content {
+      top: 49%;
+
+      .title {
+        font-size: 23px;
+
+        b {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .topBanner__btn {
+      top: calc(50% + 2em);
+    }
+
+    .topBanner__right {
+      display: block;
+
+      img {
+        max-width: 150px;
+      }
+    }
   }
 }

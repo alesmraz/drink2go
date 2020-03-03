@@ -210,180 +210,110 @@
 <main class="page">
     <section class="stripe stripe--full" data-aos="fade-up">
         <h2 class="title title--line text-center mt-5 mb-4 title--big">Párty packy</h2>
-        <section class="stripe stripe--full" data-aos="fade-up">
-            <form action="" id="filter" class="filter">
-                <div class="row">
-                    <div class="form-group">
-                        <select class="custom-select custom-select-lg mb-3">
-                            <option selected>Filtr</option>
-                            <option value="1">Alko</option>
-                            <option value="2">Nealko</option>
+        <form action="" id="filter" class="filter">
+            <div class="w-100 d-flex flex-column flex-md-row justify-content-center">
+                <button class="btn filter__button" type="button" data-toggle="collapse" data-target="#orderCollapse" aria-expanded="false" aria-controls="filterCollapse">
+                    <img src="./../assets/svg/sort.svg" alt="Třídit"><span>Třídit</span>
+                </button>
+                <button class="btn filter__button" type="button" data-toggle="collapse" data-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
+                    <img src="./../assets/svg/filter.svg" alt="Filtrovat"><span>Filtrovat</span>
+                </button>
+
+                <div class="collapse collapse-two-item" id="orderCollapse">
+                    <div class="form-group" data-name="order">
+                        <select id="input-sort" class="custom-select" onchange="location = this.value;">
+                            <option value="">Výchozí</option>
+                            <option value="">Název (A - Z)</option>
+                            <option value="">Název (Z - A)</option>
+                            <option value="">Cena (Nejnižší &gt; Nejvyšší)</option>
+                            <option value="" selected="selected">Cena (Nejvyšší &gt; Nejnižší)</option>
+                            <option value="">Hodnocení (Nejvyšší)</option>
+                            <option value="">Hodnocení (Nejnižší)</option>
+                            <option value="">Model (A - Z)</option>
+                            <option value="">Model (Z - A)</option>
                         </select>
                     </div>
-
-                    <div class="form-group">
-                        <select class="custom-select custom-select-lg mb-3">
-                            <option selected>Filtr</option>
-                            <option value="1">Alko</option>
-                            <option value="2">Nealko</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <select class="custom-select custom-select-lg mb-3">
-                            <option selected>Filtr</option>
-                            <option value="1">Alko</option>
-                            <option value="2">Nealko</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <select class="custom-select custom-select-lg mb-3">
-                            <option selected>Filtr</option>
-                            <option value="1">Alko</option>
-                            <option value="2">Nealko</option>
+                    <div class="form-group" data-name="filter">
+                        <select id="input-limit" class="custom-select" onchange="location = this.value;">
+                            <option value="">12</option>
+                            <option value="" selected="selected">24</option>
+                            <option value="">48</option>
+                            <option value="">96</option>
+                            <option value="">192</option>
                         </select>
                     </div>
                 </div>
-                <div class="row filterSelect mt-4 mb-3">
-                    <h4 class="title title--normal text-uppercase font-weight-bold">Spotřeba:</h4>
-                    <label>
-                        <input type="radio" name="spotreba" value="vse" checked>
-                        <span class="font-weight-bold text-uppercase ml-2">Vše</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="spotreba" value="24h">
-                        <span class="font-weight-bold text-uppercase ml-2">24h - Určeno k okamžité spotřebě</span>
-                    </label>
 
-                    <label>
-                        <input type="radio" name="spotreba" value="Vše">
-                        <span class="font-weight-bold text-uppercase ml-2">Dlouhodobě trvanlivé</span>
-                    </label>
-                </div>
-            </form>
-
-            <div class="productList">
-                <div class="productCard">
-                    <div class="productCard__tags tag">
-                        <div class="tag__item tag__item--sale">
-                            <span class="side">Akce%</span>
-                            <span>Akce</span>
-                            <span class="side">%Akce</span>
-                        </div>
+                <div class="collapse collapse-three-item" id="filterCollapse">
+                    <div class="form-group" data-name="filter">
+                        <select id="input-type" class="custom-select" onchange="location = this.value;">
+                            <option value="">Všechny typy</option>
+                            <option value="">Brut</option>
+                            <option value="">Extra Dry</option>
+                            <option value="">Polosladké</option>
+                            <option value="">Polosuché</option>
+                            <option value="">Sladké</option>
+                            <option value="">Suché</option>
+                        </select>
                     </div>
-                    <a href="detail.html" class="productCard__image">
-                        <img src="./../assets/img/product3.png" alt="">
-                        <span class="productCard__stamp">To chci</span>
-                    </a>
-                    <div class="productCard__content">
-                        <a href="detail.html"><h2 class="title">Sex on the beach 2 go</h2></a>
-                        <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                            <span>Spotřeba: <b>24 h</b></span>
-                        </div>
-
-                        <div class="productCard__changer">
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+                    <div class="form-group" data-name="filter">
+                        <select id="input-kind" class="custom-select" onchange="location = this.value;">
+                            <option value="">Všechny druhy</option>
+                            <option value="">Bílé víno</option>
+                            <option value="">Růžové víno</option>
+                            <option value="">Červené víno</option>
+                            <option value="">Šumivé víno</option>
+                        </select>
                     </div>
                 </div>
-                <div class="productCard">
-                    <div class="productCard__tags tag">
-                        <div class="tag__item tag__item--sale">
-                            <span class="side">Akce%</span>
-                            <span>Akce</span>
-                            <span class="side">%Akce</span>
-                        </div>
-                    </div>
-                    <a href="detail.html" class="productCard__image">
-                        <img src="./../assets/img/product3.png" alt="">
-                        <span class="productCard__stamp">To chci</span>
-                    </a>
-                    <div class="productCard__content">
-                        <a href="detail.html"><h2 class="title">Sex on the beach 2 go</h2></a>
-                        <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
+            </div>
+            <div class="row filterSelect mt-4 mb-3">
+                <h4 class="title title--normal text-uppercase font-weight-bold">Spotřeba:</h4>
+                <label>
+                    <input type="radio" name="spotreba" value="vse" checked="" onchange="location = this.value;">
+                    <span class="font-weight-bold text-uppercase ml-2">Vše</span>
+                </label>
+                <label>
+                    <input type="radio" name="spotreba" value="24h" onchange="location = this.value;">
+                    <span class="font-weight-bold text-uppercase ml-2">24h - Určeno k okamžité spotřebě</span>
+                </label>
 
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                            <span>Spotřeba: <b>24 h</b></span>
-                        </div>
+                <label>
+                    <input type="radio" name="spotreba" value="Vše" onchange="location = this.value;">
+                    <span class="font-weight-bold text-uppercase ml-2">Dlouhodobě trvanlivé</span>
+                </label>
+            </div>
+        </form>
 
-                        <div class="productCard__changer">
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+        <div class="productList">
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
                     </div>
                 </div>
-                <div class="productCard">
-                    <div class="productCard__tags tag">
-                        <div class="tag__item tag__item--sale">
-                            <span class="side">Akce%</span>
-                            <span>Akce</span>
-                            <span class="side">%Akce</span>
-                        </div>
+                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/product3.png" alt="">
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
                     </div>
-                    <a href="detail.html" class="productCard__image">
-                        <img src="./../assets/img/product3.png" alt="">
-                        <span class="productCard__stamp">To chci</span>
-                    </a>
-                    <div class="productCard__content">
-                        <a href="detail.html"><h2 class="title">Sex on the beach 2 go</h2></a>
-                        <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
 
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                            <span>Spotřeba: <b>24 h</b></span>
-                        </div>
-
+                    <div class="productCard__control">
                         <div class="productCard__changer">
                             <label>
-                                <input type="radio" name="price" value="123">
+                                <input type="radio" name="price" value="123" checked>
                                 <span>200ml</span>
                             </label>
 
@@ -397,148 +327,6 @@
                                 <span>200ml</span>
                             </label>
                         </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="productCard">
-                    <div class="productCard__tags tag">
-                        <div class="tag__item tag__item--sale">
-                            <span class="side">Akce%</span>
-                            <span>Akce</span>
-                            <span class="side">%Akce</span>
-                        </div>
-                    </div>
-                    <a href="detail.html" class="productCard__image">
-                        <img src="./../assets/img/product3.png" alt="">
-                        <span class="productCard__stamp">To chci</span>
-                    </a>
-                    <div class="productCard__content">
-                        <a href="detail.html"><h2 class="title">Sex on the beach 2 go</h2></a>
-                        <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                            <span>Spotřeba: <b>24 h</b></span>
-                        </div>
-
-                        <div class="productCard__changer">
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="productCard">
-                    <div class="productCard__tags tag">
-                        <div class="tag__item tag__item--sale">
-                            <span class="side">Akce%</span>
-                            <span>Akce</span>
-                            <span class="side">%Akce</span>
-                        </div>
-                    </div>
-                    <a href="detail.html" class="productCard__image">
-                        <img src="./../assets/img/product3.png" alt="">
-                        <span class="productCard__stamp">To chci</span>
-                    </a>
-                    <div class="productCard__content">
-                        <a href="detail.html"><h2 class="title">Sex on the beach 2 go</h2></a>
-                        <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                            <span>Spotřeba: <b>24 h</b></span>
-                        </div>
-
-                        <div class="productCard__changer">
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-                        </div>
-
-                        <div class="productCard__price">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="productCard">
-                    <div class="productCard__tags tag">
-                        <div class="tag__item tag__item--sale">
-                            <span class="side">Akce%</span>
-                            <span>Akce</span>
-                            <span class="side">%Akce</span>
-                        </div>
-                    </div>
-                    <a href="detail.html" class="productCard__image">
-                        <img src="./../assets/img/product3.png" alt="">
-                        <span class="productCard__stamp">To chci</span>
-                    </a>
-                    <div class="productCard__content">
-                        <a href="detail.html"><h2 class="title">Sex on the beach 2 go</h2></a>
-                        <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
-
-                        <div class="productCard__parameters">
-                            <span>Země původu: <b>Itálie</b></span>
-                            <span>Typ: <b>Prosecco</b></span>
-                            <span>Alkohol: <b>11%</b></span>
-                            <span>Spotřeba: <b>24 h</b></span>
-                        </div>
-
-                        <div class="productCard__changer">
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-
-                            <label>
-                                <input type="radio" name="price" value="123">
-                                <span>200ml</span>
-                            </label>
-                        </div>
-
                         <div class="productCard__price">
                             <span class="price price__actual">280.00 Kč</span>
                             <span class="price price__del">1 000.00 Kč</span>
@@ -547,14 +335,252 @@
                     </div>
                 </div>
             </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/product3.png" alt="">
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
 
-            <div class="pagination">
-                <span class="pagination__prev disabled"><img src="./../assets/svg/pagination-left.svg" alt="Zpět"></span>
-                <span class="pagination__actual">Strana 1 z 12</span>
-                <a href="#" class="pagination__next"><img src="./../assets/svg/pagination-right.svg" alt="Vpřed"></a>
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__control">
+                        <div class="productCard__changer">
+                            <label>
+                                <input type="radio" name="price" value="123" checked>
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+                        </div>
+                        <div class="productCard__price">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/product3.png" alt="">
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
 
-        </section>
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__control">
+                        <div class="productCard__changer">
+                            <label>
+                                <input type="radio" name="price" value="123" checked>
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+                        </div>
+                        <div class="productCard__price">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/product3.png" alt="">
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__control">
+                        <div class="productCard__changer">
+                            <label>
+                                <input type="radio" name="price" value="123" checked>
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+                        </div>
+                        <div class="productCard__price">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/product3.png" alt="">
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__control">
+                        <div class="productCard__changer">
+                            <label>
+                                <input type="radio" name="price" value="123" checked>
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+                        </div>
+                        <div class="productCard__price">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productCard">
+                <div class="productCard__tags tag">
+                    <div class="tag__item tag__item--sale">
+                        <span class="side">Akce%</span>
+                        <span>Akce</span>
+                        <span class="side">%Akce</span>
+                    </div>
+                </div>
+                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+                <a href="detail.html" class="productCard__image">
+                    <img src="./../assets/img/product3.png" alt="">
+                    <span class="productCard__stamp">To chci</span>
+                </a>
+                <div class="productCard__content">
+                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <a href="detail.html"><h3 class="title title--normal">Vinný perlivý koktejl s bezovým květem</h3></a>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: <b>24 h</b></span>
+                    </div>
+
+                    <div class="productCard__control">
+                        <div class="productCard__changer">
+                            <label>
+                                <input type="radio" name="price" value="123" checked>
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="price" value="123">
+                                <span>200ml</span>
+                            </label>
+                        </div>
+                        <div class="productCard__price">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="pagination">
             <span class="pagination__prev disabled"><img src="./../assets/svg/pagination-left.svg" alt="Zpět"></span>

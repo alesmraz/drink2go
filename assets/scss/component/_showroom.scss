@@ -39,7 +39,7 @@
     overflow: hidden;
     right: 0;
     width: 65vw;
-    max-height: 550px;
+    max-height: 400px;
 
     @include media-breakpoint-down(sm) {
       position: relative;

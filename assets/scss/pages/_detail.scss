@@ -127,6 +127,10 @@
 .productDetail__params--top {
   flex-direction: row;
 
+  @include media-breakpoint-down(sm) {
+    justify-content: space-between;
+  }
+
   .productDetail__paramsItem {
     flex: initial;
     display: flex;
@@ -138,12 +142,23 @@
     padding-right: 10px;
     margin-right: 0.75rem;
 
+    @include media-breakpoint-down(sm) {
+      font-size: 13px;
+      margin-right: 0;
+      border: none;
+      flex-wrap: initial;
+      padding-right: 0;
+    }
+
     &:last-of-type {
       border-right: none;
     }
 
     span {
       margin-bottom: $spacer / 4;
+      @include media-breakpoint-down(sm) {
+        margin-right: 0;
+      }
     }
   }
 }

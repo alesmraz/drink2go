@@ -34,7 +34,11 @@
   .title {
     font-size: 1.4rem;
     font-weight: $font-weight-bold;
-    margin-bottom: 2rem;
+    margin-bottom: $spacer * 2;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -42,11 +46,24 @@
   display: flex;
   margin-top: $spacer;
 
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    flex: 1;
+  }
+
   label {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 5px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: row;
+
+      input {
+        margin-right: $spacer / 4;
+      }
+    }
   }
 }
 
@@ -87,8 +104,20 @@
   flex-direction: column;
   font-size: 15px;
 
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
   b {
     color: #4c4c4c;
+  }
+}
+
+.productCard__mobileTitle {
+  display: none;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
   }
 }
 
@@ -107,11 +136,6 @@
     text-decoration: none;
   }
 
-  @media screen and (max-width: 1060px) {
-    padding: $spacer / 2 $spacer $spacer;
-    width: 100%;
-  }
-
   .title {
     height: 2em;
     margin-bottom: 0.25rem;
@@ -128,11 +152,9 @@
     @media screen and (max-width: 1015px) {
       height: 5em;
       font-size: 18px;
+      margin-bottom: 0.5rem;
     }
 
-    @include media-breakpoint-down(lg) {
-      height: 4.5em;
-    }
 
     @include media-breakpoint-down(md) {
       height: 3em;
@@ -149,8 +171,17 @@
   }
 
   @media screen and (max-width: 1060px) {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem $spacer * 4;
     margin-left: 0;
+    width: 100%;
+
+    .title {
+      text-align: center;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 1.5rem $spacer * 2;
   }
 }
 
@@ -172,6 +203,7 @@
 
   @include media-breakpoint-down(sm) {
     flex-direction: column;
+    flex: 1;
   }
 
   .price {
@@ -237,11 +269,39 @@
 
 }
 
-.productCard__title {
-  background-color: $primary;
-  font-family: $headings-font-family;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 2rem;
+.productCard__control {
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.productCard__footer {
   width: 100%;
+  padding: 0 60px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 $spacer;
+  }
+
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: $font-weight-base;
+    font-size: 15px;
+  }
+}
+
+.productCard__footerParams {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $spacer / 2;
+
+  b {
+    text-transform: uppercase;
+  }
+
+  > div {
+    margin-right: $spacer / 2;
+  }
 }

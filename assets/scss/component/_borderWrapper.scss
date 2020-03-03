@@ -5,6 +5,10 @@
   border-radius: 5px;
 
   > div {
-    padding: 1rem;
+    padding: $spacer;
+
+    @include media-breakpoint-down(sm) {
+      padding: $spacer / 4;
+    }
   }
 }
