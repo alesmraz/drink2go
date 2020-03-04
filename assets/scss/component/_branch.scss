@@ -53,8 +53,14 @@ $branches-sm-height: 250px;
 
     img {
       @media (max-height: 750px) {
+        max-height: 200px;
+        @include object-fit(contain);
+      }
+
+      @media (max-height: 595px) {
         display: none;
       }
+
 
       @include media-breakpoint-down(sm) {
         display: none;

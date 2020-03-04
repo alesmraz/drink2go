@@ -21,6 +21,20 @@
 
 }
 
+.topBanner--small {
+  height: 150px;
+
+  .topBanner__bg {
+    min-height: 150px;
+  }
+
+  .title {
+    @include media-breakpoint-down(sm) {
+      font-size: 30px !important;
+    }
+  }
+}
+
 .topBanner__content {
   @include center(vertical);
 
@@ -50,6 +64,14 @@
 
   }
 
+}
+
+.topBanner__content--center {
+  @include center();
+
+  .title {
+    flex-direction: initial;
+  }
 }
 
 .topBanner__content--overdraw {
