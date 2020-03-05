@@ -198,7 +198,12 @@
   margin-top: $spacer / 2;
   flex-wrap: wrap;
   max-width: 65%;
-  flex-direction: column;
+
+  .priceWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 
   @media screen and (max-width: 1690px) {
     max-width: 85%;
@@ -234,6 +239,10 @@
     order: -1;
     text-align: left;
     text-decoration: line-through;
+
+    @include media-breakpoint-down(sm) {
+      text-align: right;
+    }
   }
 
 }
@@ -242,16 +251,19 @@
   margin-top: $spacer;
   margin-right: $spacer / 2;
   display: flex;
+  flex: 1;
+  justify-content: flex-end;
 
   @include media-breakpoint-down(sm) {
     margin-right: 0;
+    margin-top: $spacer / 4;
   }
 
   .btn {
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
-    width: 50%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,6 +287,18 @@
     margin-left: $spacer / 4;
   }
 
+}
+
+.productCard__button--left {
+  justify-content: flex-start;
+
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+  }
+
+  .btn {
+    max-width: 50%;
+  }
 }
 
 .productCard__control {
