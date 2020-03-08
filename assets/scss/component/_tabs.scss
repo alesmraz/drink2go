@@ -44,7 +44,6 @@
 
 .tab-pane {
   width: 100%;
-  min-height: 600px;
   position: relative;
   align-items: center;
   padding: 7%;
@@ -121,7 +120,6 @@
   .tab-content {
     align-items: initial;
     padding-top: $spacer * 3;
-    min-height: 600px;
     padding: 5rem;
 
     @include media-breakpoint-down(sm) {

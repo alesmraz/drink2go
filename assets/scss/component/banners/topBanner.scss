@@ -36,6 +36,7 @@
 }
 
 .topBanner__content {
+  z-index: 2;
   @include center(vertical);
 
   @include media-breakpoint-down(sm) {
@@ -49,7 +50,7 @@
     font-size: 60px;
     white-space: nowrap;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       font-size: 40px;
 
       &:before {
@@ -132,10 +133,10 @@
     }
 
     .topBanner__content {
-      top: 49%;
+      top: 45%;
 
       .title {
-        font-size: 23px;
+        font-size: 20px;
 
         b {
           font-size: 30px;

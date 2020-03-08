@@ -215,7 +215,7 @@
   padding-top: $spacer * 0.75;
   padding-bottom: $spacer * 0.75;
   color: $white;
-  -webkit-appearance: borderless-attachment;
+  -webkit-appearance: initial;
 
   @include media-breakpoint-down(sm) {
     margin-bottom: $spacer / 2;
