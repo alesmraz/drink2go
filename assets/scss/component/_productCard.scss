@@ -151,6 +151,7 @@
     font-weight: $font-weight-base;
     font-size: 17px;
     text-transform: uppercase;
+    font-family: $font-family-base;
 
     @include hover-focus() {
       color: #000;

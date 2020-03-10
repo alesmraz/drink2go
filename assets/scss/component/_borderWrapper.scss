@@ -12,3 +12,33 @@
     }
   }
 }
+
+.borderWrapper--design {
+  max-height: 166px;
+
+  @include media-breakpoint-down(md) {
+    max-height: initial;
+  }
+
+  .buyerpanel__item:last-of-type {
+    align-items: initial;
+    padding: $spacer;
+
+    .buyerpanel__typeSelect {
+      margin-top: 0;
+      flex: 1;
+      justify-content: flex-start;
+      margin-bottom: 0;
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+
+      label {
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -117,11 +117,11 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="productDetail__gallery">
-                    <span class="bubbles">
-                        <img src="./../assets/svg/bubble.svg" alt="bubble">
-                        <img src="./../assets/svg/bubble.svg" alt="bubble">
-                        <img src="./../assets/svg/bubble.svg" alt="bubble">
-                    </span>
+<!--                    <span class="bubbles">-->
+<!--                        <img src="./../assets/svg/bubble.svg" alt="bubble">-->
+<!--                        <img src="./../assets/svg/bubble.svg" alt="bubble">-->
+<!--                        <img src="./../assets/svg/bubble.svg" alt="bubble">-->
+<!--                    </span>-->
                     <img src="./../assets/img/can/product.png" alt="Hugo dolce">
                 </div>
             </div>
@@ -141,10 +141,30 @@
                     </fieldset>
                 </div>
 
+
                 <div class="productDetail__params productDetail__params--top">
                     <p class="productDetail__paramsItem"><span>Země původu:</span> <b>Itálie</b></p>
                     <p class="productDetail__paramsItem"><span>Typ:</span> <b>Extra Brut</b></p>
                     <p class="productDetail__paramsItem"><span>Alkohol:</span> <b>11,5 %</b></p>
+                </div>
+
+                <div class="buyerpanel__variantSelect buyerpanel__variantSelect--mobile">
+                    <label class="mt-2 mb-0">
+                        <input type="radio" name="detail-select" checked>
+                        <span>250 slim</span>
+                    </label>
+                    <label class="mt-2 mb-0">
+                        <input type="radio" name="detail-select" checked>
+                        <span>250 regular</span>
+                    </label>
+                    <label class="mt-2 mb-0">
+                        <input type="radio" name="detail-select" checked>
+                        <span>330 regular</span>
+                    </label>
+                    <label class="mt-2 mb-0">
+                        <input type="radio" name="detail-select" checked>
+                        <span>500 regular</span>
+                    </label>
                 </div>
 
                 <div class="productDetail__params">
@@ -154,23 +174,62 @@
                     <p class="productDetail__paramsItem"><span>Spotřeba:</span> <b>24 H</b></p>
                 </div>
 
-                <form class="buyerpanel buyerpanel--detail">
+                <form class="buyerpanel buyerpanel--detail buyerpanel--design">
                     <input type="hidden" name="id" value="">
-                    <div class="buyerpanel__item buyerpanel__item--noBg">
-                        <div class="price opacity-0">
-                            <span data-price="actual" class="actual font-weight-bold"><small class="font-weight-bold">Od</small> 539,00 Kč/ks</span>
-                            <small data-price="noVat">Od 589,45 Kč/ks (s DPH)</small>
+
+                    <div class="row">
+                        <div class="col-md-3 buyerpanel__variantSelect">
+                            <label class="mt-2 mb-0">
+                                <input type="radio" name="detail-select" checked>
+                                <span>250 slim</span>
+                            </label>
+                        </div>
+
+                        <div class="col-md-3 buyerpanel__variantSelect">
+                            <label class="mt-2 mb-0">
+                                <input type="radio" name="detail-select">
+                                <span>250 regular</span>
+                            </label>
+                        </div>
+
+                        <div class="col-md-3 buyerpanel__variantSelect">
+                            <label class="mt-2 mb-0">
+                                <input type="radio" name="detail-select">
+                                <span>330 regular</span>
+                            </label>
+                        </div>
+
+                        <div class="col-md-3 buyerpanel__variantSelect">
+                            <label class="mt-2 mb-0">
+                                <input type="radio" name="detail-select">
+                                <span>500 regular</span>
+                            </label>
                         </div>
                     </div>
+                    <h2>Nezávázně poptat</h2>
+                    <div class="borderWrapper borderWrapper--design mt-md-3">
+                        <div class="buyerpanel__item">
+                            <div class="buyerpanel__typeSelect" id="product">
+                                <input type="hidden" name="product_id" value="13">
 
-                    <div class="buyerpanel__buttonWrap buyerpanel__buttonWrap--slim mt-3">
-                        <a href="poptavka.html" type="submit" class="btn mb-2 btn-primary buyerpanel__button btn-wide pb-3">
-                            <span>Přejít k nezávazné poptávce</span>
-                        </a>
-                        <a href="kategorie.html" class="backLink backLink--invert mb-lg-1 mb-3 mt-md-2" id="backLink">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-1 mr-1" width="5" height="auto" viewBox="0 0 13.422 22.601"><path d="M255.134,1384l10.24,10.24-10.24,10.24" transform="translate(267.495 1405.54) rotate(180)" fill="#000" stroke-width="3"/></svg>
-                            Zpět k prohlížení
-                        </a>
+                                <label>
+                                    <span>Zadejte požadované množství:</span>
+                                    <input class="form-control" type="number" name="count" value="1">
+                                </label>
+                            </div>
+
+
+                            <div class="buyerpanel__buttonWrap buyerpanel__buttonWrap--slim">
+                                <button type="button" class="btn mb-2 btn-primary buyerpanel__button btn-wide pb-3" id="button-cart" data-loading-text="Načítám...">
+                                    <span>Přidat do košíku</span>
+                                </button>
+                                <a href="kategorie.html" class="backLink backLink--invert mb-lg-1 mb-3 mt-md-2" id="backLink">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-1 mr-1" width="5" height="1em" viewBox="0 0 13.422 22.601"><path d="M255.134,1384l10.24,10.24-10.24,10.24" transform="translate(267.495 1405.54) rotate(180)" fill="#000" stroke-width="3"></path></svg>
+                                    Zpět k prohlížení
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
 
                     <input type="hidden" name="id" value="123">

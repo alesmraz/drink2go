@@ -29,6 +29,7 @@
   }
 
   .title {
+    font-family: $headings-font-family-alternative;
     @include media-breakpoint-down(sm) {
       font-size: 30px !important;
     }
@@ -49,6 +50,11 @@
     flex-direction: column;
     font-size: 60px;
     white-space: nowrap;
+    font-family: $headings-font-family-alternative;
+
+    small {
+      font-family: $headings-font-family;
+    }
 
     @include media-breakpoint-down(md) {
       font-size: 40px;
@@ -72,6 +78,7 @@
 
   .title {
     flex-direction: initial;
+    font-family: $headings-font-family-alternative;
   }
 }
 
@@ -123,6 +130,14 @@
 
 .topBanner--design {
   margin-bottom: 180px;
+
+  .title {
+    font-family: $headings-font-family;
+
+    b {
+      font-family: $headings-font-family-alternative;
+    }
+  }
 
   @include media-breakpoint-down(sm) {
     max-height: 200px;

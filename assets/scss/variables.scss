@@ -9,7 +9,7 @@ $body-color:  $text-color;
 $yellow:  #febc03;
 
 $font-family-base: 'Barlow';
-$headings-font-family: 'Barrio';
+$headings-font-family: $font-family-base;
 $headings-font-family-alternative: 'Barrio';
 
 $border-radius:               0;

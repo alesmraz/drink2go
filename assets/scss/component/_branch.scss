@@ -236,6 +236,7 @@ $image-z-index: 1;
       position: relative;
       top: -80px;
       z-index: $image-z-index + 7;
+      font-family: $headings-font-family-alternative;
 
       @include media-breakpoint-down(lg) {
         @media (max-height: 740px) {

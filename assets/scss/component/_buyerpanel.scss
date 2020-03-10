@@ -403,8 +403,41 @@
 .buyerpanel__variantSelect--mobile {
   display: none;
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     display: flex;
     justify-content: space-around;
+    text-align: center;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1;
+
+      input {
+        margin-bottom: $spacer / 2;
+      }
+
+    }
+
+  }
+}
+
+
+.buyerpanel--design {
+  max-width: 75%;
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+
+    .borderWrapper {
+      margin-bottom: $spacer;
+    }
+  }
+
+  .buyerpanel__buttonWrap--slim {
+    max-width: initial;
+    flex: 1;
+    margin-top: $spacer * (3/4);
   }
 }
