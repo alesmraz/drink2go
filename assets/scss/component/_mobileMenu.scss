@@ -235,11 +235,18 @@ body {
   width: 100%;
   text-align: right;
   padding: 1rem;
-  min-height: 100px;
+  min-height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   .logo {
     opacity: 1;
     display: block;
+    position: relative;
+    left: initial;
+    transform: none;
+    text-align: center;
 
     & > img {
       max-width: 200px;

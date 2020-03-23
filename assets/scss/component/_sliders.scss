@@ -61,6 +61,11 @@
   width: 100%;
 }
 
+.swiper-pagination--top {
+  bottom: initial;
+  top: 10px;
+}
+
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;

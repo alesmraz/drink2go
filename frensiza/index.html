@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Drink2Go</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./../assets/favicon4.png"/>
+    <script src="./../dist/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="./../dist/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="topPanel">
+        <div class="topPanel__item topPanel__item--links">
+            <a class="icon" href="https://www.instagram.com" target="_blank">
+                <img src="./../assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./../assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
+        </div>
+        <form action="" class="topPanel__item topPanel__item--search">
+            <label for="search">
+                <span class="d-none">hledání</span>
+            </label>
+            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
+            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
+        </form>
+        <div class="topPanel__item topPanel__item--cart"></div>
+    </div>
+    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
+    <div class="mobileSide hide">
+        <div class="mobileSide__inner">
+            <div class="mobileList__header">
+                <img src="./../assets/img/logo--frensiza.svg" alt="Drink2goFrensiza">
+            </div>
+
+            <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
+                <li class="mobileList__item">
+                    <a href="#page" class="mobileList__link">Domů</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="#moznosti" class="mobileList__link">Možnosti frenšíz</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="/design/kategorie.html" class="mobileList__link">Nabídka nápojů</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="#kontakt" class="mobileList__link">Nezávazná poptávka</a>
+                </li>
+                <li class="mobileList__item">
+                    <a href="#kontakt" class="mobileList__link">Kontakt</a>
+                </li>
+            </ul>
+
+            <div class="mobileList__footer">
+                <a href="design" class="logo">
+                    <img src="./../assets/img/logo.svg" alt="cans4all">
+                </a>
+                <a href="eshop" class="logo">
+                    <img src="./../assets/img/logo--invert.svg" alt="cans4all">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="logoWrapper logoWrapper--primary">
+        <div class="container">
+            <div class="links d-flex">
+                <a href="/eshop/" class="logo">
+                    <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
+                </a>
+                <a href="/design/" class="logo">
+                    <img src="./../assets/img/logo.svg" alt="cans4all">
+                </a>
+                <a href="/design/" class="logo logo--active">
+                    <img src="./../assets/img/logo--frensiza.svg" alt="cans4all">
+                </a>
+            </div>
+            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
+                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav menu menu--main" data-level="1">
+        <li class="nav__item nav__item">
+            <a href="#page" class="nav__link">Domů</a>
+        </li>
+        <li class="nav__item">
+            <a href="#moznosti" class="nav__link">Možnosti frenšíz</a>
+        </li>
+        <li class="nav__item">
+            <a href="../design/kategorie.html" class="nav__link">Nabídka nápojů</a>
+        </li>
+        <li class="nav__item nav__item--active">
+            <a href="#kontakt" class="nav__link">Nezávazná poptávka</a>
+        </li>
+        <li class="nav__item">
+            <a href="#kontakt" class="nav__link">Kontakt</a>
+        </li>
+    </ul>
+</header>
+
+<main class="page page--noBg" id="page">
+    <div class="topBanner topBanner--frensiza">
+        <div class="topBanner__bg">
+            <img src="./../assets/img/frensiza/frenchize-coverbg.png" alt="">
+        </div>
+        <div class="container topBanner__container">
+            <div class="topBanner__content">
+                <h1 class="title text-uppercase title--normal">FRENŠÍZING</h1>
+                <img src="./../assets/img/frensiza/logos.svg" alt="">
+            </div>
+            <a href="#kontakt" class="topBanner__btn btn btn-gradient border-50">Buď<br>První</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="row mb-5 mt-5">
+            <div class="col-md-7">
+                <h2 class="title title__underline title__underline--left">Rozjeďte svůj vlastní<br>drink 2 go alu bar</h2>
+                <p class="mt-4">Nostrum consequatur lacinia dictum maxime. Curabitur dapibus ac? Cursus facere quas tempor repellendus perferendis aptent fugit corporis quisquam convallis inventore odit.</p>
+                <p>rnatur, voluptas repellat voluptate dolorum ullamco, eum? Semper tellus quibusdam tincidunt! Aliqua deleniti! Sit necessitatibus, nemo assumenda ex congue illum lobortis laboriosam qui facilisis temporibus. Quisquam nostra perferendis repudiandae. Venenatis arcu aliqua minus quaerat necessitati</p>
+                <p><strong>s dignissimos viverra?</strong> Nulla, nemo interdum! Venenatis habitant eget quisque ullamcorper</p>
+                <br>
+                <p>rnatur, voluptas repellat voluptate dolorum ullamco, eum? Semper tellus quibusdam tincidunt! Aliqua deleniti! </p>
+                <p>rnatur, voluptas repellat voluptate dolorum ullamco, eum? Semper tellus quibusdam tincidunt! Aliqua deleniti! Sit necessitatibus, nemo assumenda ex congue illum lobortis laboriosam qui facilisis temporibus. Quisquam nostra perferendis repudiandae. Venenatis arcu aliqua minus quaerat necessitati</p>
+                <p><strong>s dignissimos viverra?</strong> Nulla, nemo interdum! Venenatis habitant eget quisque ullamcorper</p>
+                <p>rnatur, voluptas repellat voluptate dolorum ullamco, eum? Semper tellus quibusdam tincidunt! Aliqua deleniti! Sit necessitatibus, nemo assumenda ex congue illum lobortis laboriosam qui facilisis temporibus. Quisquam nostra perferendis repudiandae. Venenatis arcu aliqua minus quaerat necessitati</p>
+                <p>rnatur, voluptas repellat voluptate dolorum ullamco, eum? Semper tellus quibusdam tincidunt! Aliqua deleniti! Sit necessitatibus, nemo assumenda ex congue illum lobortis laboriosam qui facilisis temporibus. Quisquam nostra perferendis repudiandae. Venenatis arcu aliqua minus quaerat necessitati</p>
+            </div>
+            <div class="col-md-5">
+                <div class="slider slider--mobileSmall swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper mt-5">
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination--top"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--hasImage stripe">
+            <div class="container">
+                <h2 class="title title__underline title__underline--left w-50">Koncept</h2>
+                <p>Koncept DRINK 2 GO stavíme na třech pilířích.</p>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p><span class="highlightText">1.<strong>revoluce</strong>.</span>
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                        </p>
+                        <p><span class="highlightText">2.<strong>design</strong>.</span>
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                        </p>
+                        <p><span class="highlightText">3.<strong>kvalita</strong>.</span>
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                            Přinášíme lidem možnost vzít si drink, který není možné
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row mb-5 mt-5">
+            <div class="col-md-5">
+                <div class="slider slider--mobileSmall swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper mt-5">
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination--top"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2 class="title title__underline title__underline--right" id="moznosti">Drink 2 go alu bar</h2>
+                <p>Nostrum consequatur lacinia dictum maxime. Curabitur dapibus ac? Cursus facere quas tempor repellendus perferendis aptent fugit corporis quisquam convallis inventore odit.</p>
+                <p>rnatur, voluptas repellat voluptate dolorum ullamco, eum? Semper tellus quibusdam tincidunt! Aliqua deleniti! Sit necessitatibus, nemo assumenda ex congue illum lobortis laboriosam qui facilisis temporibus. Quisquam nostra perferendis repudiandae. Venenatis arcu aliqua minus quaerat necessitati</p>
+                <p>s dignissimos viverra? Nulla, nemo interdum! Venenatis habitant eget quisque ullamcorper</p>
+                <br>
+                <p><strong>Jak začít...</strong></p>
+                <p>s dignissimos viverra? Nulla, nemo interdum! Venenatis habitant eget quisque ullamc</p>
+                <br>
+                <p><strong>zavírací stroj na plechovky - zdarma</strong> od nás </p>
+                <p>s dignissimos viverra? <strong>Nulla,</strong> nemo interdum!</p>
+                <p><strong>Nostrum consequatur lacinia dictum maxime.</strong></p>
+
+                <div class="highlightMessage">
+                    <h3 class="title">Drink 2 go alu bar-s</h3>
+                    <div class="text">
+                        <p>Tento typ je startovací a dočasný, neměl by překročit dobu 3 měsíce.<br>
+                        Při této variantě je <strong>minimální měsíční odběr plechovek 1.000</strong>, přičemž cena za jednu plechovku činí 19 Kč.</p>
+                    </div>
+                </div>
+
+                <div class="highlightMessage">
+                    <h3 class="title">Drink 2 go alu bar-m</h3>
+                    <div class="text">
+                        <p>Tatot varianta může fungovat trvale, ale bez garance exkluzivity v oblastni.<br>
+                        <strong>Minimální měsíční odběr plechovek je 2.000</strong> při ceně <strong>17 Kč</strong> za plechovku.</p>
+                    </div>
+                </div>
+
+                <div class="highlightMessage">
+                    <h3 class="title">Drink 2 go alu bar-xl</h3>
+                    <div class="text">
+                        <p>Tato varianta nabízí <strong>nejlepší ceny a exkluzivity v oblasti. Minimální měsíční odběr plechovek je 5.000</strong> při ceně <strong>15 Kč</strong> za plechovku.</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <p>Pro více informací si prosím domluvte schůzku s naším obchodním zástupcem.</p>
+
+                <a href="#kontakt" class="btn btn-primary btn-wide">Domluvit schůzku</a>
+            </div>
+        </section>
+
+        <section class="showroom">
+            <div class="showroomSplit container">
+                <div class="showroomSplit__item">
+                    <h2 class="title title--normal">Připravujeme nový show room</h2>
+                    <ul class="styled">
+                        <li>Příjemné moderní prostředí</li>
+                        <li>Vinotéka a kavárna</li>
+                        <li>Ochutnávka našich nápojů</li>
+                        <li>Dětský koutek</li>
+                    </ul>
+                </div>
+                <div class="showroomSplit__item"><img src="../assets/img/showroom/2.jpg" alt=""></div>
+            </div>
+
+            <div class="mt-4 mb-4">
+                <p>Pretium inceptos incidunt imperdiet. In fugit? Penatibus ullamcorper, atque accusantium lacus duis! Natus cubilia! Anim eget similique omnis duis semper, explicabo nam possimus autem ullamcorper tristique curae recusandae tempore totam eleifend aliqua similique rem harum iure, occaecati dolorum harum autem eius donec aliquam elementum? Eaque dignissim? Tempora, diam! Ut consectetur habitasse volutpat eius dignissimos viverra? Nulla, nemo interdum! Venenatis habitant eget quisque ullamcorper malesuada sed cum nec reiciendis illum odio egestas iaculis, perspiciatis accusamus sit! Quas ipsum ac? Dignissim maecenas, iste mollit sequi error, similique similique lobortis vitae tellus, eaque. Suscipit conubia lacinia excepteur tellus cum placeat odit molestiae aliquam.</p>
+                <p>Pretium inceptos incidunt imperdiet. In fugit? Penatibus ullamcorper, atque accusantium lacus</p>
+            </div>
+        </section>
+        <section class="ipr-md-3 stripe stripe--full">
+            <img src="../assets/img/showroom/1.jpg" alt="">
+            <img src="../assets/img/showroom/3.jpg" alt="">
+            <img src="../assets/img/showroom/4.jpg" alt="">
+        </section>
+
+        <section class="row mb-5 mt-5">
+            <div class="col-md-7">
+                <h2 class="title title__underline title__underline--left" id="kontakt">Zanechte nám své kontaktní<br>údaje a my se vám ozveme</h2>
+                <form action="" method="post" enctype="multipart/form-data" class="mb-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-name">Jméno: </label>
+                                <input type="text" name="name" value="" class="form-control" id="input-name" placeholder="Jméno">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-name">Příjmení: </label>
+                                <input type="text" name="name" value="" class="form-control" id="input-last" placeholder="Příjmení">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-email">E-mail:</label>
+                                <input type="email" name="email" value="" id="input-email" class="form-control" aria-describedby="email" placeholder="Váš e-mail">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-name">Telefon: </label>
+                                <input type="text" name="name" value="" class="form-control" id="input-phone" placeholder="Telefon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <legend>Antispam</legend>
+                        <div class="form-group row required">
+                            <label class="col-sm-2 col-form-label" for="input-captcha">Zadejte kód</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="captcha" id="input-captcha" class="form-control input-captcha">
+                                <img src="index.php?route=extension/captcha/basic/captcha" alt="">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <small class="form-text text-muted mb-3">Odeslání souhlasíte se <a href="gdpr.html" target="_blank">zpracováním osobních údajů.</a></small>
+
+                    <button type="submit" class="btn btn-primary btn-wide text-uppercase" value="Potvrdit">Odeslat</button>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <div class="slider slider--mobileSmall swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper mt-5">
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                            <div class="swiper-slide slider__item">
+                                <img src="./../assets/img/frensiza/slider.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination--top"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="container-fluid pl-0 pr-0">
+    <div class="row">
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Informace</h4>
+            <ul class="footer__list">
+                <li><a href="o-nas.html">O nás</a></li>
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Zákaznický servis</h4>
+            <ul class="footer__list">
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Doplňky</h4>
+            <ul class="footer__list">
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col-md-3">
+            <h4 class="footer__title">Můj účet</h4>
+            <ul class="footer__list">
+                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
+                <li><a href="#">Informace o dopravě</a></li>
+                <li><a href="#">Ochrana osvních údajů</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">Drink2Go © 2020</div>
+</footer>
+<section id="modals">
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Přihlásit se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Pro přihlášení ke svému uživatelskému účtu prosím zadejte své přihlašovací údaje.</p>
+
+                    <form class="form--small">
+                        <div class="form-group">
+                            <label for="loginEmail">E-mailová adresa</label>
+                            <input type="email" class="form-control form-control-lg" id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Heslo</label>
+                            <input type="password" class="form-control form-control-password form-control-lg" id="loginPassword">
+                            <button class="password-show" data-target="#loginPassword">Zobrazit</button>
+                        </div>
+
+                        <button type="submit" class="btn btn-alternative btn-lg w-100 mt-3 text-uppercase">Přihlásit se</button>
+
+                        <a class="d-block text-center mt-4 mb-4" href="zapomenute-heslo.html">Zapomněli jste své heslo?</a>
+                    </form>
+
+                    <div class="well well-brown-light well-out text-center mt-3">
+                        <h3 class="mb-3">Nový zákazník?</h3>
+                        <a href="registrace.html" class="btn btn-white-secondary mt-2 mb-2 w-75 ml-auto mr-auto">REGISTRUJTE SE ZDE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Produkt: </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="buyerpanel">
+                        <div class="buyerpanel__item">
+                            <h4 class="priceLabel">Naše cena:</h4>
+                            <div class="price">
+                                <del data-price="old">598,00 Kč</del>
+                                <span data-price="actual" class="actual">539,00 Kč</span>
+                                <small data-price="noVat">Cena bez DPH: 445,45 Kč</small>
+                            </div>
+                        </div>
+                        <div class="buyerpanel__item">
+                            <div class="buyerpanel__typeSelect">
+                                <div class="type">
+                                    <img src="./../assets/svg/can.svg" alt="" class="type__image" data-name="bottle">
+                                    <img src="./../assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
+                                    <div class="type__control">
+                                        <span class="type__title" data-name="bottle">Typ: Plechovka</span>
+                                        <span class="type__title type__title--hide" data-name="box">Typ: Karton</span>
+                                        <span class="text-center">Množství</span>
+
+                                        <div class="inputCounter form-group" data-parent-class="productDetail">
+                                            <span class="minus">-</span>
+                                            <input type="text" name="bottle" value="0" class="form-control" min="0">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="type type-select">
+                                    <div class="type__control">
+                                        <label>
+                                            <input data-target="bottle" type="radio" name="buyerpanelselect" checked>
+                                            <span>Lahev</span>
+                                        </label>
+                                        <label>
+                                            <input data-target="box" type="radio" name="buyerpanelselect">
+                                            <span>Karton</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-secondary btn-wide buyerpanel__button">
+                                <span>Do košíku</span>
+                            </button>
+                        </div>
+
+                        <input type="hidden" name="id" value="123">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</body>
