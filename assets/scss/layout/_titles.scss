@@ -123,3 +123,22 @@ h5.title--story {
     right: 0;
   }
 }
+
+$iconOffset: 50px;
+
+.title__underline--hasIcon {
+  img {
+    position: absolute;
+    max-width: $iconOffset;
+    top: -10px;
+
+    @include media-breakpoint-down(md) {
+      top: -20px;
+    }
+  }
+
+  span {
+    position: relative;
+    padding-left: $iconOffset - ($iconOffset / 2);
+  }
+}

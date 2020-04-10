@@ -82,16 +82,6 @@
   }
 }
 
-.topBanner__content--overdraw {
-  width: 30%;
-
-  @include media-breakpoint-down(sm) {
-    top: 50%;
-    width: 100%;
-    left: 0;
-  }
-}
-
 .topBanner__btn {
   position: absolute;
   bottom: -7.5vh;
@@ -222,4 +212,59 @@
       bottom: -40px;
     }
   }
+}
+
+.topBanner--eshop {
+  height: 700px;
+
+  .slider {
+    width: 100%;
+
+    > .swiper-container {
+      height: 100%;
+    }
+  }
+
+  .topBanner__content {
+    @include media-breakpoint-down(sm) {
+      top: 50%;
+    }
+  }
+
+  // texts
+  .title {
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: $font-weight-bold;
+    line-height: 1.1;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+      font-size: 3rem;
+    }
+
+  }
+
+  p {
+    font-size: $h2-font-size;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.35rem;
+    }
+  }
+
+  .btn {
+    padding-left: $spacer * 3;
+    padding-right: $spacer * 3;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
+  }
+
+  .title,
+  p {
+    color: $white;
+  }
+
 }
