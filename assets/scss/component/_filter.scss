@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   max-width: calc(#{$filter-width} - 30px);
-  margin: 30px auto $spacer auto;
+  margin: $spacer auto;
   align-items: center;
 
   @include media-breakpoint-down(sm) {
@@ -147,7 +147,7 @@
 
   .filterSection__item {
     border-radius: $border-radius;
-    width: calc((100% / 5)- #{$spacer * 4});
+    width: calc((100% / 6)- #{$spacer * 4});
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -155,8 +155,17 @@
     align-items: center;
     transition: transform 0.3s ease-in-out;
 
-    @include hover-focus() {
-      transform: scale(1.1);
+    .title {
+      font-weight: $font-weight-bold;
+      margin-bottom: 0;
+      margin-top: $spacer / 2;
+      text-align: center;
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+      transform: scale(1.2);
     }
 
     > img {

@@ -22,16 +22,26 @@
 }
 
 .topBanner--small {
-  height: 150px;
+  height: 200px;
+  margin-bottom: 0;
 
   .topBanner__bg {
     min-height: 150px;
   }
 
-  .title {
-    font-family: $headings-font-family-alternative;
-    @include media-breakpoint-down(sm) {
-      font-size: 30px !important;
+  .topBanner__content {
+    .title {
+      font-family: $headings-font-family-alternative;
+      color: $black;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-size: 55px;
+      margin-top: $spacer;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 40px !important;
+        margin-top: 0;
+      }
     }
   }
 }
@@ -215,7 +225,7 @@
 }
 
 .topBanner--eshop {
-  height: 700px;
+  height: 400px;
 
   .slider {
     width: 100%;
@@ -234,13 +244,13 @@
   // texts
   .title {
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: $font-weight-bold;
     line-height: 1.1;
     margin-bottom: 0;
 
     @include media-breakpoint-down(md) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
   }

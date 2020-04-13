@@ -178,7 +178,6 @@
     <div class="logoWrapper logoWrapper--primary">
         <div class="container">
             <div class="links d-flex">
-
                 <a href="/eshop/" class="logo logo--active">
                     <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
                 </a>
@@ -212,75 +211,115 @@
 </header>
 
 <main class="page">
-
     <div class="topBanner topBanner--small">
         <div class="topBanner__bg">
-            <img src="./../assets/img/topbanner/banner.png" alt="">
+            <img src="./../assets/img/topbanner/eshop/all.png" alt="">
         </div>
         <div class="container topBanner__container">
             <div class="topBanner__content topBanner__content--center">
-                <h2 class="title title--line text-center mt-5 mb-4 title--big">Naše drinky</h2>
+                <h2 class="title text-center title--big">Naše drinky</h2>
             </div>
         </div>
     </div>
 
     <section class="stripe stripe--full" data-aos="fade-up" id="filter">
         <form action="" class="filter">
-            <div class="w-100 d-flex flex-column flex-md-row justify-content-center">
+            <div class="w-100 d-flex flex-column justify-content-center">
+
+                <button class="btn filter__button" type="button" data-toggle="collapse" data-target="#categoryCollapse" aria-expanded="true" aria-controls="filterCollapse">
+                    <img src="../assets/svg/sort.svg" alt="Kategorie"><span>Kategorie</span>
+                </button>
+
+                <div class="collapse mb-4" id="categoryCollapse">
+                    <div class="filterSection filterSection--middle">
+                        <a href="kategorie.html" class="filterSection__item active">
+                            <img src="../assets/img/eshop/categoryIcons/icon-all.svg" alt="Fresh nápoje" title="Fresh nápoje" height="50">
+                            <span class="title">Vše</span>
+                        </a>
+                        <a href="kategorie/fresh.html" class="filterSection__item">
+                            <img src="../assets/img/eshop/categoryIcons/icon-fresh.svg" alt="Fresh nápoje" title="Fresh nápoje" height="50">
+                            <span class="title">Fresh nápoje</span>
+                        </a>
+                        <a href="kategorie/michane.html" class="filterSection__item">
+                            <img src="../assets/img/eshop/categoryIcons/icon-cocktail.svg" alt="Fresh nápoje" title="Fresh nápoje" height="50">
+                            <span class="title">Míchané nápoje</span>
+                        </a>
+                        <a href="kategorie/vina-a-frizzante.html" class="filterSection__item">
+                            <img src="../assets/img/eshop/categoryIcons/icon-wine.svg" alt="Fresh nápoje" title="Fresh nápoje" height="50">
+                            <span class="title">Vína a Frizzante</span>
+                        </a>
+                        <a href="kategorie/vinne-koktejly.html" class="filterSection__item">
+                            <img src="../assets/img/eshop/categoryIcons/icon-bubble.svg" alt="Fresh nápoje" title="Fresh nápoje" height="50">
+                            <span class="title">Vinné koktejly</span>
+                        </a>
+                        <a href="kategorie/piva.html" class="filterSection__item">
+                            <img src="../assets/img/eshop/categoryIcons/icon-beer.svg" alt="Fresh nápoje" title="Fresh nápoje" height="50">
+                            <span class="title">Piva</span>
+                        </a>
+                        <a href="kategorie/limonady.html" class="filterSection__item">
+                            <img src="../assets/img/eshop/categoryIcons/icon-limo.svg" alt="Fresh nápoje" title="Fresh nápoje" height="50">
+                            <span class="title">Limonády Bumbi</span>
+                        </a>
+                    </div>
+                </div>
+
                 <button class="btn filter__button" type="button" data-toggle="collapse" data-target="#orderCollapse" aria-expanded="false" aria-controls="filterCollapse">
                     <img src="./../assets/svg/sort.svg" alt="Třídit"><span>Třídit</span>
                 </button>
+
                 <button class="btn filter__button" type="button" data-toggle="collapse" data-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
                     <img src="./../assets/svg/filter.svg" alt="Filtrovat"><span>Filtrovat</span>
                 </button>
 
-                <div class="collapse collapse-two-item" id="orderCollapse">
-                    <div class="form-group" data-name="order">
-                        <select id="input-sort" class="custom-select" onchange="location = this.value;">
-                            <option value="">Výchozí</option>
-                            <option value="">Název (A - Z)</option>
-                            <option value="">Název (Z - A)</option>
-                            <option value="">Cena (Nejnižší &gt; Nejvyšší)</option>
-                            <option value="" selected="selected">Cena (Nejvyšší &gt; Nejnižší)</option>
-                            <option value="">Hodnocení (Nejvyšší)</option>
-                            <option value="">Hodnocení (Nejnižší)</option>
-                            <option value="">Model (A - Z)</option>
-                            <option value="">Model (Z - A)</option>
-                        </select>
+                <div class="d-flex flex-column flex-md-row justify-content-center">
+                    <div class="collapse mb-4 collapse-two-item " id="orderCollapse">
+                        <div class="form-group" data-name="order">
+                            <select id="input-sort" class="custom-select" onchange="location = this.value;">
+                                <option value="">Výchozí</option>
+                                <option value="">Název (A - Z)</option>
+                                <option value="">Název (Z - A)</option>
+                                <option value="">Cena (Nejnižší &gt; Nejvyšší)</option>
+                                <option value="" selected="selected">Cena (Nejvyšší &gt; Nejnižší)</option>
+                                <option value="">Hodnocení (Nejvyšší)</option>
+                                <option value="">Hodnocení (Nejnižší)</option>
+                                <option value="">Model (A - Z)</option>
+                                <option value="">Model (Z - A)</option>
+                            </select>
+                        </div>
+                        <div class="form-group" data-name="filter">
+                            <select id="input-limit" class="custom-select" onchange="location = this.value;">
+                                <option value="">12</option>
+                                <option value="" selected="selected">24</option>
+                                <option value="">48</option>
+                                <option value="">96</option>
+                                <option value="">192</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group" data-name="filter">
-                        <select id="input-limit" class="custom-select" onchange="location = this.value;">
-                            <option value="">12</option>
-                            <option value="" selected="selected">24</option>
-                            <option value="">48</option>
-                            <option value="">96</option>
-                            <option value="">192</option>
-                        </select>
+                    <div class="collapse mb-4 collapse-three-item" id="filterCollapse">
+                        <div class="form-group" data-name="filter">
+                            <select id="input-type" class="custom-select" onchange="location = this.value;">
+                                <option value="">Všechny typy</option>
+                                <option value="">Brut</option>
+                                <option value="">Extra Dry</option>
+                                <option value="">Polosladké</option>
+                                <option value="">Polosuché</option>
+                                <option value="">Sladké</option>
+                                <option value="">Suché</option>
+                            </select>
+                        </div>
+                        <div class="form-group" data-name="filter">
+                            <select id="input-kind" class="custom-select" onchange="location = this.value;">
+                                <option value="">Všechny druhy</option>
+                                <option value="">Bílé víno</option>
+                                <option value="">Růžové víno</option>
+                                <option value="">Červené víno</option>
+                                <option value="">Šumivé víno</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
-                <div class="collapse collapse-three-item" id="filterCollapse">
-                    <div class="form-group" data-name="filter">
-                        <select id="input-type" class="custom-select" onchange="location = this.value;">
-                            <option value="">Všechny typy</option>
-                            <option value="">Brut</option>
-                            <option value="">Extra Dry</option>
-                            <option value="">Polosladké</option>
-                            <option value="">Polosuché</option>
-                            <option value="">Sladké</option>
-                            <option value="">Suché</option>
-                        </select>
-                    </div>
-                    <div class="form-group" data-name="filter">
-                        <select id="input-kind" class="custom-select" onchange="location = this.value;">
-                            <option value="">Všechny druhy</option>
-                            <option value="">Bílé víno</option>
-                            <option value="">Růžové víno</option>
-                            <option value="">Červené víno</option>
-                            <option value="">Šumivé víno</option>
-                        </select>
-                    </div>
-                </div>
             </div>
             <div class="row filterSelect mt-4 mb-3">
                 <h4 class="title title--normal text-uppercase font-weight-bold">Spotřeba:</h4>
