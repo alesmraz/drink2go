@@ -14,6 +14,7 @@ import Buyerpannel from './Buyerpannel'
 import BackLink from './BackLink'
 import Branch from "./Branch";
 import AOS from 'aos';
+import Scroller from './Scroller'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -53,6 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const branch = new Branch()
   branch.init()
 
+  const scroller = new Scroller()
+  scroller.init()
+
   AOS.init();
 
   /** Animation */
@@ -80,6 +84,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-
-
 });

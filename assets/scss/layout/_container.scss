@@ -9,3 +9,13 @@
     }
   }
 }
+
+.center-bootstrap-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .btn {
+    max-width: 170px;
+  }
+}

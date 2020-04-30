@@ -20,6 +20,7 @@
     flex: 1 0 75%;
     max-width: 70%;
     color: #000;
+    font-weight: $font-weight-bold;
 
     @include media-breakpoint-down(sm) {
       max-width: 100%;
@@ -106,9 +107,17 @@
     &:not(.productDetail__params--top) {
       max-width: 50%;
       position: absolute;
+
       .productDetail__paramsItem {
         font-size: 15px;
       }
+    }
+  }
+
+  @media (max-width: 510px) {
+    &:not(.productDetail__params--top) {
+      max-width: 100%;
+      position: relative;
     }
   }
 
@@ -129,6 +138,8 @@
 
   @include media-breakpoint-down(sm) {
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
   .productDetail__paramsItem {
