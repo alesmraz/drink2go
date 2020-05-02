@@ -43,12 +43,34 @@ footer {
         border-right: none;
       }
     }
+
+    .footer-col--logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      a {
+        display: flex;
+        justify-content: center;
+
+        img {
+          max-width: 280px;
+          margin: $spacer / 2 0;
+
+          @include media-breakpoint-down(sm) {
+            max-width: 180px;
+          }
+        }
+      }
+
+    }
   }
 
   .footer__title {
     text-transform: uppercase;
     margin-bottom: $spacer * 2.5;
     font-size: 1.3rem;
+    text-align: center;
 
     @include media-breakpoint-down(sm) {
       margin-bottom: $spacer * 1.5;
@@ -57,7 +79,11 @@ footer {
 
   .footer__list {
     @include list-unstyled();
-    line-height: 2.3;
+
+    li {
+      margin-bottom: $spacer;
+      text-align: center;
+    }
 
     a {
       color: #000;

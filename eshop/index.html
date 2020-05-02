@@ -16,10 +16,9 @@
 <header class="header">
     <div class="topPanel">
         <div class="topPanel__item topPanel__item--links">
-            <a class="icon" href="https://www.instagram.com" target="_blank">
-                <img src="./../assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon"
-                                                                                                      href="tel:123456789"><img
-                src="./../assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
+            <a href="/" class="logo">
+                <img src="../assets/img/logo--eshop.svg" alt="Drink2go" class="logo-img">
+            </a>
         </div>
         <form action="" class="topPanel__item topPanel__item--search">
             <label for="search">
@@ -29,8 +28,12 @@
             <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
         </form>
         <div class="topPanel__item topPanel__item--cart">
+
+            <a class="icon" href="tel:123456789">
+                <img src="./../assets/svg/phone.svg" alt="Ozvěte se nám">
+            </a>
+
             <a href="#" class="icon user">
-                <span class="mr-2 d-none d-lg-block">Vladimír dlouhý</span>
                 <img src="./../assets/svg/profile.svg" alt="Přihlásit se">
             </a>
 
@@ -142,6 +145,10 @@
                 <a href="kosik.html" class="btn btn-primary w-100 text-uppercase">Přejít do nákupního košíku</a>
             </div>
 
+            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
+                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
+            </div>
+
         </div>
     </div>
     <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít">
@@ -149,7 +156,7 @@
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
             <div class="mobileList__header">
-                <img src="./../assets/img/logo--invert.svg" alt="cans4All">
+                <img src="./../assets/img/logo--eshop.svg" alt="cans4All">
             </div>
             <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
                 <li class="mobileList__item">
@@ -175,25 +182,6 @@
                 <a href="frensiza" class="logo">
                     <img src="./../assets/img/logo--frensiza.svg" alt="">
                 </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="logoWrapper logoWrapper--primary">
-        <div class="container">
-            <div class="links d-flex">
-                <a href="/eshop/" class="logo logo--active">
-                    <img src="./../assets/img/logo--invert.svg" alt="Drink2Go">
-                </a>
-                <a href="/design/" class="logo">
-                    <img src="./../assets/img/logo.svg" alt="cans4all">
-                </a>
-                <a href="/frensiza/" class="logo">
-                    <img src="./../assets/img/logo--frensiza.svg" alt="frensiza">
-                </a>
-            </div>
-            <div class="mobileMenu" id="mobileMenu" data-toggle="mobileSide">
-                <span class="name pr-2 fs-sm">Menu</span><img src="../assets/svg/list-menu.svg" alt="">
             </div>
         </div>
     </div>
@@ -420,24 +408,19 @@
                 <li><a href="#">Ochrana osvních údajů</a></li>
             </ul>
         </div>
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Zákaznický servis</h4>
-            <ul class="footer__list">
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
+        <div class="footer-col footer-col--logo col-md-6">
+
+            <a href="/design/">
+                <img src="../assets/img/logo.svg" alt="">
+            </a>
+
+            <a href="/frensiza/">
+                <img src="../assets/img/logo--frensiza.svg" alt="">
+            </a>
+
         </div>
         <div class="footer-col col-md-3">
             <h4 class="footer__title">Doplňky</h4>
-            <ul class="footer__list">
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
-        </div>
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Můj účet</h4>
             <ul class="footer__list">
                 <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
                 <li><a href="#">Informace o dopravě</a></li>

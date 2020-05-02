@@ -1,272 +1,281 @@
-<head>
-    <meta charset="UTF-8">
-    <title>Drink2Go</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <script src="dist/index.js"></script>
-    <link type="text/css" rel="stylesheet" href="dist/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">
-</head>
-<body>
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Drink2Go</title>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>-->
+<!--    <script src="./../dist/index.js"></script>-->
+<!--    <link type="text/css" rel="stylesheet" href="./../dist/index.css">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Barrio&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Barlow:700&display=swap" rel="stylesheet">-->
+<!--</head>-->
+<!--<body>-->
 
-<header class="header">
-    <div class="topPanel">
-        <div class="topPanel__item topPanel__item--links">
-            <a class="icon" href="https://www.instagram.com" target="_blank">
-                <img src="assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>
-        </div>
-        <form action="" class="topPanel__item topPanel__item--search">
-            <label for="search">
-                <span class="d-none">hledání</span>
-            </label>
-            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="assets/svg/search.svg" alt="Hledat"></button>
-        </form>
-        <div class="topPanel__item topPanel__item--cart"></div>
-    </div>
-</header>
+<!--<header class="header">-->
+<!--    <div class="topPanel">-->
+<!--        <div class="topPanel__item topPanel__item&#45;&#45;links">-->
+<!--            <a class="icon" href="https://www.instagram.com" target="_blank">-->
+<!--                <img src="./assets/svg/instagram.svg" alt="Sledujte Drink2Go na instagramu"></a><a class="icon" href="tel:123456789"><img src="./assets/svg/phone.svg" alt="Ozvěte se nám"><span class="ml-1 d-none d-lg-block">+420 123 456 789</span></a>-->
+<!--        </div>-->
+<!--        <form action="" class="topPanel__item topPanel__item&#45;&#45;search">-->
+<!--            <label for="search">-->
+<!--                <span class="d-none">hledání</span>-->
+<!--            </label>-->
+<!--            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">-->
+<!--            <button type="submit"><img src="./assets/svg/search.svg" alt="Hledat"></button>-->
+<!--        </form>-->
+<!--        <div class="topPanel__item topPanel__item&#45;&#45;cart"></div>-->
+<!--    </div>-->
+<!--</header>-->
 
-<main>
-    <section class="branches">
-        <div class="branch__item order-1">
-            <div class="logoWrapper logoWrapper--primary logoWrapper--big">
-                <div class="logo logo--active m-0">
-                    <img src="assets/img/logo--invert.svg" alt="Drink2Go">
-                </div>
-            </div>
-            <div class="branch__content">
-                <span class="title"><b>Chci si vybrat</b><br>ze sortimentu fresh nápojů<br><b>drink2go</b></span>
-            </div>
+<!--<main>-->
+<!--    <section class="branches">-->
+<!--        <div class="branch__item order-1">-->
+<!--            <div class="logoWrapper logoWrapper&#45;&#45;primary logoWrapper&#45;&#45;big">-->
+<!--                <div class="logo logo&#45;&#45;active m-0">-->
+<!--                    <img src="./assets/img/logo&#45;&#45;eshop.svg" alt="Drink2Go">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="branch__content">-->
+<!--                <span class="title"><b>Chci si vybrat</b><br>ze sortimentu fresh nápojů<br><b>drink2go</b></span>-->
+<!--            </div>-->
 
-            <div class="products">
-                <div class="products__animation">
-                    <img src="assets/img/amaro.png" alt="">
-                    <img src="assets/img/product8.png" alt="">
-                    <img src="assets/img/branches/juice.png" alt="">
-                    <img src="assets/img/branches/vino4.png" alt="">
-                    <img src="assets/img/branches/podlozka.svg" class="ground" alt="">
-                </div>
+<!--            <div class="products">-->
+<!--                <div class="products__animation">-->
+<!--                    <img src="./assets/img/amaro.png" alt="">-->
+<!--                    <img src="./assets/img/product8.png" alt="">-->
+<!--                    <img src="./assets/img/branches/juice.png" alt="">-->
+<!--                    <img src="./assets/img/branches/vino4.png" alt="">-->
+<!--                    <img src="./assets/img/branches/podlozka.svg" class="ground" alt="">-->
+<!--                </div>-->
 
-                <a href="/eshop/" class="btn btn-white btn-lg btn-m-5">Nakupovat</a>
-            </div>
+<!--                <a href="/eshop/" class="btn btn-white btn-lg btn-m-5">Nakupovat</a>-->
+<!--            </div>-->
 
-            <img src="assets/img/eshop.svg" class="branch__bg" alt="eshop">
-        </div>
-        <div class="branch__item order-2">
-            <div class="logoWrapper logoWrapper--primary logoWrapper--big">
-                <div class="logo logo--active m-0">
-                    <img src="assets/img/logo.svg" alt="Drink2Go">
-                </div>
-            </div>
-            <div class="branch__content">
-                <div class="title title--dark">Chci plechovku<br><b>s vlastním<br> designem</b></div>
-            </div>
+<!--            <img src="./assets/img/eshop.svg" class="branch__bg" alt="eshop">-->
+<!--        </div>-->
+<!--        <div class="branch__item order-2">-->
+<!--            <div class="logoWrapper logoWrapper&#45;&#45;primary logoWrapper&#45;&#45;big">-->
+<!--                <div class="logo logo&#45;&#45;active m-0">-->
+<!--                    <img src="./assets/img/logo.svg" alt="Drink2Go">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="branch__content">-->
+<!--                <div class="title title&#45;&#45;dark">Chci plechovku<br><b>s vlastním<br> designem</b></div>-->
+<!--            </div>-->
 
-            <div class="products">
-                <div class="products__animation products__animation--design">
-                    <img src="assets/img/branches/330_oranzova_REGULAR.png" alt="">
-                    <img src="assets/img/branches/250_bila_SLIM.png" alt="">
-                    <img src="assets/img/branches/250_cerna_SLIM.png" alt="">
-                    <img src="assets/img/branches/250_bila_REGULAR.png" alt="">
-                    <img src="assets/img/branches/podlozka.svg" class="ground" alt="">
-                </div>
+<!--            <div class="products">-->
+<!--                <div class="products__animation products__animation&#45;&#45;design">-->
+<!--                    <img src="./assets/img/branches/330_oranzova_REGULAR.png" alt="">-->
+<!--                    <img src="./assets/img/branches/250_bila_SLIM.png" alt="">-->
+<!--                    <img src="./assets/img/branches/250_cerna_SLIM.png" alt="">-->
+<!--                    <img src="./assets/img/branches/250_bila_REGULAR.png" alt="">-->
+<!--                    <img src="./assets/img/branches/podlozka.svg" class="ground" alt="">-->
+<!--                </div>-->
 
-                <a href="/design/" class="btn btn-primary btn-lg btn-m-5">Prozkoumat</a>
-            </div>
+<!--                <a href="/design/" class="btn btn-primary btn-lg btn-m-5">Prozkoumat</a>-->
+<!--            </div>-->
 
-            <img src="assets/img/design.svg" class="branch__bg" alt="design">
-        </div>
-    </section>
+<!--            <img src="./assets/img/design.svg" class="branch__bg" alt="design">-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <footer class="pt-3 text-center row m-0">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-sm-6"><p>Drink2go s.r.o.</p></div>
-                <div class="col-sm-6"><p>Sídlo firmy</p></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6"><p>Telefon: 123 456 789</p></div>
-                <div class="col-sm-6"><p>Email: info@drink2go.cz</p></div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-sm-6"><p>Can2forAll s.r.o.</p></div>
-                <div class="col-sm-6"><p>Sídlo firmy</p></div>
-            </div>
+<!--    <footer class="pt-3 text-center row m-0">-->
+<!--        <div class="col-md-6">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6"><p>Drink2go s.r.o.</p></div>-->
+<!--                <div class="col-sm-6"><p>Sídlo firmy</p></div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6"><p>Telefon: 123 456 789</p></div>-->
+<!--                <div class="col-sm-6"><p>Email: info@drink2go.cz</p></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6"><p>Can2forAll s.r.o.</p></div>-->
+<!--                <div class="col-sm-6"><p>Sídlo firmy</p></div>-->
+<!--            </div>-->
 
-            <div class="row">
-                <div class="col-sm-6"><p>Telefon: 123 456 789</p></div>
-                <div class="col-sm-6"><p>Email: info@cans4all.cz</p></div>
-            </div>
-        </div>
-    </footer>
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6"><p>Telefon: 123 456 789</p></div>-->
+<!--                <div class="col-sm-6"><p>Email: info@cans4all.cz</p></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
 
-</main>
+<!--</main>-->
 
-<section id="modals">
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginLabel">Přihlásit se</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-center">Pro přihlášení ke svému uživatelskému účtu prosím zadejte své přihlašovací údaje.</p>
+<!--<section id="modals">-->
+<!--    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">-->
+<!--        <div class="modal-dialog" role="document">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <h5 class="modal-title" id="loginLabel">Přihlásit se</h5>-->
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <p class="text-center">Pro přihlášení ke svému uživatelskému účtu prosím zadejte své přihlašovací údaje.</p>-->
 
-                    <form class="form--small">
-                        <div class="form-group">
-                            <label for="loginEmail">E-mailová adresa</label>
-                            <input type="email" class="form-control form-control-lg" id="loginEmail">
-                        </div>
-                        <div class="form-group">
-                            <label for="loginPassword">Heslo</label>
-                            <input type="password" class="form-control form-control-password form-control-lg" id="loginPassword">
-                            <button class="password-show" data-target="#loginPassword">Zobrazit</button>
-                        </div>
+<!--                    <form class="form&#45;&#45;small">-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="loginEmail">E-mailová adresa</label>-->
+<!--                            <input type="email" class="form-control form-control-lg" id="loginEmail">-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="loginPassword">Heslo</label>-->
+<!--                            <input type="password" class="form-control form-control-password form-control-lg" id="loginPassword">-->
+<!--                            <button class="password-show" data-target="#loginPassword">Zobrazit</button>-->
+<!--                        </div>-->
 
-                        <button type="submit" class="btn btn-alternative btn-lg w-100 mt-3 text-uppercase">Přihlásit se</button>
+<!--                        <button type="submit" class="btn btn-alternative btn-lg w-100 mt-3 text-uppercase">Přihlásit se</button>-->
 
-                        <a class="d-block text-center mt-4 mb-4" href="zapomenute-heslo.html">Zapomněli jste své heslo?</a>
-                    </form>
+<!--                        <a class="d-block text-center mt-4 mb-4" href="zapomenute-heslo.html">Zapomněli jste své heslo?</a>-->
+<!--                    </form>-->
 
-                    <div class="well well-brown-light well-out text-center mt-3">
-                        <h3 class="mb-3">Nový zákazník?</h3>
-                        <a href="registrace.html" class="btn btn-white-secondary mt-2 mb-2 w-75 ml-auto mr-auto">REGISTRUJTE SE ZDE</a>
-                    </div>
+<!--                    <div class="well well-brown-light well-out text-center mt-3">-->
+<!--                        <h3 class="mb-3">Nový zákazník?</h3>-->
+<!--                        <a href="registrace.html" class="btn btn-white-secondary mt-2 mb-2 w-75 ml-auto mr-auto">REGISTRUJTE SE ZDE</a>-->
+<!--                    </div>-->
 
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productModalLabel">Produkt: </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="buyerpanel">
-                        <div class="buyerpanel__item">
-                            <h4 class="priceLabel">Naše cena:</h4>
-                            <div class="price">
-                                <del data-price="old">598,00 Kč</del>
-                                <span data-price="actual" class="actual">539,00 Kč</span>
-                                <small data-price="noVat">Cena bez DPH: 445,45 Kč</small>
-                            </div>
-                        </div>
-                        <div class="buyerpanel__item">
-                            <div class="buyerpanel__typeSelect">
-                                <div class="type">
-                                    <img src="assets/svg/can.svg" alt="" class="type__image" data-name="can">
-                                    <img src="assets/svg/box.svg" alt="" class="type__image type__image--hide" data-name="box">
-                                    <div class="type__control">
-                                        <span class="type__title" data-name="bottle">Typ: Plechovka</span>
-                                        <span class="type__title type__title--hide" data-name="box">Typ: Karton</span>
-                                        <span class="text-center">Množství</span>
+<!--    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">-->
+<!--        <div class="modal-dialog modal-lg" role="document">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <h5 class="modal-title" id="productModalLabel">Produkt: </h5>-->
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <form class="buyerpanel">-->
+<!--                        <div class="buyerpanel__item">-->
+<!--                            <h4 class="priceLabel">Naše cena:</h4>-->
+<!--                            <div class="price">-->
+<!--                                <del data-price="old">598,00 Kč</del>-->
+<!--                                <span data-price="actual" class="actual">539,00 Kč</span>-->
+<!--                                <small data-price="noVat">Cena bez DPH: 445,45 Kč</small>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="buyerpanel__item">-->
+<!--                            <div class="buyerpanel__typeSelect">-->
+<!--                                <div class="type">-->
+<!--                                    <img src="./../assets/svg/can.svg" alt="" class="type__image" data-name="can">-->
+<!--                                    <img src="./../assets/svg/box.svg" alt="" class="type__image type__image&#45;&#45;hide" data-name="box">-->
+<!--                                    <div class="type__control">-->
+<!--                                        <span class="type__title" data-name="bottle">Typ: Plechovka</span>-->
+<!--                                        <span class="type__title type__title&#45;&#45;hide" data-name="box">Typ: Karton</span>-->
+<!--                                        <span class="text-center">Množství</span>-->
 
-                                        <div class="inputCounter form-group" data-parent-class="productDetail">
-                                            <span class="minus">-</span>
-                                            <input type="text" name="bottle" value="0" class="form-control" min="0">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="type type-select">
-                                    <div class="type__control">
-                                        <label>
-                                            <input data-target="bottle" type="radio" name="buyerpanelselect" checked>
-                                            <span>Lahev</span>
-                                        </label>
-                                        <label>
-                                            <input data-target="box" type="radio" name="buyerpanelselect">
-                                            <span>Karton</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+<!--                                        <div class="inputCounter form-group" data-parent-class="productDetail">-->
+<!--                                            <span class="minus">-</span>-->
+<!--                                            <input type="text" name="bottle" value="0" class="form-control" min="0">-->
+<!--                                            <span class="plus">+</span>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="type type-select">-->
+<!--                                    <div class="type__control">-->
+<!--                                        <label>-->
+<!--                                            <input data-target="bottle" type="radio" name="buyerpanelselect" checked>-->
+<!--                                            <span>Lahev</span>-->
+<!--                                        </label>-->
+<!--                                        <label>-->
+<!--                                            <input data-target="box" type="radio" name="buyerpanelselect">-->
+<!--                                            <span>Karton</span>-->
+<!--                                        </label>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
 
-                            <button type="submit" class="btn btn-lg btn-secondary btn-wide buyerpanel__button">
-                                <span>Do košíku</span>
-                            </button>
-                        </div>
+<!--                            <button type="submit" class="btn btn-lg btn-secondary btn-wide buyerpanel__button">-->
+<!--                                <span>Do košíku</span>-->
+<!--                            </button>-->
+<!--                        </div>-->
 
-                        <input type="hidden" name="id" value="123">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                        <input type="hidden" name="id" value="123">-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<!--    &lt;!&ndash; Root element of PhotoSwipe. Must have class pswp. &ndash;&gt;-->
+<!--    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">-->
 
-        <!-- Background of PhotoSwipe.
-             It's a separate element, as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
+<!--        &lt;!&ndash; Background of PhotoSwipe.-->
+<!--             It's a separate element, as animating opacity is faster than rgba(). &ndash;&gt;-->
+<!--        <div class="pswp__bg"></div>-->
 
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
+<!--        &lt;!&ndash; Slides wrapper with overflow:hidden. &ndash;&gt;-->
+<!--        <div class="pswp__scroll-wrap">-->
 
-            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
+<!--            &lt;!&ndash; Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. &ndash;&gt;-->
+<!--            &lt;!&ndash; don't modify these 3 pswp__item elements, data is added later on. &ndash;&gt;-->
+<!--            <div class="pswp__container">-->
+<!--                <div class="pswp__item"></div>-->
+<!--                <div class="pswp__item"></div>-->
+<!--                <div class="pswp__item"></div>-->
+<!--            </div>-->
 
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
+<!--            &lt;!&ndash; Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. &ndash;&gt;-->
+<!--            <div class="pswp__ui pswp__ui&#45;&#45;hidden">-->
 
-                <div class="pswp__top-bar">
+<!--                <div class="pswp__top-bar">-->
 
-                    <!--  Controls are self-explanatory. Order can be changed. -->
+<!--                    &lt;!&ndash;  Controls are self-explanatory. Order can be changed. &ndash;&gt;-->
 
-                    <div class="pswp__counter"></div>
+<!--                    <div class="pswp__counter"></div>-->
 
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<!--                    <button class="pswp__button pswp__button&#45;&#45;close" title="Close (Esc)"></button>-->
 
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
+<!--                    <button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
 
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<!--                    <button class="pswp__button pswp__button&#45;&#45;fs" title="Toggle fullscreen"></button>-->
 
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<!--                    <button class="pswp__button pswp__button&#45;&#45;zoom" title="Zoom in/out"></button>-->
 
-                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                    &lt;!&ndash; Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR &ndash;&gt;-->
+<!--                    &lt;!&ndash; element will get class pswp__preloader&#45;&#45;active when preloader is running &ndash;&gt;-->
+<!--                    <div class="pswp__preloader">-->
+<!--                        <div class="pswp__preloader__icn">-->
+<!--                            <div class="pswp__preloader__cut">-->
+<!--                                <div class="pswp__preloader__donut"></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="pswp__share-modal pswp__share-modal&#45;&#45;hidden pswp__single-tap">-->
+<!--                    <div class="pswp__share-tooltip"></div>-->
+<!--                </div>-->
+<!--                <button class="pswp__button pswp__button&#45;&#45;arrow&#45;&#45;left" title="Previous (arrow left)">-->
+<!--                </button>-->
+<!--                <button class="pswp__button pswp__button&#45;&#45;arrow&#45;&#45;right" title="Next (arrow right)">-->
+<!--                </button>-->
+<!--                <div class="pswp__caption">-->
+<!--                    <div class="pswp__caption__center"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-</section>
+<!--</section>-->
 
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->
+
+REMOVED
+
+<br>
+<br>
+
+<a href="/eshop/">-> eshop</a><br>
+<a href="/design/">-> reklamni plechovky</a><br>
+<a href="/frensiza/">-> frensiza</a>

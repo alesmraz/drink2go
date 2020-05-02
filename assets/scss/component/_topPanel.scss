@@ -1,6 +1,6 @@
 .topPanel {
   display: flex;
-  background: linear-gradient(0,#bf3322,#ed8f02);
+  background: $white;
   padding: 0 70px;
   height: $top-panel-height;
   position: relative;
@@ -8,12 +8,13 @@
   z-index: 2;
 
   @include media-breakpoint-down(sm) {
-    padding: 0;
+    padding: 0 $spacer / 2;
     margin-bottom: 0;
+    box-shadow: 0 5px $primary;
   }
 
-  a {
-    color: #fff;
+  a:not(.btn) {
+    color: $gray;
   }
 
   img:not(.logo-img) {
@@ -31,37 +32,43 @@
 .topPanel__item {
   display: flex;
 
-  .mobileMenu {
-    .name {
-      color: #fff;
-    }
-  }
-
   .icon {
-    padding-right: 32px;
+    padding-right: $spacer;
+    padding-left: $spacer;
     height: 100%;
     display: flex;
     align-items: center;
 
+    &:after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 65%;
+      background-color: $gray;
+      position: relative;
+      right: -$spacer;
+
+      @include media-breakpoint-down(sm) {
+        right: -$spacer / 2;
+        height: 40%;
+      }
+    }
+
     @include media-breakpoint-down(sm) {
-      padding-right: $spacer / 1.5;
+      padding-left: $spacer / 2;
+      padding-right: $spacer / 2;
     }
 
     .cart {
       padding-right: 0;
     }
 
-    &:first-of-type {
-      border-right: 1px solid #fff;
-    }
-
     &:last-of-type {
-      margin-left: 32px;
-
-      @include media-breakpoint-down(sm) {
-        margin-left: $spacer / 1.5;
+      &:after {
+        display: none;
       }
     }
+
   }
 }
 
@@ -104,6 +111,10 @@
 
   }
 
+  @include media-breakpoint-down(sm) {
+    flex: 2;
+  }
+
 }
 
 .topPanel__item--search {
@@ -111,22 +122,22 @@
   justify-content: center;
 
   @include media-breakpoint-down(sm) {
-    flex: 2;
+    display: none;
   }
 
   input {
-    border-color: transparent;
     padding-right: 45px;
+    border-radius: 7px;
   }
 
   button[type="submit"] {
     position: absolute;
-    top: $top-panel-height / 6;
     right: 0;
     height: calc(1.5em + .75rem + 2px);
     background-color: transparent;
     border: none;
     padding-right: 10px;
+    padding-bottom: 0;
 
     img {
       width: 20px;

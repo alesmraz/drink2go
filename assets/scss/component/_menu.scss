@@ -5,8 +5,8 @@
 .menu {
   margin-left: auto;
   justify-content: center;
-  padding: 15px 0 15px;
-  background-color: $white;
+  padding: 12px 0 12px;
+  background-color: $primary;
 }
 
 .nav--sub {
@@ -38,7 +38,7 @@
 .nav__item {
   position: relative;
   text-align: center;
-  height: calc(35px / 2);
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@
   flex: 0;
   white-space: nowrap;
   font-size: $font-size-lg;
-  border-right: 1px solid $primary;
+  border-right: 1px solid $white;
 
   &:last-of-type {
     border-right: none;
@@ -78,16 +78,17 @@
   justify-content: center;
   align-items: center;
   line-height: 1;
-  color: $black;
+  color: $white;
   white-space: nowrap;
-  font-size: 1.2rem;
+  font-size: 0.75em;
+  text-transform: uppercase;
 
   @include media-breakpoint-down(md) {
     font-size: 13px;
   }
 
   @include hover-focus() {
-    color: $alternative;
+    color: $secondary;
     text-decoration: none;
   }
 }

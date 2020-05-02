@@ -57,30 +57,17 @@
 .logo {
   display: flex;
   justify-content: center;
-  margin: 0 20px $spacer 5px;
 
   > img {
-    width: 400px;
+    width: 200px;
   }
 
   @include media-breakpoint-down(sm) {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-
-    &:not(.logo--active) {
-      display: none;
-    }
-
     > img {
       max-width: 120px;
     }
   }
 
-  &:not(.logo--active) {
-    opacity: 0.5;
-  }
 }
 
 .icon--home {
