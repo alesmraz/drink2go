@@ -1,12 +1,12 @@
 .highlightMessage {
   display: flex;
   flex-direction: column;
-  background-color: #F2F2F2;
+  background-color: #575756;
   border-radius: 15px;
   margin-bottom: $spacer;
 
   .title {
-    background: linear-gradient(-90deg,#bf3322,#ed8f02);
+    background: $primary;
     color: #fff;
     text-align: center;
     border-top-left-radius: 15px;
@@ -14,10 +14,12 @@
     padding: 8px;
     font-size: 18px;
     text-transform: uppercase;
+    box-shadow: 0 5px 3px #4a4a4a;
   }
 
   .text {
     padding: 0 1.5em;
+    color: $white;
   }
 }
 

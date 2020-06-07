@@ -6,7 +6,7 @@
   margin-left: auto;
   justify-content: center;
   padding: 12px 0 12px;
-  background-color: $primary;
+  background: linear-gradient(90deg, $lighter-gray, $light-gray);
 }
 
 .nav--sub {
@@ -19,18 +19,18 @@
   align-items: flex-start;
   flex-wrap: wrap;
   z-index: 100;
-  border-bottom: 1px solid $primary;
+  border-bottom: 1px solid $light-gray;
 
   .nav__item {
     height: $nav-item-height + 15px;
-    border-right: 1px solid $primary;
+    border-right: 1px solid $light-gray;
 
     &:last-of-type {
-      border-right: 1px solid $primary;
+      border-right: 1px solid $light-gray;
     }
 
     &:first-of-type {
-      border-left: 1px solid $primary;
+      border-left: 1px solid $light-gray;
     }
   }
 }
@@ -46,7 +46,7 @@
   flex: 0;
   white-space: nowrap;
   font-size: $font-size-lg;
-  border-right: 1px solid $white;
+  border-right: 1px solid $black;
 
   &:last-of-type {
     border-right: none;
@@ -78,7 +78,7 @@
   justify-content: center;
   align-items: center;
   line-height: 1;
-  color: $white;
+  color: $black;
   white-space: nowrap;
   font-size: 0.75em;
   text-transform: uppercase;

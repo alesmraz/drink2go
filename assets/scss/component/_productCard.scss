@@ -8,9 +8,9 @@
 
   &:before {
     content: "";
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    box-shadow: inset 0 0 0 10px #000;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    box-shadow: inset 0 0 0 5px #000;
     position: absolute;
   }
 

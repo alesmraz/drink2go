@@ -10,7 +10,7 @@
   @include media-breakpoint-down(sm) {
     padding: 0 $spacer / 2;
     margin-bottom: 0;
-    box-shadow: 0 5px $primary;
+    box-shadow: 0 5px $light-gray;
   }
 
   a:not(.btn) {
