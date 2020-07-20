@@ -7,6 +7,8 @@
   padding: $spacer 0 1.4rem 0;
   font-size: 1rem;
   border-radius: 0;
+  margin-bottom: $spacer;
+  margin-top: $spacer;
   @include get-stripe-offset();
 
   @include media-breakpoint-down(sm) {

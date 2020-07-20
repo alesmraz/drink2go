@@ -1,0 +1,113 @@
+.variantSelect {
+  display: flex;
+
+  @include media-breakpoint-up(md) {
+    select {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  &:not(.variantSelect--inline) {
+    margin-left: -$spacer / 2;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: $spacer / 2;
+    }
+  }
+}
+
+.variantSelect--inline {
+  flex-direction: column;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  .variantSelect__item {
+    background: #717171;
+    margin-right: 0;
+    border: 1px solid transparent;
+
+    .topTitle, .bottomTitle {
+      color: $white;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.variantSelect__item {
+  padding: $spacer / 4 $spacer * 2;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: $spacer / 2;
+  width: 100%;
+  margin-right: $spacer / 2;
+  border: 1px solid $gray-300;
+
+  .topTitle {
+    margin-bottom: 0;
+    font-size: $font-size-sm;
+  }
+
+  .bottomTitle {
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+    font-size: $font-size-sm;
+
+    span {
+      font-weight: $font-weight-base;
+    }
+  }
+
+  @include hover-focus() {
+    border-color: $secondary;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-right: 0;
+  }
+}
+
+.variantSelect__item--selected {
+  border-color: $secondary;
+}
+
+.priceMobileControl {
+  flex: 1;
+  width: 70%;
+
+  select {
+    font-size: 13px;
+    margin-bottom: $spacer / 4;
+  }
+
+  .btn {
+    font-size: $font-size-sm;
+    white-space: nowrap;
+  }
+
+  .inputCounter {
+    border: 1px solid $black;
+    margin-right: $spacer / 2;
+
+    .minus,
+    .plus {
+      @include size(23px);
+      font-size: 23px;
+    }
+
+    input {
+      width: 40px;
+      font-size: 16px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}

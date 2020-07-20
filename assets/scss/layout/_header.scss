@@ -56,14 +56,16 @@
 
 .logo {
   display: flex;
-  justify-content: center;
 
   > img {
-    width: 200px;
-  }
+    width: 100%;
+    max-width: 250px;
 
-  @include media-breakpoint-down(sm) {
-    > img {
+    @include media-breakpoint-down(lg) {
+      max-width: 75%;
+    }
+
+    @include media-breakpoint-down(sm) {
       max-width: 120px;
     }
   }

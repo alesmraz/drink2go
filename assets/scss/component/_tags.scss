@@ -1,18 +1,9 @@
 .productCard__tags {
   position: absolute;
-  height: calc(100% - 10px);
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
   z-index: 0;
-
-  @include media-breakpoint-down(sm) {
-    position: relative;
-    top: 10px;
-    left: 0;
-    height: 45px;
-    margin-bottom: 0;
-    width: calc(100% - 10px);
-  }
+  width: 100%;
 }
 
 .tag {
@@ -21,25 +12,8 @@
 
 .tag__item {
   padding: 5px 2px;
-  writing-mode: tb;
-  transform: rotate(180deg);
-  text-transform: uppercase;
-  font-family: $font-family-base;
-  font-size: 23px;
-  letter-spacing: 6px;
   text-align: center;
-  max-width: 40px;
-
-  @include media-breakpoint-down(sm) {
-    transform: rotate(0);
-    width: 100%;
-    writing-mode: initial;
-    max-width: 100%;
-  }
-
-  .side {
-    color: rgba(#fff, 0.5);
-  }
+  width: 100%;
 }
 
 .tag__item--sale {
@@ -65,31 +39,4 @@
 .tag__item--warning {
   background-color: rgba($warning, 0.75);
   color: color-yiq($warning);
-}
-
-.productCard__stamp {
-  background-color: #C22F5B;
-  border: 4px solid #fff;
-  color: $yellow;
-  border-radius: 50%;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include size(75px);
-  position: absolute;
-  line-height: 1;
-  text-align: center;
-  bottom: 20px;
-  right: 5%;
-  transform: rotate(-20deg);
-  font-weight: $font-weight-bold;
-  font-size: 1.2rem;
-  padding: 1px;
-  box-shadow: 1px 2px 3px #00000054;
-  transition: all 0.3s ease-in-out;
-
-  @include media-breakpoint-down(sm) {
-    left: 50%;
-  }
 }

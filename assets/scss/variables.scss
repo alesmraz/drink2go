@@ -1,6 +1,6 @@
-$primary:     #c30f0a;
-$secondary:   #000;
-$alternative: #c43c20;
+$primary:     #434343;
+$secondary:   #00D28D;
+$alternative: #D80002;
 $gray:        #575756;
 $lighter-gray:#F1F1F1;
 $light-gray:  #AFAFAF;
@@ -12,9 +12,9 @@ $yellow:  #febc03;
 
 $font-family-base: 'Barlow';
 $headings-font-family: $font-family-base;
-$headings-font-family-alternative: 'Barrio';
+$headings-font-family-alternative: 'Barlow';
 
-$border-radius:               0;
+$border-radius:               10px;
 $border-radius-lg:            0;
 $border-radius-sm:            0;
 
@@ -34,7 +34,7 @@ $btn-font-family:   $headings-font-family;
 //== Components
 
 // Top panel
-$top-panel-height: 70px;
+$top-panel-height: 90px;
 
 // Forms
 $form-border-color: $gray;
@@ -44,7 +44,7 @@ $main-menu-size: 1450px;
 $nav-item-height: 50px;
 
 // Filter
-$filter-width: 1320px;
+$filter-width: 1020px;
 
 // Section Header
 $section-header-height: (

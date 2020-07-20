@@ -20,13 +20,34 @@
                 <img src="../assets/img/logo--eshop.svg" alt="Drink2go" class="logo-img">
             </a>
         </div>
-        <form action="" class="topPanel__item topPanel__item--search">
-            <label for="search">
-                <span class="d-none">hledání</span>
-            </label>
-            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
-        </form>
+        <div class="topPanel__item topPanel__item--search">
+            <form action="" class="w-100 position-relative">
+                <label for="search" class="d-none">
+                    <span>hledání</span>
+                </label>
+                <input id="search" placeholder="Hledejte, co hledáte..." class="form-control" name="search" type="search">
+                <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
+            </form>
+
+            <ul class="nav menu menu--main mt-2" data-level="1">
+                <li class="nav__item nav__item--active">
+                    <a href="kategorie-nase-drinky.html" class="nav__link">E-shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="o-nas.html" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nase-sluzby.html#3dPotisk" class="nav__link">3D potisk plechovek</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nase-sluzby.html#reklamniPlechovky" class="nav__link">Reklamní plechovky</a>
+                </li>
+                <li class="nav__item">
+                    <a href="kontakt.html" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
+
+        </div>
         <div class="topPanel__item topPanel__item--cart">
 
             <a class="icon" href="tel:123456789">
@@ -186,20 +207,7 @@
         </div>
     </div>
 
-    <ul class="nav menu menu--main" data-level="1">
-        <li class="nav__item">
-            <a href="../eshop" class="nav__link">Domů</a>
-        </li>
-        <li class="nav__item nav__item--active">
-            <a href="kategorie-nase-drinky.html" class="nav__link">Naše drinky</a>
-        </li>
-        <li class="nav__item">
-            <a href="o-nas.html" class="nav__link">O nás</a>
-        </li>
-        <li class="nav__item">
-            <a href="kontakt.html" class="nav__link">Kontakt</a>
-        </li>
-    </ul>
+
 </header>
 
 <main class="page">
@@ -225,37 +233,33 @@
 
 <footer class="container-fluid pl-0 pr-0">
     <div class="row">
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Informace</h4>
-            <ul class="footer__list">
-                <li><a href="o-nas.html">O nás</a></li>
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
+        <div class="footer-col col-md-6">
+            <div class="row mr-0 ml-0">
+                <div class="col-6 footer-border">
+                    <div class="footer__title text-right">Informace</div>
+                    <ul class="footer__list footer__list--right">
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="#">Informace o dopravě</a></li>
+                        <li><a href="#">Ochrana osobních údajů</a></li>
+                        <li><a href="#">Všeobecké obchodní podmínky</a></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="footer__title">Můj účet</div>
+                    <ul class="footer__list footer__list--left">
+                        <li><a href="#">Můj účet</a></li>
+                        <li><a href="#">Historie objednávek</a></li>
+                        <li><a href="#">Seznam přání</a></li>
+                        <li><a href="#">Novinky</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-col footer-col--logo col-md-6">
-
-            <a href="/design/">
-                <img src="../assets/img/logo.svg" alt="">
-            </a>
-
-            <a href="/frensiza/">
-                <img src="../assets/img/logo--frensiza.svg" alt="">
-            </a>
-
-        </div>
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Doplňky</h4>
-            <ul class="footer__list">
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
+        <div class="footer-col footer-col--alternative col-md-6">
+            <h4 class="footer__title">Máte rádi pivo?</h4>
+            <p>Objevte největší český eshop craftového piva...</p>
         </div>
     </div>
-
-    <div class="copyright">Drink2Go © 2020</div>
 </footer>
 
 <section id="modals">

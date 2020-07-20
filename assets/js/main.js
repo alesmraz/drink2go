@@ -15,6 +15,7 @@ import BackLink from './BackLink'
 import Branch from "./Branch";
 import AOS from 'aos';
 import Scroller from './Scroller'
+import ProductCard from './ProductCard'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const filter = new Filter();
   filter.init();
+
+  const productCard = new ProductCard();
+  productCard.init();
 
   objectFitImages() // Polyfill: Object-fit (css property)
 

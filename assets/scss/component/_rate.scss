@@ -12,6 +12,7 @@
 
 .rate__title {
   margin-bottom: $spacer * 4;
+  font-weight: $font-weight-bold;
 }
 
 .ratingWrapper {
@@ -46,7 +47,7 @@
 
 .rating > label:before {
   margin: 5px;
-  font-size: 1.25em;
+  font-size: 2em;
   font-family: FontAwesome;
   display: inline-block;
   content: "\f005";
@@ -67,11 +68,11 @@
 }
 
 .rating > input:checked ~ label {
-  color: $primary;
+  color: $alternative;
 }
 
 .rating > input:checked,
 .rating > input:checked,
 .rating > label:hover ~ input:checked ~ label {
-  color: $primary;
+  color: $alternative;
 }

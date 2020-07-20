@@ -33,6 +33,11 @@
   @include get-stripe-offset();
 }
 
+.stripe--gray {
+  @include get-stripe-offset();
+  @include stripe-variant($gray-200);
+}
+
 .stripe--full {
   overflow-x: hidden;
   padding-left: 0;

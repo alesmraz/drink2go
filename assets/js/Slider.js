@@ -52,6 +52,7 @@ export default class Slider {
 
     this.setUp(slider, this.options)
     const currentInstance = new Swiper(slider, this.options)
+
     if (controller) {
       // Init controller
       this.options = Object.assign(this.options, {
@@ -59,6 +60,8 @@ export default class Slider {
         slidesPerView       : 3,
         spaceBetween        : 15,
         slideToClickedSlide : true,
+        direction           : 'vertical',
+        autoHeight: true,
         on                  : {
           init : function () {
           }
@@ -93,21 +96,22 @@ export default class Slider {
   setUp (slider) {
     this.options.slidesPerView = 1
     this.options.spaceBetween = 0
-  }
 
-  /**
-   * Returns null or next key in object
-   * @param key
-   * @param obj
-   * @returns {string|null}
-   */
-  nextKey (key, obj) {
-    let found = false
-    for (let k in obj) {
-      if (found) { return k }
-      if (k === key) { found = true }
+    if (slider.classList.contains('swiper-centered')) {
+      this.options.breakpoints = {
+        100: {
+          slidesPerView: 1,
+        },
+        500: {
+          slidesPerView: 2
+        },
+        700: {
+          slidesPerView: 4
+        }
+      }
+      this.options.spaceBetween = 30
+      this.options.centeredSlides = true
     }
-
-    return null
   }
+
 }

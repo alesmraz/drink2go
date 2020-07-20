@@ -1,0 +1,30 @@
+.canProcessSlider .swiper-slide {
+  .canProcessCard {
+    background-color: $black;
+  }
+
+  &:nth-child(even) {
+    .canProcessCard {
+      background-color: $alternative;
+    }
+  }
+}
+
+.canProcessCard__image {
+  height: 300px;
+  position: relative;
+
+  > img {
+    @include fill();
+    @include object-fit(cover);
+  }
+}
+
+.canProcessCard__content {
+  padding: $spacer * 1.5 $spacer * 1.5;
+
+  .title, p {
+    color: $white;
+  }
+
+}

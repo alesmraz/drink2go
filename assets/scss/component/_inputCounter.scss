@@ -1,17 +1,20 @@
 .inputCounter {
   display: flex;
   align-items: center;
+  border-radius: 20px;
+  background-color: $white;
 
   input {
-    width: 50px;
+    width: 45px;
     text-align: center;
     background-color: transparent;
     font-size: $font-size-lg;
     -moz-appearance:textfield;
     -webkit-appearance: none;
     margin: 0;
-    color: #fff;
-    border: 1px solid #fff;
+    color: $black;
+    border: none;
+    font-weight: $font-weight-bold;
   }
 
   .minus,
@@ -22,6 +25,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: $black;
   }
 
+  &.inputCounter--withBorder {
+    border: 1px solid $black;
+  }
 }

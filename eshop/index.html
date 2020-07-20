@@ -20,13 +20,34 @@
                 <img src="../assets/img/logo--eshop.svg" alt="Drink2go" class="logo-img">
             </a>
         </div>
-        <form action="" class="topPanel__item topPanel__item--search">
-            <label for="search">
-                <span class="d-none">hledání</span>
-            </label>
-            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
-        </form>
+        <div class="topPanel__item topPanel__item--search">
+            <form action="" class="w-100 position-relative">
+                <label for="search" class="d-none">
+                    <span>hledání</span>
+                </label>
+                <input id="search" placeholder="Hledejte, co hledáte..." class="form-control" name="search" type="search">
+                <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
+            </form>
+
+            <ul class="nav menu menu--main mt-2" data-level="1">
+                <li class="nav__item nav__item--active">
+                    <a href="kategorie-nase-drinky.html" class="nav__link">E-shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="o-nas.html" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nase-sluzby.html#3dPotisk" class="nav__link">3D potisk plechovek</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nase-sluzby.html#reklamniPlechovky" class="nav__link">Reklamní plechovky</a>
+                </li>
+                <li class="nav__item">
+                    <a href="kontakt.html" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
+
+        </div>
         <div class="topPanel__item topPanel__item--cart">
 
             <a class="icon" href="tel:123456789">
@@ -186,26 +207,11 @@
         </div>
     </div>
 
-    <ul class="nav menu menu--main" data-level="1">
-        <li class="nav__item">
-            <a href="../eshop" class="nav__link">Domů</a>
-        </li>
-        <li class="nav__item nav__item--active">
-            <a href="kategorie-nase-drinky.html" class="nav__link">Naše drinky</a>
-        </li>
-        <li class="nav__item">
-            <a href="o-nas.html" class="nav__link">O nás</a>
-        </li>
-        <li class="nav__item">
-            <a href="kontakt.html" class="nav__link">Kontakt</a>
-        </li>
-    </ul>
+
 </header>
 
 <main class="page page--noBg">
     <div class="topBanner topBanner--eshop">
-
-
         <div class="slider swiper">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -216,12 +222,8 @@
                         </div>
                         <div class="container topBanner__container">
                             <div class="topBanner__content">
-                                <div class="text-left">
-                                    <h2 class="title title--normal">buď</h2>
-                                    <h2 class="title title--normal">fresh!</h2>
-                                    <p class="mt-3">Vitamínová bomba na cesty.</p>
-
-                                    <a href="kategorie.html" class="btn btn-outline-light btn-lg btn-wide">Objevuj</a>
+                                <div class="text-center">
+                                    <h2 class="title title--line">Nakupujte geniální nápoje<br> v sympatickém obalu</h2>
                                 </div>
                             </div>
                         </div>
@@ -234,12 +236,8 @@
                         </div>
                         <div class="container topBanner__container">
                             <div class="topBanner__content">
-                                <div class="text-left">
-                                    <h2 class="title title--normal">Objevte</h2>
-                                    <h2 class="title title--normal">nový svět!</h2>
-                                    <p class="mt-3">Míchaný koktejl pohodlně kdekoliv.</p>
-
-                                    <a href="kategorie.html" class="btn btn-outline-light btn-lg btn-wide">Objevuj</a>
+                                <div class="text-center">
+                                    <h2 class="title title--line">Nakupujte geniální nápoje<br> v sympatickém obalu</h2>
                                 </div>
                             </div>
                         </div>
@@ -251,185 +249,348 @@
         </div>
     </div>
 
+    <section class="mt-4 mb-4">
+        <h2 class="title text-uppercase text-center mb-4">Doporučujeme</h2>
 
-    <div class="container">
-        <section id="hpStripe1" class="row mb-3 pt-3 mt-0 ">
-            <div class="col-md-6 order-2 order-md-0">
-                <a href="kategorie/fresh.html" class="imageBg">
-                    <img src="../assets/img/eshop/homepage/fresh.png" alt="">
+        <div class="productList">
+            <form class="productCard">
+                <a href="detail.html" class="productCard__image">
+                    <div class="productCard__tags tag">
+                        <div class="tag__item tag__item--sale">
+                            <span>Akce</span>
+                        </div>
+                    </div>
+                    <img src="./../assets/img/product3.png" alt="">
                 </a>
-            </div>
-            <div class="col-md-6 order-1 order-md-0 center-bootstrap-col">
-                <h2 class="title title__underline title__underline--right title__underline--hasIcon">
-                    <img src="../assets/img/eshop/categoryIcons/icon-fresh.svg" alt="">
-                    <span>Fresh nápoje</span>
-                </h2>
-                <p>Fames duis perferendis sagittis. Fringilla tenetur repellat aspernatur cupidatat quasi faucibus
-                    nesciunt! Nullam ut magnam nostrud inventore lorem. Dapibus minus potenti tenetur sem parturient!
-                    Distinctio ducimus donec ridiculus! Nisl dictumst! Beatae doloremque! Etiam suscipit ornare conubia!
-                    Potenti nobis ab facere? Esse pede nec accumsan. Adipisci debitis semper impedit! Donec ligula.
-                    Quasi non recusandae sit. Pretium? Ridiculus nec esse expedita corrupti molestie consectetur, totam
-                    sapiente litora ullam aspernatur conubia, soluta odio tenetur urna. Tristique dignissim convallis
-                    tem</p>
+                <div class="productCard__content">
+                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
 
-                <a href="kategorie/fresh.html" class="btn btn-secondary btn-wide mb-4 mb-md-0">Nakupovat</a>
-            </div>
-        </section>
-        <section id="hpStripe2" class="row mb-3 pt-3 mt-0">
-            <div class="col-md-6 order-1 order-md-0 center-bootstrap-col">
-                <h2 class="title title__underline title__underline--left title__underline--hasIcon">
-                    <img src="../assets/img/eshop/categoryIcons/icon-cocktail.svg" alt="">
-                    <span>Míchané koktejly</span>
-                </h2>
-                <p>Fames duis perferendis sagittis. Fringilla tenetur repellat aspernatur cupidatat quasi faucibus
-                    nesciunt! Nullam ut magnam nostrud inventore lorem. Dapibus minus potenti tenetur sem parturient!
-                    Distinctio ducimus donec ridiculus! Nisl dictumst! Beatae doloremque! Etiam suscipit ornare conubia!
-                    Potenti nobis ab facere? Esse pede nec accumsan. Adipisci debitis semper impedit! Donec ligula.
-                    Quasi non recusandae sit. Pretium? Ridiculus nec esse expedita corrupti molestie consectetur, totam
-                    sapiente litora ullam aspernatur conubia, soluta odio tenetur urna. Tristique dignissim convallis
-                    tem</p>
+                    <div class="productCard__rate">
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="half"></span>
+                    </div>
 
-                <a href="kategorie/michane.html" class="btn btn-secondary btn-wide mb-4 mb-md-0">Nakupovat</a>
-            </div>
-            <div class="col-md-6 order-2 order-md-0">
-                <a href="kategorie/michane.html" class="imageBg">
-                    <img src="../assets/img/eshop/homepage/cocktail.png" alt="">
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: Uvedeno na plechovce</span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <div class="priceMobileControl">
+                            <select name="">
+                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
+                            </select>
+
+                            <div class="d-flex align-items-center">
+                                <div class="inputCounter mt-1 mb-2 form-group">
+                                    <span class="minus">-</span>
+                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                    <span class="plus">+</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
+                            </div>
+                        </div>
+                        <div class="priceWrapper">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+                    <div class="productCard__cover">
+
+                        <div class="variantSelect variantSelect--inline">
+                            <div class="variantSelect__item variantSelect__item--selected">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+                        </div>
+
+                        <div class="inputCounter mt-1 mb-2 form-group">
+                            <span class="minus">-</span>
+                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                            <span class="plus">+</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
+                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                    </div>
+                </div>
+            </form>
+            <form class="productCard">
+                <a href="detail.html" class="productCard__image">
+                    <div class="productCard__tags tag">
+                        <div class="tag__item tag__item--sale">
+                            <span>Akce</span>
+                        </div>
+                    </div>
+                    <img src="./../assets/img/product3.png" alt="">
                 </a>
-            </div>
-        </section>
+                <div class="productCard__content">
+                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
 
-        <section id="hpStripe3" class="row mb-3 pt-3 mt-0">
-            <div class="col-md-6 order-2 order-md-0">
-                <a href="kategorie/vina-a-frizzante.html" class="imageBg">
-                    <img src="../assets/img/eshop/homepage/wines-frizzante.png" alt="">
+                    <div class="productCard__rate">
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="half"></span>
+                    </div>
+
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: Uvedeno na plechovce</span>
+                    </div>
+
+                    <div class="productCard__price">
+                        <div class="priceMobileControl">
+                            <select name="">
+                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
+                            </select>
+
+                            <div class="d-flex align-items-center">
+                                <div class="inputCounter mt-1 mb-2 form-group">
+                                    <span class="minus">-</span>
+                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                    <span class="plus">+</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
+                            </div>
+                        </div>
+                        <div class="priceWrapper">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+                    <div class="productCard__cover">
+
+                        <div class="variantSelect variantSelect--inline">
+                            <div class="variantSelect__item variantSelect__item--selected">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+                        </div>
+
+                        <div class="inputCounter mt-1 mb-2 form-group">
+                            <span class="minus">-</span>
+                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                            <span class="plus">+</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
+                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                    </div>
+                </div>
+            </form>
+            <form class="productCard">
+                <a href="detail.html" class="productCard__image">
+                    <div class="productCard__tags tag">
+                        <div class="tag__item tag__item--sale">
+                            <span>Akce</span>
+                        </div>
+                    </div>
+                    <img src="./../assets/img/product3.png" alt="">
                 </a>
-            </div>
-            <div class="col-md-6 order-1 order-md-0 center-bootstrap-col">
-                <h2 class="title title__underline title__underline--right title__underline--hasIcon">
-                    <img src="../assets/img/eshop/categoryIcons/icon-wine.svg" alt="">
-                    <span>Vína a Frizzante</span>
-                </h2>
-                <p>Fames duis perferendis sagittis. Fringilla tenetur repellat aspernatur cupidatat quasi faucibus
-                    nesciunt! Nullam ut magnam nostrud inventore lorem. Dapibus minus potenti tenetur sem parturient!
-                    Distinctio ducimus donec ridiculus! Nisl dictumst! Beatae doloremque! Etiam suscipit ornare conubia!
-                    Potenti nobis ab facere? Esse pede nec accumsan. Adipisci debitis semper impedit! Donec ligula.
-                    Quasi non recusandae sit. Pretium? Ridiculus nec esse expedita corrupti molestie consectetur, totam
-                    sapiente litora ullam aspernatur conubia, soluta odio tenetur urna. Tristique dignissim convallis
-                    tem</p>
+                <div class="productCard__content">
+                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
 
-                <a href="kategorie/vina-a-frizzante.html" class="btn btn-secondary btn-wide mb-4 mb-md-0">Nakupovat</a>
-            </div>
-        </section>
+                    <div class="productCard__rate">
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="half"></span>
+                    </div>
 
-        <section id="hpStripe4" class="row mb-3 pt-3 mt-0 ">
-            <div class="col-md-6 order-1 order-md-0 center-bootstrap-col">
-                <h2 class="title title__underline title__underline--left title__underline--hasIcon">
-                    <img src="../assets/img/eshop/categoryIcons/icon-bubble.svg" alt="">
-                    <span>Vinné koktejly</span>
-                </h2>
-                <p>Fames duis perferendis sagittis. Fringilla tenetur repellat aspernatur cupidatat quasi faucibus
-                    nesciunt! Nullam ut magnam nostrud inventore lorem. Dapibus minus potenti tenetur sem parturient!
-                    Distinctio ducimus donec ridiculus! Nisl dictumst! Beatae doloremque! Etiam suscipit ornare conubia!
-                    Potenti nobis ab facere? Esse pede nec accumsan. Adipisci debitis semper impedit! Donec ligula.
-                    Quasi non recusandae sit. Pretium? Ridiculus nec esse expedita corrupti molestie consectetur, totam
-                    sapiente litora ullam aspernatur conubia, soluta odio tenetur urna. Tristique dignissim convallis
-                    tem</p>
-                <a href="kategorie/vinne-koktejly.html" class="btn btn-secondary btn-wide mb-4 mb-md-0">Nakupovat</a>
-            </div>
-            <div class="col-md-6 order-2 order-md-0">
-                <a href="kategorie/vinne-koktejly.html" class="imageBg">
-                    <img src="../assets/img/eshop/homepage/wine.png" alt="">
-                </a>
-            </div>
-        </section>
+                    <div class="productCard__parameters">
+                        <span>Země původu: <b>Itálie</b></span>
+                        <span>Typ: <b>Prosecco</b></span>
+                        <span>Alkohol: <b>11%</b></span>
+                        <span>Spotřeba: Uvedeno na plechovce</span>
+                    </div>
 
-        <section id="hpStripe5" class="row mb-3 pt-3 mt-0 ">
-            <div class="col-md-6 order-2 order-md-0">
-                <a href="kategorie/piva.html" class="imageBg">
-                    <img src="../assets/img/eshop/homepage/beer.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-6 order-1 order-md-0 center-bootstrap-col">
-                <h2 class="title title__underline title__underline--right title__underline--hasIcon">
-                    <img src="../assets/img/eshop/categoryIcons/icon-beer.svg" alt="">
-                    <span>Piva</span>
-                </h2>
-                <p>Fames duis perferendis sagittis. Fringilla tenetur repellat aspernatur cupidatat quasi faucibus
-                    nesciunt! Nullam ut magnam nostrud inventore lorem. Dapibus minus potenti tenetur sem parturient!
-                    Distinctio ducimus donec ridiculus! Nisl dictumst! Beatae doloremque! Etiam suscipit ornare conubia!
-                    Potenti nobis ab facere? Esse pede nec accumsan. Adipisci debitis semper impedit! Donec ligula.
-                    Quasi non recusandae sit. Pretium? Ridiculus nec esse expedita corrupti molestie consectetur, totam
-                    sapiente litora ullam aspernatur conubia, soluta odio tenetur urna. Tristique dignissim convallis
-                    tem</p>
+                    <div class="productCard__price">
+                        <div class="priceMobileControl">
+                            <select name="">
+                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
+                            </select>
 
-                <a href="kategorie/piva.html" class="btn btn-secondary btn-wide mb-4 mb-md-0">Nakupovat</a>
-            </div>
-        </section>
+                            <div class="d-flex align-items-center">
+                                <div class="inputCounter mt-1 mb-2 form-group">
+                                    <span class="minus">-</span>
+                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                    <span class="plus">+</span>
+                                </div>
 
-        <section id="hpStripe6" class="row mb-3 pt-3 mt-0 ">
-            <div class="col-md-6 order-1 order-md-0 center-bootstrap-col">
-                <h2 class="title title__underline title__underline--left title__underline--hasIcon">
-                    <img src="../assets/img/eshop/categoryIcons/icon-limo.svg" alt="">
-                    <span>Limonády</span>
-                </h2>
-                <p>Fames duis perferendis sagittis. Fringilla tenetur repellat aspernatur cupidatat quasi faucibus
-                    nesciunt! Nullam ut magnam nostrud inventore lorem. Dapibus minus potenti tenetur sem parturient!
-                    Distinctio ducimus donec ridiculus! Nisl dictumst! Beatae doloremque! Etiam suscipit ornare conubia!
-                    Potenti nobis ab facere? Esse pede nec accumsan. Adipisci debitis semper impedit! Donec ligula.
-                    Quasi non recusandae sit. Pretium? Ridiculus nec esse expedita corrupti molestie consectetur, totam
-                    sapiente litora ullam aspernatur conubia, soluta odio tenetur urna. Tristique dignissim convallis
-                    tem</p>
+                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
+                            </div>
+                        </div>
+                        <div class="priceWrapper">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
+                        </div>
+                    </div>
 
-                <a href="kategorie/limonady.html" class="btn btn-secondary btn-wide mb-4 mb-md-0">Nakupovat</a>
-            </div>
-            <div class="col-md-6 order-2 order-md-0">
-                <a href="kategorie/limonady.html" class="imageBg">
-                    <img src="../assets/img/eshop/homepage/bumbi.png" alt="">
-                </a>
-            </div>
-        </section>
+                    <div class="productCard__cover">
 
-    </div>
+                        <div class="variantSelect variantSelect--inline">
+                            <div class="variantSelect__item variantSelect__item--selected">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+                        </div>
+
+                        <div class="inputCounter mt-1 mb-2 form-group">
+                            <span class="minus">-</span>
+                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                            <span class="plus">+</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
+                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="stripe stripe--gray pt-4 pb-5 mb-3 mt-3">
+        <h2 class="title text-uppercase text-center mb-4">Také umíme</h2>
+
+        <div class="ipr-md-3 gutter-5 p-1">
+            <a href="#" class="imageBg">
+                <span class="text">
+                    POTISK<br>
+                    PLECHOVEK
+                </span>
+                <img src="../assets/img/plneni/1.jpg" alt="">
+            </a>
+            <a href="#" class="imageBg">
+                <span class="text">
+                    PLNĚNÍ<br>
+                    PLECHOVEK
+                </span>
+                <img src="../assets/img/plneni/1.jpg" alt="">
+            </a>
+            <a href="#" class="imageBg">
+                <span class="text">
+                    SOUTĚŽNÍ<br>
+                    PLECHOVKY
+                </span>
+                <img src="../assets/img/plneni/1.jpg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section class="stripe pt-4">
+        <h2 class="title text-uppercase text-center mb-4">RÁDI VÁS PROVEDEME NAŠÍM<br> NOVÝM SHOWROOMEM</h2>
+
+        <img src="../assets/img/showroom/design/large.jpg" class="showroom--image mb-3" alt="">
+
+        <div class="mt-3 text-center">
+            <a href="kontakt.html" class="btn text-dark font-weight-bold btn-secondary">DOMLUVIT SCHŮZKU</a>
+
+            <div class="container mt-5 mb-5">
+                <p>V Dobřejovicích u Prahy chystáme moderní zázemí pro zákazníky. Naše produkty skutečně oslovují všechny lidské smysly a internet zkrátka nedokáže všechny infor- mace přenést. A je to dobře. Z naší široké nabídky nápojů si totiž nejlépe vyberete tak, že ochutnáte vzorky přímo u nás.</p>
+                <p>Reklamní plechovky s unikátním 3D potiskem je třeba vzít do ruky a osahat. Jen tak si dokážete představit, jaký dojem mohou udělat na vaše zákazníky. V naší rozsáh- lé galerii vzorků si můžete prohlédnout hotové plechovky, které jsme navrhli pro jiné klienty a nechat se jimi inspirovat.</p>
+                <p>V naší bohatě zásobené vinotéce si můžete vybrat víno, které vám chutná a třeba si jej rovnou nechat stočit do plechovek na večerní grilování s kamarády. Vaše děti si mezitím mohou pohrát v dětském koutku.</p>
+            </div>
+
+            <div class="ipr-md-3">
+                <div class="">
+                    <img src="../assets/img/showroom/design/large.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="../assets/img/showroom/design/large.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="../assets/img/showroom/design/large.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 </main>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAge">
-    Souhlas s věkem
-</button>
-
 <footer class="container-fluid pl-0 pr-0">
     <div class="row">
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Informace</h4>
-            <ul class="footer__list">
-                <li><a href="o-nas.html">O nás</a></li>
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
+        <div class="footer-col col-md-6">
+            <div class="row mr-0 ml-0">
+                <div class="col-6 footer-border">
+                    <div class="footer__title text-right">Informace</div>
+                    <ul class="footer__list footer__list--right">
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="#">Informace o dopravě</a></li>
+                        <li><a href="#">Ochrana osobních údajů</a></li>
+                        <li><a href="#">Všeobecké obchodní podmínky</a></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="footer__title">Můj účet</div>
+                    <ul class="footer__list footer__list--left">
+                        <li><a href="#">Můj účet</a></li>
+                        <li><a href="#">Historie objednávek</a></li>
+                        <li><a href="#">Seznam přání</a></li>
+                        <li><a href="#">Novinky</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-col footer-col--logo col-md-6">
-
-            <a href="/design/">
-                <img src="../assets/img/logo.svg" alt="">
-            </a>
-
-            <a href="/frensiza/">
-                <img src="../assets/img/logo--frensiza.svg" alt="">
-            </a>
-
-        </div>
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Doplňky</h4>
-            <ul class="footer__list">
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
+        <div class="footer-col footer-col--alternative col-md-6">
+            <h4 class="footer__title">Máte rádi pivo?</h4>
+            <p>Objevte největší český eshop craftového piva...</p>
         </div>
     </div>
-
-    <div class="copyright">Drink2Go © 2020</div>
 </footer>
 
 <section id="modals">

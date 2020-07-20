@@ -21,13 +21,37 @@
                 <img src="../assets/img/logo.svg" alt="Drink2go" class="logo-img">
             </a>
         </div>
-        <form action="" class="topPanel__item topPanel__item--search">
-            <label for="search">
-                <span class="d-none">hledání</span>
-            </label>
-            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
-        </form>
+        <div class="topPanel__item topPanel__item--search">
+            <form action="" class="w-100 position-relative">
+                <label for="search" class="d-none">
+                    <span>hledání</span>
+                </label>
+                <input id="search" placeholder="Hledejte, co hledáte..." class="form-control" name="search" type="search">
+                <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
+            </form>
+
+            <ul class="nav menu menu--main mt-2" data-level="1">
+                <li class="nav__item">
+                    <a href="kategorie.html" class="nav__link">Naše drinky</a>
+                </li>
+                <li class="nav__item">
+                    <a href="stiraci-plechovky.html" class="nav__link">Soutěžní plechovky</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a href="potisk-plechovek.html" class="nav__link">3D Potisk plechovek</a>
+                </li>
+                <li class="nav__item">
+                    <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
+                </li>
+                <li class="nav__item">
+                    <a href="o-nas.html" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__item">
+                    <a href="kontakt.html" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
+
+        </div>
         <div class="topPanel__item topPanel__item--cart">
 
             <a class="icon" href="tel:123456789">
@@ -152,31 +176,23 @@
 
         </div>
     </div>
-    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít"></div>
+    <div class="mobileSide__close" data-toggle="mobileSide"><img src="./../assets/svg/mobile-close.svg" alt="Zavřít">
+    </div>
     <div class="mobileSide hide">
         <div class="mobileSide__inner">
             <div class="mobileList__header">
-                <img src="./../assets/img/logo.svg" alt="Drink2go">
+                <img src="./../assets/img/logo--eshop.svg" alt="cans4All">
             </div>
-
             <ul class="menu menu--mobile mobileList mobileList--sub" data-level="1">
                 <li class="mobileList__item">
-                    <a href="../design" class="mobileList__link">Domů</a>
+                    <a href="../eshop" class="mobileList__link">Domů</a>
                 </li>
                 <li class="mobileList__item">
-                    <a href="potisk-plechovek.html" class="mobileList__link">Potisk plechovek</a>
+                    <a href="kategorie-nase-drinky.html" class="mobileList__link">Naše drinky</a>
                 </li>
+
                 <li class="mobileList__item">
-                    <a href="stiraci-plechovky.html" class="mobileList__link">Stírací plechovky</a>
-                </li>
-                <li class="mobileList__item">
-                    <a href="plneni-plechovek.html" class="mobileList__link">Plnění plechovek</a>
-                </li>
-                <li class="mobileList__item">
-                    <a href="kategorie.html" class="mobileList__link">Kategorie</a>
-                </li>
-                <li class="mobileList__item">
-                    <a href="o-nas.html" class="mobileList__link">O nás</a>
+                    <a href="kategorie.html" class="mobileList__link">O nás</a>
                 </li>
 
                 <li class="mobileList__item">
@@ -185,8 +201,8 @@
             </ul>
 
             <div class="mobileList__footer">
-                <a href="eshop" class="logo">
-                    <img src="./../assets/img/logo--eshop.svg" alt="">
+                <a href="design" class="logo">
+                    <img src="./../assets/img/logo.svg" alt="">
                 </a>
                 <a href="frensiza" class="logo">
                     <img src="./../assets/img/logo--frensiza.svg" alt="">
@@ -195,42 +211,10 @@
         </div>
     </div>
 
-    <ul class="nav menu menu--main" data-level="1">
-        <li class="nav__item nav__item">
-            <a href="../design/" class="nav__link">Domů</a>
-        </li>
-        <li class="nav__item">
-            <a href="kategorie.html" class="nav__link">Naše drinky</a>
-        </li>
-        <li class="nav__item">
-            <a href="stiraci-plechovky.html" class="nav__link">Soutěžní plechovky</a>
-        </li>
-        <li class="nav__item nav__item--active">
-            <a href="potisk-plechovek.html" class="nav__link">3D Potisk plechovek</a>
-        </li>
-        <li class="nav__item">
-            <a href="plneni-plechovek.html" class="nav__link">Plnění plechovek</a>
-        </li>
-        <li class="nav__item">
-            <a href="o-nas.html" class="nav__link">O nás</a>
-        </li>
-        <li class="nav__item">
-            <a href="kontakt.html" class="nav__link">Kontakt</a>
-        </li>
-    </ul>
+
 </header>
 
 <main class="page">
-    <div class="topBanner topBanner--small">
-        <div class="topBanner__bg">
-            <img src="./../assets/img/topbanner/banner.png" alt="">
-        </div>
-        <div class="container topBanner__container">
-            <div class="topBanner__content topBanner__content--center">
-                <h2 class="title title--line text-center mt-5 mb-4 title--big">Naše drinky</h2>
-            </div>
-        </div>
-    </div>
 
     <section class="stripe stripe--full" data-aos="fade-up">
         <form action="" id="filter" class="filter">
@@ -290,253 +274,257 @@
                     </div>
                 </div>
             </div>
-            <div class="row filterSelect mt-4 mb-3">
-                <h4 class="title title--normal text-uppercase font-weight-bold">Spotřeba:</h4>
-                <label>
-                    <input type="radio" name="spotreba" value="vse" checked="" onchange="location = this.value;">
-                    <span class="font-weight-bold text-uppercase ml-2">Vše</span>
-                </label>
-                <label>
-                    <input type="radio" name="spotreba" value="24h" onchange="location = this.value;">
-                    <span class="font-weight-bold text-uppercase ml-2">24h - Určeno k okamžité spotřebě</span>
-                </label>
 
-                <label>
-                    <input type="radio" name="spotreba" value="Vše" onchange="location = this.value;">
-                    <span class="font-weight-bold text-uppercase ml-2">Dlouhodobě trvanlivé</span>
-                </label>
-            </div>
         </form>
 
+        <div class="productCount">39 produktů</div>
         <div class="productList">
-            <div class="productCard">
-                <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span class="side">Akce%</span>
-                        <span>Akce</span>
-                        <span class="side">%Akce</span>
-                    </div>
-                </div>
-                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+            <form class="productCard">
                 <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product7.png" alt="">
-                    <span class="productCard__stamp">To chci</span>
+                    <div class="productCard__tags tag">
+                        <div class="tag__item tag__item--sale">
+                            <span>Akce</span>
+                        </div>
+                    </div>
+                    <img src="./../assets/img/product3.png" alt="">
                 </a>
                 <div class="productCard__content">
-                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+
+                    <div class="productCard__rate">
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="half"></span>
+                    </div>
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
                         <span>Typ: <b>Prosecco</b></span>
                         <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: <b>24 h</b></span>
+                        <span>Spotřeba: Uvedeno na plechovce</span>
                     </div>
 
                     <div class="productCard__price">
-                        <div class="productCard__button productCard__button--left">
-                            <a href="detail.html" class="btn btn-primary text-uppercase">detail</a>
+                        <div class="priceMobileControl">
+                            <select name="">
+                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
+                            </select>
+
+                            <div class="d-flex align-items-center">
+                                <div class="inputCounter mt-1 mb-2 form-group">
+                                    <span class="minus">-</span>
+                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                    <span class="plus">+</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
+                            </div>
+                        </div>
+                        <div class="priceWrapper">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
                         </div>
                     </div>
 
-                </div>
-                <div class="productCard__footer">
-                    <h6 class="title title--normal">Objem:</h6>
-                    <div class="productCard__footerParams">
-                        <div><b>SLIM:</b> 250ml</div>
-                        <div><b>REGULAR:</b> 250ml / 330 ml / 500 ml</div>
+                    <div class="productCard__cover">
+
+                        <div class="variantSelect variantSelect--inline">
+                            <div class="variantSelect__item variantSelect__item--selected">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+                        </div>
+
+                        <div class="inputCounter mt-1 mb-2 form-group">
+                            <span class="minus">-</span>
+                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                            <span class="plus">+</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
+                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
                     </div>
                 </div>
-            </div>
-            <div class="productCard">
-                <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span class="side">Akce%</span>
-                        <span>Akce</span>
-                        <span class="side">%Akce</span>
-                    </div>
-                </div>
-                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+            </form>
+            <form class="productCard">
                 <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product7.png" alt="">
-                    <span class="productCard__stamp">To chci</span>
+                    <div class="productCard__tags tag">
+                        <div class="tag__item tag__item--sale">
+                            <span>Akce</span>
+                        </div>
+                    </div>
+                    <img src="./../assets/img/product3.png" alt="">
                 </a>
                 <div class="productCard__content">
-                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+
+                    <div class="productCard__rate">
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="half"></span>
+                    </div>
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
                         <span>Typ: <b>Prosecco</b></span>
                         <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: <b>24 h</b></span>
+                        <span>Spotřeba: Uvedeno na plechovce</span>
                     </div>
 
                     <div class="productCard__price">
-                        <div class="productCard__button productCard__button--left">
-                            <a href="detail.html" class="btn btn-primary text-uppercase">detail</a>
+                        <div class="priceMobileControl">
+                            <select name="">
+                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
+                            </select>
+
+                            <div class="d-flex align-items-center">
+                                <div class="inputCounter mt-1 mb-2 form-group">
+                                    <span class="minus">-</span>
+                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                    <span class="plus">+</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
+                            </div>
+                        </div>
+                        <div class="priceWrapper">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
                         </div>
                     </div>
 
-                </div>
-                <div class="productCard__footer">
-                    <h6 class="title title--normal">Objem:</h6>
-                    <div class="productCard__footerParams">
-                        <div><b>SLIM:</b> 250ml</div>
-                        <div><b>REGULAR:</b> 250ml / 330 ml / 500 ml</div>
+                    <div class="productCard__cover">
+
+                        <div class="variantSelect variantSelect--inline">
+                            <div class="variantSelect__item variantSelect__item--selected">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+                        </div>
+
+                        <div class="inputCounter mt-1 mb-2 form-group">
+                            <span class="minus">-</span>
+                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                            <span class="plus">+</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
+                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
                     </div>
                 </div>
-            </div>
-            <div class="productCard">
-                <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span class="side">Akce%</span>
-                        <span>Akce</span>
-                        <span class="side">%Akce</span>
-                    </div>
-                </div>
-                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
+            </form>
+            <form class="productCard">
                 <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product7.png" alt="">
-                    <span class="productCard__stamp">To chci</span>
+                    <div class="productCard__tags tag">
+                        <div class="tag__item tag__item--sale">
+                            <span>Akce</span>
+                        </div>
+                    </div>
+                    <img src="./../assets/img/product3.png" alt="">
                 </a>
                 <div class="productCard__content">
-                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+
+                    <div class="productCard__rate">
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="half"></span>
+                    </div>
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
                         <span>Typ: <b>Prosecco</b></span>
                         <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: <b>24 h</b></span>
+                        <span>Spotřeba: Uvedeno na plechovce</span>
                     </div>
 
                     <div class="productCard__price">
-                        <div class="productCard__button productCard__button--left">
-                            <a href="detail.html" class="btn btn-primary text-uppercase">detail</a>
+                        <div class="priceMobileControl">
+                            <select name="">
+                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
+                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
+                            </select>
+
+                            <div class="d-flex align-items-center">
+                                <div class="inputCounter mt-1 mb-2 form-group">
+                                    <span class="minus">-</span>
+                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
+                                    <span class="plus">+</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
+                            </div>
+                        </div>
+                        <div class="priceWrapper">
+                            <span class="price price__actual">280.00 Kč</span>
+                            <span class="price price__del">1 000.00 Kč</span>
+                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
                         </div>
                     </div>
 
-                </div>
-                <div class="productCard__footer">
-                    <h6 class="title title--normal">Objem:</h6>
-                    <div class="productCard__footerParams">
-                        <div><b>SLIM:</b> 250ml</div>
-                        <div><b>REGULAR:</b> 250ml / 330 ml / 500 ml</div>
-                    </div>
-                </div>
-            </div>
-            <div class="productCard">
-                <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span class="side">Akce%</span>
-                        <span>Akce</span>
-                        <span class="side">%Akce</span>
-                    </div>
-                </div>
-                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product7.png" alt="">
-                    <span class="productCard__stamp">To chci</span>
-                </a>
-                <div class="productCard__content">
-                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
+                    <div class="productCard__cover">
 
-                    <div class="productCard__parameters">
-                        <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: <b>24 h</b></span>
-                    </div>
+                        <div class="variantSelect variantSelect--inline">
+                            <div class="variantSelect__item variantSelect__item--selected">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
 
-                    <div class="productCard__price">
-                        <div class="productCard__button productCard__button--left">
-                            <a href="detail.html" class="btn btn-primary text-uppercase">detail</a>
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
+
+                            <div class="variantSelect__item">
+                                <p class="topTitle">Plechovka 1x250 ml</p>
+                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-                <div class="productCard__footer">
-                    <h6 class="title title--normal">Objem:</h6>
-                    <div class="productCard__footerParams">
-                        <div><b>SLIM:</b> 250ml</div>
-                        <div><b>REGULAR:</b> 250ml / 330 ml / 500 ml</div>
-                    </div>
-                </div>
-            </div>
-            <div class="productCard">
-                <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span class="side">Akce%</span>
-                        <span>Akce</span>
-                        <span class="side">%Akce</span>
-                    </div>
-                </div>
-                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product7.png" alt="">
-                    <span class="productCard__stamp">To chci</span>
-                </a>
-                <div class="productCard__content">
-                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
-
-                    <div class="productCard__parameters">
-                        <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: <b>24 h</b></span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="productCard__button productCard__button--left">
-                            <a href="detail.html" class="btn btn-primary text-uppercase">detail</a>
+                        <div class="inputCounter mt-1 mb-2 form-group">
+                            <span class="minus">-</span>
+                            <input type="text" name="bottle" value="1" class="form-control" min="0">
+                            <span class="plus">+</span>
                         </div>
-                    </div>
 
-                </div>
-                <div class="productCard__footer">
-                    <h6 class="title title--normal">Objem:</h6>
-                    <div class="productCard__footerParams">
-                        <div><b>SLIM:</b> 250ml</div>
-                        <div><b>REGULAR:</b> 250ml / 330 ml / 500 ml</div>
+                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
+                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
                     </div>
                 </div>
-            </div>
-            <div class="productCard">
-                <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span class="side">Akce%</span>
-                        <span>Akce</span>
-                        <span class="side">%Akce</span>
-                    </div>
-                </div>
-                <a href="detail.html" class="mobile-only mt-4"><h2 class="title">Sex on the beach 2 go</h2></a>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product7.png" alt="">
-                    <span class="productCard__stamp">To chci</span>
-                </a>
-                <div class="productCard__content">
-                    <a href="detail.html" class="desktop-only"><h2 class="title">Sex on the beach 2 go</h2></a>
-
-                    <div class="productCard__parameters">
-                        <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: <b>24 h</b></span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="productCard__button productCard__button--left">
-                            <a href="detail.html" class="btn btn-primary text-uppercase">detail</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="productCard__footer">
-                    <h6 class="title title--normal">Objem:</h6>
-                    <div class="productCard__footerParams">
-                        <div><b>SLIM:</b> 250ml</div>
-                        <div><b>REGULAR:</b> 250ml / 330 ml / 500 ml</div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
 
         <div class="pagination">
@@ -549,37 +537,33 @@
 
 <footer class="container-fluid pl-0 pr-0">
     <div class="row">
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Informace</h4>
-            <ul class="footer__list">
-                <li><a href="o-nas.html">O nás</a></li>
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
+        <div class="footer-col col-md-6">
+            <div class="row mr-0 ml-0">
+                <div class="col-6 footer-border">
+                    <div class="footer__title text-right">Informace</div>
+                    <ul class="footer__list footer__list--right">
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="#">Informace o dopravě</a></li>
+                        <li><a href="#">Ochrana osobních údajů</a></li>
+                        <li><a href="#">Všeobecké obchodní podmínky</a></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="footer__title">Můj účet</div>
+                    <ul class="footer__list footer__list--left">
+                        <li><a href="#">Můj účet</a></li>
+                        <li><a href="#">Historie objednávek</a></li>
+                        <li><a href="#">Seznam přání</a></li>
+                        <li><a href="#">Novinky</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-                <div class="footer-col footer-col--logo col-md-6">
-
-            <a href="/eshop/">
-                <img src="../assets/img/logo--eshop.svg" alt="">
-            </a>
-
-            <a href="/frensiza/">
-                <img src="../assets/img/logo--frensiza.svg" alt="">
-            </a>
-
-        </div>
-        <div class="footer-col col-md-3">
-            <h4 class="footer__title">Doplňky</h4>
-            <ul class="footer__list">
-                <li><a href="#">Jako byste seděli na španělské vinici...</a></li>
-                <li><a href="#">Informace o dopravě</a></li>
-                <li><a href="#">Ochrana osvních údajů</a></li>
-            </ul>
+        <div class="footer-col footer-col--alternative col-md-6">
+            <h4 class="footer__title">Máte rádi pivo?</h4>
+            <p>Objevte největší český eshop craftového piva...</p>
         </div>
     </div>
-
-    <div class="copyright">Drink2Go © 2020</div>
 </footer>
 <section id="modals">
 

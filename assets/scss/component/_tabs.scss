@@ -1,22 +1,25 @@
 .nav-tabs {
   border-bottom: none;
-  margin-bottom: $spacer * 1.5;
   background-color: transparent;
 
   .nav-link {
-    border-radius: 0;
-    border-width: 3px;
+    border-width: 0;
     width: 150px;
     text-align: center;
-    background: #F3F4F5;
-    color: #535455;
+    background: transparentize($gray-400, .7);
+    color: transparentize($black, .7);
     font-family: $headings-font-family;
     font-weight: $font-weight-bold;
     font-size: 1.2rem;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    padding-bottom: $spacer * .75;
+    padding-top: $spacer * .75;
+    text-transform: uppercase;
 
     @include media-breakpoint-down(sm) {
-      width: 90px;
-      font-size: 0.9rem;
+      width: 93px;
+      font-size: 0.8rem;
       padding-left: $spacer / 2;
       padding-right: $spacer / 2;
     }
@@ -37,23 +40,17 @@
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  border-color: $brown;
-  color: #000;
-  background: transparent;
+  color: $black;
+  background: $gray-400;
 }
 
 .tab-pane {
   width: 100%;
   position: relative;
   align-items: center;
-  padding: 7%;
 
-  .tab-content {
-    background-color: $white;
-  }
 
   @include media-breakpoint-down(sm) {
-    padding: 12% 7%;
     min-height: initial;
   }
 
@@ -108,7 +105,6 @@
 
 .tabs--detail {
   display: flex;
-  justify-content: center;
 }
 
 .tab-content--detail {
@@ -119,8 +115,7 @@
 
   .tab-content {
     align-items: initial;
-    padding-top: $spacer * 3;
-    padding: 5rem;
+    padding: $spacer * 2 0;
 
     @include media-breakpoint-down(sm) {
       min-height: initial;

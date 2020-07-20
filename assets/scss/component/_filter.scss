@@ -68,7 +68,7 @@
   border: 1px solid #9c9288;
   padding-right: 30px;
   color: #645e5c;
-  font-size: 20px;
+  font-size: 17px;
   border-radius: $border-radius-lg;
   align-items: center;
   text-align-last: center;
@@ -160,6 +160,8 @@
       margin-bottom: 0;
       margin-top: $spacer / 2;
       text-align: center;
+      color: $gray-800;
+      line-height: 1;
     }
 
     &:hover,

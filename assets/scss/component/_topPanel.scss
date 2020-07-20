@@ -1,11 +1,15 @@
 .topPanel {
   display: flex;
-  background: $white;
+  background: $primary;
   padding: 0 70px;
   height: $top-panel-height;
   position: relative;
   box-shadow: 0 2px 10px #00000045;
   z-index: 2;
+
+  @include media-breakpoint-down(lg) {
+    padding: 0;
+  }
 
   @include media-breakpoint-down(sm) {
     padding: 0 $spacer / 2;
@@ -39,21 +43,6 @@
     display: flex;
     align-items: center;
 
-    &:after {
-      content: '';
-      display: block;
-      width: 2px;
-      height: 65%;
-      background-color: $gray;
-      position: relative;
-      right: -$spacer;
-
-      @include media-breakpoint-down(sm) {
-        right: -$spacer / 2;
-        height: 40%;
-      }
-    }
-
     @include media-breakpoint-down(sm) {
       padding-left: $spacer / 2;
       padding-right: $spacer / 2;
@@ -85,6 +74,12 @@
 }
 
 .topPanel__item--links {
+  padding-right: $spacer / 2;
+
+  @include media-breakpoint-down(lg) {
+    flex: 1;
+  }
+
   @include media-breakpoint-down(sm) {
     justify-content: flex-start;
 
@@ -96,6 +91,14 @@
 
 .topPanel__item--cart {
   justify-content: flex-end;
+
+  @include media-breakpoint-down(lg) {
+    flex: 1;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex: 2;
+  }
 
   > .user {
 
@@ -111,15 +114,17 @@
 
   }
 
-  @include media-breakpoint-down(sm) {
-    flex: 2;
-  }
-
 }
 
 .topPanel__item--search {
   position: relative;
   justify-content: center;
+  flex: 3;
+  max-width: map_get($container-max-widths, 'md');
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 
   @include media-breakpoint-down(sm) {
     display: none;
@@ -133,7 +138,7 @@
   button[type="submit"] {
     position: absolute;
     right: 0;
-    height: calc(1.5em + .75rem + 2px);
+    top: 6px;
     background-color: transparent;
     border: none;
     padding-right: 10px;

@@ -20,13 +20,34 @@
                 <img src="../assets/img/logo--eshop.svg" alt="Drink2go" class="logo-img">
             </a>
         </div>
-        <form action="" class="topPanel__item topPanel__item--search">
-            <label for="search">
-                <span class="d-none">hledání</span>
-            </label>
-            <input id="search" placeholder="Hledej" class="form-control" name="search" type="search">
-            <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
-        </form>
+        <div class="topPanel__item topPanel__item--search">
+            <form action="" class="w-100 position-relative">
+                <label for="search" class="d-none">
+                    <span>hledání</span>
+                </label>
+                <input id="search" placeholder="Hledejte, co hledáte..." class="form-control" name="search" type="search">
+                <button type="submit"><img src="./../assets/svg/search.svg" alt="Hledat"></button>
+            </form>
+
+            <ul class="nav menu menu--main mt-2" data-level="1">
+                <li class="nav__item nav__item--active">
+                    <a href="kategorie-nase-drinky.html" class="nav__link">E-shop</a>
+                </li>
+                <li class="nav__item">
+                    <a href="o-nas.html" class="nav__link">O nás</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nase-sluzby.html#3dPotisk" class="nav__link">3D potisk plechovek</a>
+                </li>
+                <li class="nav__item">
+                    <a href="nase-sluzby.html#reklamniPlechovky" class="nav__link">Reklamní plechovky</a>
+                </li>
+                <li class="nav__item">
+                    <a href="kontakt.html" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
+
+        </div>
         <div class="topPanel__item topPanel__item--cart">
 
             <a class="icon" href="tel:123456789">
@@ -186,20 +207,7 @@
         </div>
     </div>
 
-    <ul class="nav menu menu--main" data-level="1">
-        <li class="nav__item">
-            <a href="../eshop" class="nav__link">Domů</a>
-        </li>
-        <li class="nav__item nav__item--active">
-            <a href="kategorie-nase-drinky.html" class="nav__link">Naše drinky</a>
-        </li>
-        <li class="nav__item">
-            <a href="o-nas.html" class="nav__link">O nás</a>
-        </li>
-        <li class="nav__item">
-            <a href="kontakt.html" class="nav__link">Kontakt</a>
-        </li>
-    </ul>
+
 </header>
 
 <main class="page">
