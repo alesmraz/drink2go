@@ -1,6 +1,7 @@
 .canProcessSlider .swiper-slide {
   .canProcessCard {
     background-color: $black;
+    min-height: 750px;
   }
 
   &:nth-child(even) {
@@ -8,6 +9,11 @@
       background-color: $alternative;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 750px;
+  }
+
 }
 
 .canProcessCard__image {
