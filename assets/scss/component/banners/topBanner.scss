@@ -14,6 +14,13 @@
   @include size(100%);
   min-height: 300px;
 
+  &:after {
+    content: '';
+    @include fill();
+    @include size(100%);
+    background-color: transparentize($black, 0.6);
+  }
+
   > img {
     @include fill();
     @include object-fit(cover);
