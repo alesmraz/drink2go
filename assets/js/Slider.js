@@ -61,7 +61,6 @@ export default class Slider {
         spaceBetween        : 15,
         slideToClickedSlide : true,
         direction           : 'vertical',
-        autoHeight: true,
         on                  : {
           init : function () {
           }
@@ -110,7 +109,7 @@ export default class Slider {
         }
       }
       this.options.spaceBetween = 30
-      this.options.centeredSlides = true
+   //   this.options.centeredSlides = true
     }
   }
 

@@ -80,6 +80,17 @@
   .preview {
     width: 20%;
     position: relative;
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+
+    .swiper-slide-active {
+      background: #f9f9f9;
+      border-radius: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     @include media-breakpoint-down(sm) {
       width: 100%;
