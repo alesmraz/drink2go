@@ -23,25 +23,35 @@ export default class InputCounter {
     if (plus && minus && number) {
       plus.addEventListener('click', () => {
         number.value++
-        this.getActualData(number.name, number.value)
+        this.syncInputs(input, number.value)
       })
 
       minus.addEventListener('click', () => {
         if (number.value > 0) {
           number.value--
-          this.getActualData(number.name, number.value)
+          this.syncInputs(input, number.value)
         }
       })
 
       number.addEventListener('change', () => {
-        this.getActualData(number.name, number.value)
+        this.syncInputs(input, number.value)
       })
 
     }
   }
 
-  getActualData(type, inputValue) {
-    //TODO: add ajax call to server to fetch calc price. then fill variable: values - now with mock data.
+  syncInputs(input, numberValue) {
+    if (input) {
+      const otherInputs = [...input.closest('form').querySelectorAll(`${this.selector} input`)]
+
+      if (otherInputs.length) {
+       otherInputs.forEach(foreignInput => {
+         if (Number(foreignInput.value) !== Number(numberValue)) {
+           foreignInput.value = numberValue
+         }
+       })
+      }
+    }
   }
 
 

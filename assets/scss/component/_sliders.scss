@@ -193,6 +193,11 @@
 }
 
 .swiper--thumbnails {
+
+  .swiper-wrapper {
+    transform: none !important;
+  }
+
   @include media-breakpoint-down(sm) {
     display: flex;
   }

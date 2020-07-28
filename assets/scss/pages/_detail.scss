@@ -84,12 +84,22 @@
     display: flex;
     overflow: hidden;
 
+    .swiper--thumbnails {
+
+      .swiper-wrapper {
+        transform: none !important;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
     .swiper-slide-active {
       background: #f9f9f9;
       border-radius: 26px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     @include media-breakpoint-down(sm) {
