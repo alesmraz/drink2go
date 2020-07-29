@@ -24,12 +24,25 @@
   .text {
     @include center();
     color: $white;
-    font-size: $h3-font-size;
+    font-size: $h2-font-size;
     z-index: 3;
     text-align: center;
     font-weight: $font-weight-bold;
     line-height: 1;
+    width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $h4-font-size;
+    }
+
+    .subtext {
+      font-weight: $font-weight-normal;
+      display: block;
+      margin-top: $spacer / 4;
+    }
   }
+
+
 
   @include hover-focus() {
     img {

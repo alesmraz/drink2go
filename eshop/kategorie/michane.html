@@ -322,19 +322,19 @@
 
         <div class="productCount">39 produktů</div>
         <div class="productList">
-            <form class="productCard">
+            <form class="productCard" id="product_19">
                 <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span>Akce</span>
+                    <div class="tag__item tag__item--danger">
+                        Vyprodáno
                     </div>
                 </div>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product3.png" alt="">
+                <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="productCard__image">
+                    <img src="https://drink2go.cz/image/cache/catalog/slim%20250%20vino/vino_slim_3-200x260.png" alt="Merlot polosladké" title="Merlot polosladké">
                 </a>
                 <div class="productCard__content">
-                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+                    <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19"><h2 class="title">Merlot polosladké</h2></a>
 
-                    <div class="productCard__rate">
+                    <div class="productCard__rate d-none d-md-flex">
                         <span class="full"></span>
                         <span class="full"></span>
                         <span class="full"></span>
@@ -344,79 +344,69 @@
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: Uvedeno na plechovce</span><span>Objem: 250ml</span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="priceMobileControl">
-                            <select name="">
-                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
-                            </select>
-
-                            <div class="d-flex align-items-center">
-                                <div class="inputCounter mt-1 mb-2 form-group">
-                                    <span class="minus">-</span>
-                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                    <span class="plus">+</span>
-                                </div>
-
-                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
-                            </div>
-                        </div>
-                        <div class="priceWrapper">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+                        <span>Typ: <b>Polosladké</b></span>
+                        <span>Alkohol: <b>12,5%</b></span>
+                        <span>Spotřeba: <b>Uvedeno na plechovce </b></span>
                     </div>
 
                     <div class="productCard__cover">
-
                         <div class="variantSelect variantSelect--inline">
-                            <div class="variantSelect__item variantSelect__item--selected">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item variantSelect__item--selected" onclick="getpriceCan('19', '59');">
+                                <p class="topTitle">1x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
-                            </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item " onclick="getpriceCan('19', '60');">
+                                <p class="topTitle">6x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
                         </div>
 
-                        <div class="inputCounter mt-1 mb-2 form-group">
-                            <span class="minus">-</span>
-                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                            <span class="plus">+</span>
+                        <div class="productCard__price">
+                            <div class="priceWrapper">
+                                <span class="price price__actual">59,00 Kč</span>
+                                <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
-                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                        <div class="d-flex d-md-block align-items-center">
+                            <div class="inputCounter mt-md-1 mb-md-2 mt-0 mb-0 mr-1 mr-md-0 form-group">
+                                <span class="minus">-</span>
+                                <input type="text" name="quantity_desktop" value="1" class="form-control" min="0" id="counter_desktop_19">
+                                <span class="plus">+</span>
+                            </div>
+
+                            <input type="hidden" name="product_id" value="19">
+
+                            <button type="button" class="btn btn-lg pl-3 pr-3 text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-md-2" onclick="addToCart(19)">Do košíku</button>
+                        </div>
+
+                        <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="text-uppercase fs-xs text-white font-weight-bold text-underline d-none d-md-block">Více informace</a>
                     </div>
+
+                    <div class="productCard__price d-none d-md-flex">
+                        <div class="priceWrapper" id="priceCan_19">
+                            <span class="price price__actual">59,00 Kč</span>
+                            <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </form>
-            <form class="productCard">
+            <form class="productCard" id="product_19">
                 <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span>Akce</span>
+                    <div class="tag__item tag__item--danger">
+                        Vyprodáno
                     </div>
                 </div>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product3.png" alt="">
+                <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="productCard__image">
+                    <img src="https://drink2go.cz/image/cache/catalog/slim%20250%20vino/vino_slim_3-200x260.png" alt="Merlot polosladké" title="Merlot polosladké">
                 </a>
                 <div class="productCard__content">
-                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+                    <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19"><h2 class="title">Merlot polosladké</h2></a>
 
-                    <div class="productCard__rate">
+                    <div class="productCard__rate d-none d-md-flex">
                         <span class="full"></span>
                         <span class="full"></span>
                         <span class="full"></span>
@@ -426,79 +416,69 @@
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: Uvedeno na plechovce</span><span>Objem: 250ml</span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="priceMobileControl">
-                            <select name="">
-                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
-                            </select>
-
-                            <div class="d-flex align-items-center">
-                                <div class="inputCounter mt-1 mb-2 form-group">
-                                    <span class="minus">-</span>
-                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                    <span class="plus">+</span>
-                                </div>
-
-                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
-                            </div>
-                        </div>
-                        <div class="priceWrapper">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+                        <span>Typ: <b>Polosladké</b></span>
+                        <span>Alkohol: <b>12,5%</b></span>
+                        <span>Spotřeba: <b>Uvedeno na plechovce </b></span>
                     </div>
 
                     <div class="productCard__cover">
-
                         <div class="variantSelect variantSelect--inline">
-                            <div class="variantSelect__item variantSelect__item--selected">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item variantSelect__item--selected" onclick="getpriceCan('19', '59');">
+                                <p class="topTitle">1x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
-                            </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item " onclick="getpriceCan('19', '60');">
+                                <p class="topTitle">6x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
                         </div>
 
-                        <div class="inputCounter mt-1 mb-2 form-group">
-                            <span class="minus">-</span>
-                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                            <span class="plus">+</span>
+                        <div class="productCard__price">
+                            <div class="priceWrapper">
+                                <span class="price price__actual">59,00 Kč</span>
+                                <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
-                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                        <div class="d-flex d-md-block align-items-center">
+                            <div class="inputCounter mt-md-1 mb-md-2 mt-0 mb-0 mr-1 mr-md-0 form-group">
+                                <span class="minus">-</span>
+                                <input type="text" name="quantity_desktop" value="1" class="form-control" min="0" id="counter_desktop_19">
+                                <span class="plus">+</span>
+                            </div>
+
+                            <input type="hidden" name="product_id" value="19">
+
+                            <button type="button" class="btn btn-lg pl-3 pr-3 text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-md-2" onclick="addToCart(19)">Do košíku</button>
+                        </div>
+
+                        <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="text-uppercase fs-xs text-white font-weight-bold text-underline d-none d-md-block">Více informace</a>
                     </div>
+
+                    <div class="productCard__price d-none d-md-flex">
+                        <div class="priceWrapper" id="priceCan_19">
+                            <span class="price price__actual">59,00 Kč</span>
+                            <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </form>
-            <form class="productCard">
+            <form class="productCard" id="product_19">
                 <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span>Akce</span>
+                    <div class="tag__item tag__item--danger">
+                        Vyprodáno
                     </div>
                 </div>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product3.png" alt="">
+                <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="productCard__image">
+                    <img src="https://drink2go.cz/image/cache/catalog/slim%20250%20vino/vino_slim_3-200x260.png" alt="Merlot polosladké" title="Merlot polosladké">
                 </a>
                 <div class="productCard__content">
-                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+                    <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19"><h2 class="title">Merlot polosladké</h2></a>
 
-                    <div class="productCard__rate">
+                    <div class="productCard__rate d-none d-md-flex">
                         <span class="full"></span>
                         <span class="full"></span>
                         <span class="full"></span>
@@ -508,79 +488,69 @@
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: Uvedeno na plechovce</span><span>Objem: 250ml</span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="priceMobileControl">
-                            <select name="">
-                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
-                            </select>
-
-                            <div class="d-flex align-items-center">
-                                <div class="inputCounter mt-1 mb-2 form-group">
-                                    <span class="minus">-</span>
-                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                    <span class="plus">+</span>
-                                </div>
-
-                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
-                            </div>
-                        </div>
-                        <div class="priceWrapper">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+                        <span>Typ: <b>Polosladké</b></span>
+                        <span>Alkohol: <b>12,5%</b></span>
+                        <span>Spotřeba: <b>Uvedeno na plechovce </b></span>
                     </div>
 
                     <div class="productCard__cover">
-
                         <div class="variantSelect variantSelect--inline">
-                            <div class="variantSelect__item variantSelect__item--selected">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item variantSelect__item--selected" onclick="getpriceCan('19', '59');">
+                                <p class="topTitle">1x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
-                            </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item " onclick="getpriceCan('19', '60');">
+                                <p class="topTitle">6x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
                         </div>
 
-                        <div class="inputCounter mt-1 mb-2 form-group">
-                            <span class="minus">-</span>
-                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                            <span class="plus">+</span>
+                        <div class="productCard__price">
+                            <div class="priceWrapper">
+                                <span class="price price__actual">59,00 Kč</span>
+                                <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
-                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                        <div class="d-flex d-md-block align-items-center">
+                            <div class="inputCounter mt-md-1 mb-md-2 mt-0 mb-0 mr-1 mr-md-0 form-group">
+                                <span class="minus">-</span>
+                                <input type="text" name="quantity_desktop" value="1" class="form-control" min="0" id="counter_desktop_19">
+                                <span class="plus">+</span>
+                            </div>
+
+                            <input type="hidden" name="product_id" value="19">
+
+                            <button type="button" class="btn btn-lg pl-3 pr-3 text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-md-2" onclick="addToCart(19)">Do košíku</button>
+                        </div>
+
+                        <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="text-uppercase fs-xs text-white font-weight-bold text-underline d-none d-md-block">Více informace</a>
                     </div>
+
+                    <div class="productCard__price d-none d-md-flex">
+                        <div class="priceWrapper" id="priceCan_19">
+                            <span class="price price__actual">59,00 Kč</span>
+                            <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </form>
-            <form class="productCard">
+            <form class="productCard" id="product_19">
                 <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span>Akce</span>
+                    <div class="tag__item tag__item--danger">
+                        Vyprodáno
                     </div>
                 </div>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product3.png" alt="">
+                <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="productCard__image">
+                    <img src="https://drink2go.cz/image/cache/catalog/slim%20250%20vino/vino_slim_3-200x260.png" alt="Merlot polosladké" title="Merlot polosladké">
                 </a>
                 <div class="productCard__content">
-                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+                    <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19"><h2 class="title">Merlot polosladké</h2></a>
 
-                    <div class="productCard__rate">
+                    <div class="productCard__rate d-none d-md-flex">
                         <span class="full"></span>
                         <span class="full"></span>
                         <span class="full"></span>
@@ -590,79 +560,69 @@
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: Uvedeno na plechovce</span><span>Objem: 250ml</span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="priceMobileControl">
-                            <select name="">
-                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
-                            </select>
-
-                            <div class="d-flex align-items-center">
-                                <div class="inputCounter mt-1 mb-2 form-group">
-                                    <span class="minus">-</span>
-                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                    <span class="plus">+</span>
-                                </div>
-
-                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
-                            </div>
-                        </div>
-                        <div class="priceWrapper">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+                        <span>Typ: <b>Polosladké</b></span>
+                        <span>Alkohol: <b>12,5%</b></span>
+                        <span>Spotřeba: <b>Uvedeno na plechovce </b></span>
                     </div>
 
                     <div class="productCard__cover">
-
                         <div class="variantSelect variantSelect--inline">
-                            <div class="variantSelect__item variantSelect__item--selected">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item variantSelect__item--selected" onclick="getpriceCan('19', '59');">
+                                <p class="topTitle">1x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
-                            </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item " onclick="getpriceCan('19', '60');">
+                                <p class="topTitle">6x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
                         </div>
 
-                        <div class="inputCounter mt-1 mb-2 form-group">
-                            <span class="minus">-</span>
-                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                            <span class="plus">+</span>
+                        <div class="productCard__price">
+                            <div class="priceWrapper">
+                                <span class="price price__actual">59,00 Kč</span>
+                                <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
-                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                        <div class="d-flex d-md-block align-items-center">
+                            <div class="inputCounter mt-md-1 mb-md-2 mt-0 mb-0 mr-1 mr-md-0 form-group">
+                                <span class="minus">-</span>
+                                <input type="text" name="quantity_desktop" value="1" class="form-control" min="0" id="counter_desktop_19">
+                                <span class="plus">+</span>
+                            </div>
+
+                            <input type="hidden" name="product_id" value="19">
+
+                            <button type="button" class="btn btn-lg pl-3 pr-3 text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-md-2" onclick="addToCart(19)">Do košíku</button>
+                        </div>
+
+                        <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="text-uppercase fs-xs text-white font-weight-bold text-underline d-none d-md-block">Více informace</a>
                     </div>
+
+                    <div class="productCard__price d-none d-md-flex">
+                        <div class="priceWrapper" id="priceCan_19">
+                            <span class="price price__actual">59,00 Kč</span>
+                            <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </form>
-            <form class="productCard">
+            <form class="productCard" id="product_19">
                 <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span>Akce</span>
+                    <div class="tag__item tag__item--danger">
+                        Vyprodáno
                     </div>
                 </div>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product3.png" alt="">
+                <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="productCard__image">
+                    <img src="https://drink2go.cz/image/cache/catalog/slim%20250%20vino/vino_slim_3-200x260.png" alt="Merlot polosladké" title="Merlot polosladké">
                 </a>
                 <div class="productCard__content">
-                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+                    <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19"><h2 class="title">Merlot polosladké</h2></a>
 
-                    <div class="productCard__rate">
+                    <div class="productCard__rate d-none d-md-flex">
                         <span class="full"></span>
                         <span class="full"></span>
                         <span class="full"></span>
@@ -672,79 +632,69 @@
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: Uvedeno na plechovce</span><span>Objem: 250ml</span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="priceMobileControl">
-                            <select name="">
-                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
-                            </select>
-
-                            <div class="d-flex align-items-center">
-                                <div class="inputCounter mt-1 mb-2 form-group">
-                                    <span class="minus">-</span>
-                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                    <span class="plus">+</span>
-                                </div>
-
-                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
-                            </div>
-                        </div>
-                        <div class="priceWrapper">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+                        <span>Typ: <b>Polosladké</b></span>
+                        <span>Alkohol: <b>12,5%</b></span>
+                        <span>Spotřeba: <b>Uvedeno na plechovce </b></span>
                     </div>
 
                     <div class="productCard__cover">
-
                         <div class="variantSelect variantSelect--inline">
-                            <div class="variantSelect__item variantSelect__item--selected">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item variantSelect__item--selected" onclick="getpriceCan('19', '59');">
+                                <p class="topTitle">1x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
-                            </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item " onclick="getpriceCan('19', '60');">
+                                <p class="topTitle">6x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
                         </div>
 
-                        <div class="inputCounter mt-1 mb-2 form-group">
-                            <span class="minus">-</span>
-                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                            <span class="plus">+</span>
+                        <div class="productCard__price">
+                            <div class="priceWrapper">
+                                <span class="price price__actual">59,00 Kč</span>
+                                <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
-                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                        <div class="d-flex d-md-block align-items-center">
+                            <div class="inputCounter mt-md-1 mb-md-2 mt-0 mb-0 mr-1 mr-md-0 form-group">
+                                <span class="minus">-</span>
+                                <input type="text" name="quantity_desktop" value="1" class="form-control" min="0" id="counter_desktop_19">
+                                <span class="plus">+</span>
+                            </div>
+
+                            <input type="hidden" name="product_id" value="19">
+
+                            <button type="button" class="btn btn-lg pl-3 pr-3 text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-md-2" onclick="addToCart(19)">Do košíku</button>
+                        </div>
+
+                        <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="text-uppercase fs-xs text-white font-weight-bold text-underline d-none d-md-block">Více informace</a>
                     </div>
+
+                    <div class="productCard__price d-none d-md-flex">
+                        <div class="priceWrapper" id="priceCan_19">
+                            <span class="price price__actual">59,00 Kč</span>
+                            <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </form>
-            <form class="productCard">
+            <form class="productCard" id="product_19">
                 <div class="productCard__tags tag">
-                    <div class="tag__item tag__item--sale">
-                        <span>Akce</span>
+                    <div class="tag__item tag__item--danger">
+                        Vyprodáno
                     </div>
                 </div>
-                <a href="detail.html" class="productCard__image">
-                    <img src="./../assets/img/product3.png" alt="">
+                <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="productCard__image">
+                    <img src="https://drink2go.cz/image/cache/catalog/slim%20250%20vino/vino_slim_3-200x260.png" alt="Merlot polosladké" title="Merlot polosladké">
                 </a>
                 <div class="productCard__content">
-                    <h2 class="title">Hugo Jahoda Hugo Jahoda Hugo Jahoda</h2>
+                    <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19"><h2 class="title">Merlot polosladké</h2></a>
 
-                    <div class="productCard__rate">
+                    <div class="productCard__rate d-none d-md-flex">
                         <span class="full"></span>
                         <span class="full"></span>
                         <span class="full"></span>
@@ -754,64 +704,54 @@
 
                     <div class="productCard__parameters">
                         <span>Země původu: <b>Itálie</b></span>
-                        <span>Typ: <b>Prosecco</b></span>
-                        <span>Alkohol: <b>11%</b></span>
-                        <span>Spotřeba: Uvedeno na plechovce</span><span>Objem: 250ml</span>
-                    </div>
-
-                    <div class="productCard__price">
-                        <div class="priceMobileControl">
-                            <select name="">
-                                <option value="" selected>Plechovka 1x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 4x250 ml - 59,00 Kč</option>
-                                <option value="">Plechovka 8x250 ml - 59,00 Kč</option>
-                            </select>
-
-                            <div class="d-flex align-items-center">
-                                <div class="inputCounter mt-1 mb-2 form-group">
-                                    <span class="minus">-</span>
-                                    <input type="text" name="bottle" value="1" class="form-control" min="0">
-                                    <span class="plus">+</span>
-                                </div>
-
-                                <button type="submit" class="btn btn-lg text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-2">Do košíku</button>
-                            </div>
-                        </div>
-                        <div class="priceWrapper">
-                            <span class="price price__actual">280.00 Kč</span>
-                            <span class="price price__del">1 000.00 Kč</span>
-                            <span class="price price__noVat">230.00 Kč (bez DPH)</span>
-                        </div>
+                        <span>Typ: <b>Polosladké</b></span>
+                        <span>Alkohol: <b>12,5%</b></span>
+                        <span>Spotřeba: <b>Uvedeno na plechovce </b></span>
                     </div>
 
                     <div class="productCard__cover">
-
                         <div class="variantSelect variantSelect--inline">
-                            <div class="variantSelect__item variantSelect__item--selected">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item variantSelect__item--selected" onclick="getpriceCan('19', '59');">
+                                <p class="topTitle">1x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
-                            </div>
-
-                            <div class="variantSelect__item">
-                                <p class="topTitle">Plechovka 1x250 ml</p>
-                                <p class="bottomTitle">59,00 Kč <span class="ml-3">48,76 Kč bez DPH</span></p>
+                            <div class="variantSelect__item " onclick="getpriceCan('19', '60');">
+                                <p class="topTitle">6x500ml (cena za kus)</p>
+                                <p class="bottomTitle">59,00 Kč<span class="ml-3">48,76 Kč bez DPH</span></p>
                             </div>
                         </div>
 
-                        <div class="inputCounter mt-1 mb-2 form-group">
-                            <span class="minus">-</span>
-                            <input type="text" name="bottle" value="1" class="form-control" min="0">
-                            <span class="plus">+</span>
+                        <div class="productCard__price">
+                            <div class="priceWrapper">
+                                <span class="price price__actual">59,00 Kč</span>
+                                <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-lg text-body font-weight-bold pl-4 pr-4 btn-secondary mb-2">Do košíku</button>
-                        <a href="detail.html" class="text-uppercase fs-xs text-white font-weight-bold text-underline">Více informace</a>
+                        <div class="d-flex d-md-block align-items-center">
+                            <div class="inputCounter mt-md-1 mb-md-2 mt-0 mb-0 mr-1 mr-md-0 form-group">
+                                <span class="minus">-</span>
+                                <input type="text" name="quantity_desktop" value="1" class="form-control" min="0" id="counter_desktop_19">
+                                <span class="plus">+</span>
+                            </div>
+
+                            <input type="hidden" name="product_id" value="19">
+
+                            <button type="button" class="btn btn-lg pl-3 pr-3 text-body font-weight-bold pl-md-4 pr-md-4 btn-secondary mb-md-2" onclick="addToCart(19)">Do košíku</button>
+                        </div>
+
+                        <a href="https://drink2go.cz/index.php?route=product/product&amp;path=201&amp;product_id=19" class="text-uppercase fs-xs text-white font-weight-bold text-underline d-none d-md-block">Více informace</a>
                     </div>
+
+                    <div class="productCard__price d-none d-md-flex">
+                        <div class="priceWrapper" id="priceCan_19">
+                            <span class="price price__actual">59,00 Kč</span>
+                            <span class="price price__noVat">48,76 Kč (bez DPH)</span>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </form>
         </div>

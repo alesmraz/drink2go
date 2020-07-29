@@ -31,6 +31,12 @@
 
 .stripe {
   @include get-stripe-offset();
+  position: relative;
+
+  .stripe__bg {
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 .stripe--gray {
