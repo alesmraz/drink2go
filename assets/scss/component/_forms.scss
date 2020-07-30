@@ -21,6 +21,21 @@
   font-size: $font-size-base;
 }
 
+.custom-select--rounded {
+  border-color: $black !important;
+  border-radius: 10px !important;
+  color: $black !important;
+}
+
+.form-check--large {
+  @include size(25px);
+}
+
+.btn-reset {
+  border: none;
+  background: none;
+}
+
 .form-control-password {
   padding-right: 80px;
 }

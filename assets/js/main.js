@@ -16,11 +16,15 @@ import Branch from "./Branch";
 import AOS from 'aos';
 import Scroller from './Scroller'
 import ProductCard from './ProductCard'
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+import ProductPicker from "./ProductPicker"; // You can also use <link> for styles
 
 document.addEventListener('DOMContentLoaded', () => {
   const sliders = new Slider()
   sliders.init()
+
+  const productPicker = new ProductPicker()
+  productPicker.init()
 
   const filter = new Filter();
   filter.init();
