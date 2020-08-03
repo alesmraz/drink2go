@@ -213,15 +213,12 @@
 <main class="page">
     <div class="topBanner topBanner--eshop mt-3 mb-3">
         <div class="item">
-            <div class="topBanner__bg">
-                <img src="./../../assets/img/eshop/homepage/soutezni.png" alt="">
+            <div class="topBanner__bg topBanner__bg--withoutBackground">
+                <img class="desktop-only" src="./../../assets/img/topbanner/banners/smysl/D2G-BANNER-42.png" alt="">
+                <img class="mobile-only" src="./../../assets/img/topbanner/banners/smysl/D2G-BANNER-43.png" alt="">
             </div>
             <div class="container topBanner__container">
-                <div class="topBanner__content">
-                    <div class="text-center">
-                        <h2 class="title title--line mb-5" id="plneniPlechovek">Výherní plechovky</h2>
-                    </div>
-                </div>
+                <div class="topBanner__content topBanner__content--bottom"></div>
             </div>
         </div>
     </div>
@@ -238,8 +235,8 @@
         <h2 class="title text-center mb-4 mt-5 pt-1">POSTUP PLNĚNÍ PLECHOVKY</h2>
 
         <div class="slider swiper canProcessSlider">
-            <div class="swiper-container swiper-centered">
-                <div class="swiper-wrapper ml-md-5 mr-md-5 pl-md-5 pr-md-5">
+            <div class="swiper-container swiper-centered swiper-same-height swiper-outside-arrow ml-md-5 mr-md-5 pl-md-5 pr-md-5">
+                <div class="swiper-wrapper ">
                     <!-- Slide-->
                     <div class="swiper-slide slider__item">
                         <div class="canProcessCard">
@@ -318,9 +315,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 </main>
