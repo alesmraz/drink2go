@@ -1,11 +1,7 @@
 .canProcessSlider .swiper-slide {
   .canProcessCard {
     border: 1px solid $black;
-    min-height: 780px;
-  }
 
-  @include media-breakpoint-up(lg) {
-    min-height: 750px;
   }
 
 }
@@ -26,5 +22,6 @@
   .title, p {
     color: $black;
   }
+
 
 }

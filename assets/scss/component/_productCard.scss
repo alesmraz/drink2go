@@ -41,6 +41,7 @@
 
   @include media-breakpoint-down(sm) {
     padding: 5px;
+    padding-top: 1.5rem;
   }
 
   > img {
@@ -86,13 +87,15 @@
   }
 
   .title {
-    height: 3em;
+    height: 2em;
     min-height: max-content;
     margin-bottom: $spacer * 1.25;
     color: $black;
     font-weight: $font-weight-bold;
     font-size: $h5-font-size;
     text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
 
     @media screen and (max-width: 1015px) {
       height: 5em;

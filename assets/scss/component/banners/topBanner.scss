@@ -14,14 +14,16 @@
   @include size(100%);
   min-height: 300px;
 
-  &:after {
-    content: '';
-    @include fill();
-    @include size(100%);
-    background-color: transparentize($black, 0.6);
+  &:not(.topBanner__bg--withoutBackground) {
+    &:after {
+      content: '';
+      @include fill();
+      @include size(100%);
+      background-color: transparentize($black, 0.6);
+    }
   }
 
-  > img {
+  img {
     @include fill();
     @include object-fit(cover);
   }
@@ -89,6 +91,16 @@
 
   }
 
+}
+
+.topBanner__content--bottom {
+  top: initial;
+  bottom: 5%;
+
+  @include media-breakpoint-down(sm) {
+    bottom: 5%;
+    top: initial;
+  }
 }
 
 .topBanner__content--center {
@@ -234,7 +246,7 @@
 }
 
 .topBanner--eshop {
-  height: 400px;
+  height: 500px;
   margin-bottom: 0;
 
   @include media-breakpoint-down(md) {
@@ -249,7 +261,7 @@
     }
   }
 
-  .topBanner__content {
+  .topBanner__content:not(.topBanner__content--bottom) {
     @include media-breakpoint-down(sm) {
       top: 50%;
     }
@@ -283,6 +295,8 @@
 
     @include media-breakpoint-down(sm) {
       font-size: 1rem;
+      padding-left: $spacer * 1.5;
+      padding-right: $spacer * 1.5;
     }
   }
 

@@ -108,8 +108,39 @@ export default class Slider {
           slidesPerView: 4
         }
       }
+      this.options.loopAdditionalSlides = 3
       this.options.spaceBetween = 30
-   //   this.options.centeredSlides = true
+    }
+
+    if (slider.classList.contains('swiper-same-height')) {
+      this.options.on = {
+        init: () => {
+          const requiredHeight = slider.clientHeight || 500 // fallback
+          const slides = [...slider.querySelectorAll('.slider__item > div')]
+          if (slides.length) {
+            const updatedSlides = slides.map((slide) => {
+              slide.style.height = `${requiredHeight}px`
+            })
+          }
+        },
+        resize: () => {
+          const requiredHeight = slider.clientHeight || 500 // fallback
+          const slides = [...slider.querySelectorAll('.slider__item > div')]
+          if (slides.length) {
+            const updatedSlides = slides.map((slide) => {
+              slide.style.height = `${requiredHeight}px`
+            })
+          }
+        }
+      }
+    }
+
+
+    if (slider.classList.contains('swiper-outside-arrow')) {
+      this.options.navigation = {
+        nextEl: slider.parentNode.querySelector('.swiper-button-next'),
+        prevEl: slider.parentNode.querySelector('.swiper-button-prev')
+      }
     }
   }
 
