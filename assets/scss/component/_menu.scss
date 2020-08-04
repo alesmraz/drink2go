@@ -41,10 +41,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 7px;
   flex: 0;
   white-space: nowrap;
-  font-size: $font-size-lg;
+  font-size: 1.1rem;
   border-right: 1px solid $white;
 
   &:last-of-type {
@@ -82,8 +82,12 @@
   font-size: 0.75em;
   text-transform: uppercase;
 
+  @include media-breakpoint-down(lg) {
+    font-size: 0.8rem;
+  }
+
   @include media-breakpoint-down(md) {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   @include hover-focus() {

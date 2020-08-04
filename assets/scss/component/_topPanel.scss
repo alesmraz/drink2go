@@ -8,6 +8,14 @@
   z-index: 2;
 
   @include media-breakpoint-down(lg) {
+    height: 120px;
+  }
+
+  @include media-breakpoint-down(sm){
+    height: $top-panel-height;
+  }
+
+  @media screen and (max-width: 1345px)  {
     padding: 0;
   }
 
@@ -118,12 +126,15 @@
 .topPanel__item--search {
   position: relative;
   justify-content: center;
-  flex: 3;
-  max-width: map_get($container-max-widths, 'md');
+  flex: 4;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
+
+  @include media-breakpoint-down(md) {
+    flex: 2;
+  }
 
   @include media-breakpoint-down(sm) {
     display: none;
@@ -149,6 +160,20 @@
       @include media-breakpoint-down(sm) {
         width: 15px;
       }
+    }
+  }
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - #{$spacer * 4});
+
+    @include media-breakpoint-down(lg) {
+      width: calc(100% - #{$spacer * 2});
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
     }
   }
 
