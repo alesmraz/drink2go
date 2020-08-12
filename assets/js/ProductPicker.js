@@ -74,8 +74,9 @@ export default class ProductPicker {
     const newRow = firstRow.cloneNode(true)
 
     const allSelects = newRow.querySelectorAll('select')
-    const checkbox = newRow.querySelector('input[type="checkbox"]')
-    const checkboxLabel = checkbox.parentNode.querySelector('label')
+    const numberInput = newRow.querySelector('input[type="number"]')
+    const radios = [...newRow.querySelectorAll('input[type="radio"]')]
+    const elements = [...newRow.querySelectorAll('.element-to-update-index')]
 
     newRow.dataset.index = newIndex
     allSelects.forEach((select) => {
@@ -83,10 +84,36 @@ export default class ProductPicker {
       select.selectedIndex = 0
     })
 
-    checkbox.name = this.getInputName(checkbox, newIndex)
-    checkbox.checked = false
-    checkbox.id = this.getInputName(checkboxLabel, newIndex, 'nameId')
-    checkboxLabel.setAttribute('for', this.getInputName(checkboxLabel, newIndex, 'nameId'))
+    radios.forEach((radio, index) => {
+      if (radio) {
+        radio.name = this.getInputName(radio, newIndex)
+
+        const radioLabel = radio.parentNode.querySelector('label')
+
+        if (radioLabel) {
+          radioLabel.setAttribute('for', this.getInputName(radioLabel, newIndex, 'nameId'))
+          radio.id = this.getInputName(radio, newIndex, 'nameId')
+
+        }
+
+        if (index === 0) {
+          radios.forEach(radioSecond => {
+            radioSecond.checked = false
+          })
+
+          radio.checked = true
+        }
+      }
+    })
+
+    elements.forEach((element) => {
+      if (element) {
+        element.id = this.getInputName(element, newIndex)
+      }
+    })
+
+    numberInput.value = 1
+    numberInput.name = this.getInputName(numberInput, newIndex)
 
     return newRow
   }
@@ -102,28 +129,57 @@ export default class ProductPicker {
           const newIndex = index+1
 
           const allSelects = child.querySelectorAll('select')
-          const checkbox = child.querySelector('input[type="checkbox"]')
-          const checkboxLabel = checkbox.parentNode.querySelector('label')
+          const numberInput = child.querySelector('input[type="number"]')
+          const radios = [...child.querySelectorAll('input[type="radio"]')]
+          const elements = [...child.querySelectorAll('.element-to-update-index')]
+
 
           child.dataset.index = newIndex.toString()
           allSelects.forEach((select) => {
             select.name = this.getInputName(select, newIndex)
-            select.selectedIndex = 0
           })
 
-          checkbox.name = this.getInputName(checkbox, newIndex)
-          checkbox.checked = false
-          checkbox.id = this.getInputName(checkboxLabel, newIndex, 'nameId')
-          checkboxLabel.setAttribute('for', this.getInputName(checkboxLabel, newIndex, 'nameId'))
+          radios.forEach((radio, index) => {
+            if (radio) {
+              radio.name = this.getInputName(radio, newIndex)
+
+              const radioLabel = radio.parentNode.querySelector('label')
+
+              if (radioLabel) {
+                radioLabel.setAttribute('for', this.getInputName(radioLabel, newIndex, 'nameId'))
+                radio.id = this.getInputName(radio, newIndex, 'nameId')
+              }
+
+            }
+          })
+
+          elements.forEach((element) => {
+            if (element) {
+              element.id = this.getInputName(element, newIndex)
+            }
+          })
+
+          numberInput.name = this.getInputName(numberInput, newIndex)
         })
       }
     }, 100)
-
-
   }
 
   getInputName(input, requiredIndex, idName) {
+
     const template = input.dataset[idName ? idName : this.inputNameTemplate]
-    return template.replace('<number>', requiredIndex)
+    let result = template.toString()
+    const splitedTemplate = template.toString().split('<')
+
+    if (splitedTemplate.toString().includes('number>')) {
+      result = result.replace('<number>', requiredIndex)
+    }
+
+    if (splitedTemplate.toString().includes('value>')) {
+      const hasDataValue = input.dataset.value
+      result = result.replace('<value>', hasDataValue ? hasDataValue.toString() : input.value.toString())
+    }
+
+    return result
   }
 }

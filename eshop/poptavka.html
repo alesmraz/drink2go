@@ -291,7 +291,7 @@
                                 <div class="col-md-11">
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <div class="form-group">
+                                            <div class="form-group mb-1">
                                                 <label>Typ*</label>
                                                 <select name="type1" data-name-template="type<number>" class="custom-select custom-select--rounded custom-select-lg mb-3">
                                                     <option selected>Vše</option>
@@ -338,13 +338,40 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-10 d-flex align-items-center">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
                                     <div class="position-relative form-check d-flex pl-0">
-                                        <label class="form-check-label mr-3" for="canPrint1" data-name-id="canPrint<number>">
+                                        <label class="form-check-label mr-3" data-name-id="canPrint<number>">
                                             Chci plechovku s potiskem
                                         </label>
-                                        <input name="withPrint1" data-name-template="withPrint<number>" class="form-check form-check--large" type="checkbox" value="" id="canPrint1" data-name-id="canPrint<number>">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" checked name="withPrint1" data-name-template="withPrint<number>" data-name-id="canPrint<number><value>" id="canPrint1ANO" value="ANO">
+                                            <label class="form-check-label" data-name-id="canPrint<number><value>" data-value="ANO" for="canPrint1ANO">ANO</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="withPrint1" data-name-template="withPrint<number>" data-name-id="canPrint<number><value>" id="canPrint1NE" value="NE">
+                                            <label class="form-check-label" data-name-id="canPrint<number><value>" data-value="NE" for="canPrint1NE">NE</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label >Množství</label>
+                                                <input value="1" min="1" data-name-template="productcount<number>" name="productcount1" type="number" class="form-control form-control-md" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 element-to-update-index" id="priceResultPerItem1" data-name-template="priceResultPerItem<number>">
+                                            <p class="text-center lh-1 mb-2">Cena za kus <small class="d-block">&nbsp;</small></p>
+                                            <p class="text-center fs-sm mb-0 font-weight-bold">30,58 Kč</p>
+                                            <p class="text-center fs-xs mb-0">(s DPH)</p>
+                                        </div>
+                                        <div class="col-md-4 element-to-update-index" id="priceResultTotal1" data-name-template="priceResultTotal<number>">
+                                            <p class="text-center lh-1 mb-2">Cena celkem <small class="d-block">(vždy za jeden nápoj)</small></p>
+                                            <p class="text-center fs-sm mb-0 font-weight-bold">30,58 Kč</p>
+                                            <p class="text-center fs-xs mb-0">(s DPH)</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
